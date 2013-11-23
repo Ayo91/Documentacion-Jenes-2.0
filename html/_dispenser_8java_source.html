@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Jenes 2.0: Fichero Fuente C:/Users/Ayo/Desktop/jenes 2.0/src/jenes/stage/Dispenser.java</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Jenes 2.0
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="namespaces.html"><span>Paquetes</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_12f2200cf1e99b3d3381c7cc6a32cc41.html">jenes</a></li><li class="navelem"><a class="el" href="dir_f97a2bf6fe05c495e341fd5fd7b88cb5.html">stage</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Dispenser.java</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_dispenser_8java.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * JENES</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * A time and memory efficient Java library for genetic algorithms and more </span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Copyright (C) 2011 Intelligentia srl</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * This program is free software: you can redistribute it and/or modify</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * the Free Software Foundation, either version 3 of the License, or</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * (at your option) any later version.</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> *  This program is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> *  but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> *  GNU General Public License for more details.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> *  You should have received a copy of the GNU General Public License</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> *  along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;. </span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">package </span>jenes.stage;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">import</span> jenes.chromosome.Chromosome;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">import</span> jenes.population.Population;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classjenes_1_1stage_1_1_dispenser_3_01_t_01extends_01_chromosome_01_4.html">   74</a></span>&#160;<span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class </span>Dispenser&lt;T <span class="keyword">extends</span> Chromosome&gt; {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="classjenes_1_1stage_1_1_dispenser_3_01_t_01extends_01_chromosome_01_4.html#a8f9bc0997e0536729db0c55bc9e240a5">   78</a></span>&#160;    <span class="keyword">protected</span> <span class="keywordtype">int</span> <a class="code" href="classjenes_1_1stage_1_1_dispenser_3_01_t_01extends_01_chromosome_01_4.html#a8f9bc0997e0536729db0c55bc9e240a5">span</a>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classjenes_1_1stage_1_1_dispenser_3_01_t_01extends_01_chromosome_01_4.html#a8972dc3bcea956122cc623784a833bcf">   85</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classjenes_1_1stage_1_1_dispenser_3_01_t_01extends_01_chromosome_01_4.html#a8972dc3bcea956122cc623784a833bcf">Dispenser</a>(<span class="keywordtype">int</span> span) {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        this.span = span;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="classjenes_1_1stage_1_1_dispenser_3_01_t_01extends_01_chromosome_01_4.html#a6ece937f3d7564424f6367e96e1b21c7">   94</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="classjenes_1_1stage_1_1_dispenser_3_01_t_01extends_01_chromosome_01_4.html#a6ece937f3d7564424f6367e96e1b21c7">span</a>() {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordflow">return</span> this.span;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keywordtype">void</span> distribute(Population&lt;T&gt; in, Population&lt;T&gt;[] branches);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keywordtype">void</span> mergePopulation(Population&lt;T&gt;[] branches, Population&lt;T&gt; out);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;}</div>
+<div class="ttc" id="classjenes_1_1stage_1_1_dispenser_3_01_t_01extends_01_chromosome_01_4_html_a6ece937f3d7564424f6367e96e1b21c7"><div class="ttname"><a href="classjenes_1_1stage_1_1_dispenser_3_01_t_01extends_01_chromosome_01_4.html#a6ece937f3d7564424f6367e96e1b21c7">jenes.stage.Dispenser&lt; T extends Chromosome &gt;.span</a></div><div class="ttdeci">int span()</div><div class="ttdef"><b>Definition:</b> <a href="_dispenser_8java_source.html#l00094">Dispenser.java:94</a></div></div>
+<div class="ttc" id="classjenes_1_1stage_1_1_dispenser_3_01_t_01extends_01_chromosome_01_4_html_a8f9bc0997e0536729db0c55bc9e240a5"><div class="ttname"><a href="classjenes_1_1stage_1_1_dispenser_3_01_t_01extends_01_chromosome_01_4.html#a8f9bc0997e0536729db0c55bc9e240a5">jenes.stage.Dispenser&lt; T extends Chromosome &gt;.span</a></div><div class="ttdeci">int span</div><div class="ttdef"><b>Definition:</b> <a href="_dispenser_8java_source.html#l00078">Dispenser.java:78</a></div></div>
+<div class="ttc" id="classjenes_1_1stage_1_1_dispenser_3_01_t_01extends_01_chromosome_01_4_html_a8972dc3bcea956122cc623784a833bcf"><div class="ttname"><a href="classjenes_1_1stage_1_1_dispenser_3_01_t_01extends_01_chromosome_01_4.html#a8972dc3bcea956122cc623784a833bcf">jenes.stage.Dispenser&lt; T extends Chromosome &gt;.Dispenser</a></div><div class="ttdeci">Dispenser(int span)</div><div class="ttdef"><b>Definition:</b> <a href="_dispenser_8java_source.html#l00085">Dispenser.java:85</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Sábado, 23 de Noviembre de 2013 21:00:50 para Jenes 2.0 por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

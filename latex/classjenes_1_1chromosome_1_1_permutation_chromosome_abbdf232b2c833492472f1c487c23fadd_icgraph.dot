@@ -1,0 +1,13 @@
+digraph "jenes.chromosome.PermutationChromosome.length"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="jenes.chromosome.Permutation\lChromosome.length",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="jenes.chromosome.Permutation\lChromosome.PermutationChromosome",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classjenes_1_1chromosome_1_1_permutation_chromosome.html#a7c3b4e904d419c51af512f1f82faa109"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="jenes.chromosome.Permutation\lChromosome.setAs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classjenes_1_1chromosome_1_1_permutation_chromosome.html#ad1e5735c594b7c43f7cca5996da5741e"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="jenes.chromosome.Permutation\lChromosome.equals",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classjenes_1_1chromosome_1_1_permutation_chromosome.html#a2cac25997ad82e5f3793bd65c8de1b37"];
+}

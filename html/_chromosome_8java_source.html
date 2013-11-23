@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Jenes 2.0: Fichero Fuente C:/Users/Ayo/Desktop/jenes 2.0/src/jenes/chromosome/Chromosome.java</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Jenes 2.0
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="namespaces.html"><span>Paquetes</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_12f2200cf1e99b3d3381c7cc6a32cc41.html">jenes</a></li><li class="navelem"><a class="el" href="dir_a865121f1fb24a03e6ef1b6d5f819127.html">chromosome</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Chromosome.java</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_chromosome_8java.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * JENES</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * A time and memory efficient Java library for genetic algorithms and more </span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Copyright (C) 2011 Intelligentia srl</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * This program is free software: you can redistribute it and/or modify</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * the Free Software Foundation, either version 3 of the License, or</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * (at your option) any later version.</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> *  This program is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> *  but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> *  GNU General Public License for more details.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> *  You should have received a copy of the GNU General Public License</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> *  along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;. </span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">package </span>jenes.chromosome;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="interfacejenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4.html">   38</a></span>&#160;<span class="keyword">public</span> <span class="keyword">interface </span>Chromosome&lt;T <span class="keyword">extends</span> Chromosome&gt; extends Cloneable {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> swap(<span class="keywordtype">int</span> pos1, <span class="keywordtype">int</span> pos2);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> randomize(<span class="keywordtype">int</span> pos);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> leftShift(<span class="keywordtype">int</span> from, <span class="keywordtype">int</span> to);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> rightShift(<span class="keywordtype">int</span> from, <span class="keywordtype">int</span> to);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> setDefaultValueAt(<span class="keywordtype">int</span> pos);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keyword">public</span> T clone();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keyword">public</span> <span class="keywordtype">int</span> length();</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> randomize();</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> setAs(T chromosome);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> cross(T chromosome, <span class="keywordtype">int</span> from, <span class="keywordtype">int</span> to);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> cross(T chromosome, <span class="keywordtype">int</span> from);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keyword">public</span> <span class="keywordtype">boolean</span> equals(T chromosome);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> difference(T chromosome, <span class="keywordtype">double</span>[] diff);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    </div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keyword">public</span> Object[] toArray();</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00148"></a><span class="lineno"><a class="line" href="classjenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4_1_1_util.html">  148</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">class </span>Util {</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
+<div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="classjenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4_1_1_util.html#a0c295f1ee65108c934fbe03c1c7c849e">  157</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keywordtype">double</span>[] <a class="code" href="classjenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4_1_1_util.html#a0c295f1ee65108c934fbe03c1c7c849e">getDifference</a>(Chromosome c0, Chromosome c1) {</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            <span class="keywordflow">return</span> getDifference(c0, c1, null);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        }</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
+<div class="line"><a name="l00170"></a><span class="lineno"><a class="line" href="classjenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4_1_1_util.html#aa9c40ae514b0f60b28f678ba7dc1d95c">  170</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keywordtype">double</span>[] <a class="code" href="classjenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4_1_1_util.html#aa9c40ae514b0f60b28f678ba7dc1d95c">getDifference</a>(Chromosome c0, Chromosome c1, <span class="keywordtype">double</span>[] dist) {</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            <span class="keywordtype">int</span> s0 = c0.length();</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            <span class="keywordtype">int</span> s1 = c1.length();</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            <span class="keywordtype">int</span> sz = s0 &gt; s1 ? s0 : s1;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            <span class="keywordflow">if</span> (dist == null || sz != dist.length) {</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                dist = <span class="keyword">new</span> <span class="keywordtype">double</span>[sz];</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            }</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; sz; ++i) {</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                dist[i] = Double.NaN;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            }</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            c0.difference(c1, dist);</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            <span class="keywordflow">return</span> dist;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        }</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    }</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;}</div>
+<div class="ttc" id="classjenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4_1_1_util_html_aa9c40ae514b0f60b28f678ba7dc1d95c"><div class="ttname"><a href="classjenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4_1_1_util.html#aa9c40ae514b0f60b28f678ba7dc1d95c">jenes.chromosome.Chromosome&lt; T extends Chromosome &gt;.Util.getDifference</a></div><div class="ttdeci">static final double[] getDifference(Chromosome c0, Chromosome c1, double[] dist)</div><div class="ttdef"><b>Definition:</b> <a href="_chromosome_8java_source.html#l00170">Chromosome.java:170</a></div></div>
+<div class="ttc" id="classjenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4_1_1_util_html_a0c295f1ee65108c934fbe03c1c7c849e"><div class="ttname"><a href="classjenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4_1_1_util.html#a0c295f1ee65108c934fbe03c1c7c849e">jenes.chromosome.Chromosome&lt; T extends Chromosome &gt;.Util.getDifference</a></div><div class="ttdeci">static final double[] getDifference(Chromosome c0, Chromosome c1)</div><div class="ttdef"><b>Definition:</b> <a href="_chromosome_8java_source.html#l00157">Chromosome.java:157</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Sábado, 23 de Noviembre de 2013 21:00:49 para Jenes 2.0 por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

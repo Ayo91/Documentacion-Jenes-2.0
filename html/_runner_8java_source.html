@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Jenes 2.0: Fichero Fuente C:/Users/Ayo/Desktop/jenes 2.0/src/jenes/utils/multitasking/Runner.java</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Jenes 2.0
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="namespaces.html"><span>Paquetes</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_12f2200cf1e99b3d3381c7cc6a32cc41.html">jenes</a></li><li class="navelem"><a class="el" href="dir_fba9f71ed58fee33ebb3ba606d7667cb.html">utils</a></li><li class="navelem"><a class="el" href="dir_4abcc20f3f4315bb8cacf03180c799b0.html">multitasking</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Runner.java</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_runner_8java.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * JENES</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * A time and memory efficient Java library for genetic algorithms and more </span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Copyright (C) 2011 Intelligentia srl</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * This program is free software: you can redistribute it and/or modify</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * the Free Software Foundation, either version 3 of the License, or</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * (at your option) any later version.</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> *  This program is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> *  but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> *  GNU General Public License for more details.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> *  You should have received a copy of the GNU General Public License</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> *  along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;. </span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">package </span>jenes.utils.multitasking;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">import</span> jenes.population.Fitness;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">import</span> jenes.GeneticAlgorithm;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">import</span> jenes.population.Individual;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">import</span> jenes.population.Population;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classjenes_1_1utils_1_1multitasking_1_1_runner.html">   35</a></span>&#160;<span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class </span><a class="code" href="classjenes_1_1utils_1_1multitasking_1_1_runner.html">Runner</a> {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classjenes_1_1utils_1_1multitasking_1_1_runner.html#a699ccf526b6116f97abc09e4ce390c89">   40</a></span>&#160;    <span class="keyword">protected</span> GeneticAlgorithm <a class="code" href="classjenes_1_1utils_1_1multitasking_1_1_runner.html#a699ccf526b6116f97abc09e4ce390c89">algorithm</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classjenes_1_1utils_1_1multitasking_1_1_runner.html#a24d074cbd5140cd8bc65623fa1961f39">   49</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1utils_1_1multitasking_1_1_runner.html#a24d074cbd5140cd8bc65623fa1961f39">execute</a>(GeneticAlgorithm <a class="code" href="classjenes_1_1utils_1_1multitasking_1_1_runner.html#a699ccf526b6116f97abc09e4ce390c89">algorithm</a>, <span class="keywordtype">boolean</span> restart) {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        this.algorithm = <a class="code" href="classjenes_1_1utils_1_1multitasking_1_1_runner.html#a699ccf526b6116f97abc09e4ce390c89">algorithm</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        this.algorithm.setRunner(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        this.algorithm.evolve(restart);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classjenes_1_1utils_1_1multitasking_1_1_runner.html#ae222d69f44508fc432c05074272e0ae3">   61</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1utils_1_1multitasking_1_1_runner.html#ae222d69f44508fc432c05074272e0ae3">execute</a>(GeneticAlgorithm algoritm) {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        this.execute(algoritm, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classjenes_1_1utils_1_1multitasking_1_1_runner.html#a7205f2d93d68f40e3e87dccf92cc3720">   71</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1utils_1_1multitasking_1_1_runner.html#a7205f2d93d68f40e3e87dccf92cc3720">execute</a>(GeneticAlgorithm <a class="code" href="classjenes_1_1utils_1_1multitasking_1_1_runner.html#a699ccf526b6116f97abc09e4ce390c89">algorithm</a>, Population&lt;?&gt; initialPopulation) {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        this.algorithm = <a class="code" href="classjenes_1_1utils_1_1multitasking_1_1_runner.html#a699ccf526b6116f97abc09e4ce390c89">algorithm</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        this.algorithm.setRunner(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        this.algorithm.evolve(initialPopulation);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classjenes_1_1utils_1_1multitasking_1_1_runner.html#a462a121a840bbf06593bbd7da219d8b9">   82</a></span>&#160;    <span class="keyword">public</span> GeneticAlgorithm <a class="code" href="classjenes_1_1utils_1_1multitasking_1_1_runner.html#a462a121a840bbf06593bbd7da219d8b9">getGeneticAlgorithm</a>() {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classjenes_1_1utils_1_1multitasking_1_1_runner.html#a699ccf526b6116f97abc09e4ce390c89">algorithm</a>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="classjenes_1_1utils_1_1multitasking_1_1_runner.html#adad9fb400d736e55bcd3dfdf07742437">   91</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1utils_1_1multitasking_1_1_runner.html#adad9fb400d736e55bcd3dfdf07742437">setAlgorithm</a>(GeneticAlgorithm <a class="code" href="classjenes_1_1utils_1_1multitasking_1_1_runner.html#a699ccf526b6116f97abc09e4ce390c89">algorithm</a>) {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        this.algorithm = <a class="code" href="classjenes_1_1utils_1_1multitasking_1_1_runner.html#a699ccf526b6116f97abc09e4ce390c89">algorithm</a>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    </div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="classjenes_1_1utils_1_1multitasking_1_1_runner.html#a5dc1ed49495150ff26ec5194010b00e4">   99</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1utils_1_1multitasking_1_1_runner.html#a5dc1ed49495150ff26ec5194010b00e4">start</a>(<span class="keywordtype">boolean</span> reset) {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="comment">//call-back -&gt; do nothing</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="classjenes_1_1utils_1_1multitasking_1_1_runner.html#a4c4d4a0cd7aec110d60da5c660903398">  106</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1utils_1_1multitasking_1_1_runner.html#a4c4d4a0cd7aec110d60da5c660903398">onInit</a>() {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="comment">//call-back -&gt; do nothing</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="classjenes_1_1utils_1_1multitasking_1_1_runner.html#ac89e8ac54daba2e326e687662ff9f7b0">  113</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1utils_1_1multitasking_1_1_runner.html#ac89e8ac54daba2e326e687662ff9f7b0">stop</a>() {</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="comment">//call-back -&gt; do nothing</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    }</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="classjenes_1_1utils_1_1multitasking_1_1_runner.html#a6ec13cf0fb2ff03461a3a397421505cf">  124</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1utils_1_1multitasking_1_1_runner.html#a6ec13cf0fb2ff03461a3a397421505cf">onEvaluationBegin</a>(Population pop, <span class="keywordtype">boolean</span> forced) {</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="comment">//call-back -&gt; do nothing</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    }</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="classjenes_1_1utils_1_1multitasking_1_1_runner.html#a82c84ad942296d62849248b107ec3a2c">  134</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1utils_1_1multitasking_1_1_runner.html#a82c84ad942296d62849248b107ec3a2c">onEvaluationEnd</a>() {</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="comment">//call-back -&gt; do nothing</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    }</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1utils_1_1multitasking_1_1_runner.html#a250c5e0ffdb86ef0bb0e78e625a449e7">evaluateIndividual</a>(Individual individual);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    </div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;}</div>
+<div class="ttc" id="classjenes_1_1utils_1_1multitasking_1_1_runner_html_a24d074cbd5140cd8bc65623fa1961f39"><div class="ttname"><a href="classjenes_1_1utils_1_1multitasking_1_1_runner.html#a24d074cbd5140cd8bc65623fa1961f39">jenes.utils.multitasking.Runner.execute</a></div><div class="ttdeci">final void execute(GeneticAlgorithm algorithm, boolean restart)</div><div class="ttdef"><b>Definition:</b> <a href="_runner_8java_source.html#l00049">Runner.java:49</a></div></div>
+<div class="ttc" id="classjenes_1_1utils_1_1multitasking_1_1_runner_html_a462a121a840bbf06593bbd7da219d8b9"><div class="ttname"><a href="classjenes_1_1utils_1_1multitasking_1_1_runner.html#a462a121a840bbf06593bbd7da219d8b9">jenes.utils.multitasking.Runner.getGeneticAlgorithm</a></div><div class="ttdeci">GeneticAlgorithm getGeneticAlgorithm()</div><div class="ttdef"><b>Definition:</b> <a href="_runner_8java_source.html#l00082">Runner.java:82</a></div></div>
+<div class="ttc" id="classjenes_1_1utils_1_1multitasking_1_1_runner_html_a4c4d4a0cd7aec110d60da5c660903398"><div class="ttname"><a href="classjenes_1_1utils_1_1multitasking_1_1_runner.html#a4c4d4a0cd7aec110d60da5c660903398">jenes.utils.multitasking.Runner.onInit</a></div><div class="ttdeci">void onInit()</div><div class="ttdef"><b>Definition:</b> <a href="_runner_8java_source.html#l00106">Runner.java:106</a></div></div>
+<div class="ttc" id="classjenes_1_1utils_1_1multitasking_1_1_runner_html_a82c84ad942296d62849248b107ec3a2c"><div class="ttname"><a href="classjenes_1_1utils_1_1multitasking_1_1_runner.html#a82c84ad942296d62849248b107ec3a2c">jenes.utils.multitasking.Runner.onEvaluationEnd</a></div><div class="ttdeci">void onEvaluationEnd()</div><div class="ttdef"><b>Definition:</b> <a href="_runner_8java_source.html#l00134">Runner.java:134</a></div></div>
+<div class="ttc" id="classjenes_1_1utils_1_1multitasking_1_1_runner_html_a5dc1ed49495150ff26ec5194010b00e4"><div class="ttname"><a href="classjenes_1_1utils_1_1multitasking_1_1_runner.html#a5dc1ed49495150ff26ec5194010b00e4">jenes.utils.multitasking.Runner.start</a></div><div class="ttdeci">void start(boolean reset)</div><div class="ttdef"><b>Definition:</b> <a href="_runner_8java_source.html#l00099">Runner.java:99</a></div></div>
+<div class="ttc" id="classjenes_1_1utils_1_1multitasking_1_1_runner_html"><div class="ttname"><a href="classjenes_1_1utils_1_1multitasking_1_1_runner.html">jenes.utils.multitasking.Runner</a></div><div class="ttdef"><b>Definition:</b> <a href="_runner_8java_source.html#l00035">Runner.java:35</a></div></div>
+<div class="ttc" id="classjenes_1_1utils_1_1multitasking_1_1_runner_html_a250c5e0ffdb86ef0bb0e78e625a449e7"><div class="ttname"><a href="classjenes_1_1utils_1_1multitasking_1_1_runner.html#a250c5e0ffdb86ef0bb0e78e625a449e7">jenes.utils.multitasking.Runner.evaluateIndividual</a></div><div class="ttdeci">abstract void evaluateIndividual(Individual individual)</div></div>
+<div class="ttc" id="classjenes_1_1utils_1_1multitasking_1_1_runner_html_ac89e8ac54daba2e326e687662ff9f7b0"><div class="ttname"><a href="classjenes_1_1utils_1_1multitasking_1_1_runner.html#ac89e8ac54daba2e326e687662ff9f7b0">jenes.utils.multitasking.Runner.stop</a></div><div class="ttdeci">void stop()</div><div class="ttdef"><b>Definition:</b> <a href="_runner_8java_source.html#l00113">Runner.java:113</a></div></div>
+<div class="ttc" id="classjenes_1_1utils_1_1multitasking_1_1_runner_html_a7205f2d93d68f40e3e87dccf92cc3720"><div class="ttname"><a href="classjenes_1_1utils_1_1multitasking_1_1_runner.html#a7205f2d93d68f40e3e87dccf92cc3720">jenes.utils.multitasking.Runner.execute</a></div><div class="ttdeci">final void execute(GeneticAlgorithm algorithm, Population&lt;?&gt; initialPopulation)</div><div class="ttdef"><b>Definition:</b> <a href="_runner_8java_source.html#l00071">Runner.java:71</a></div></div>
+<div class="ttc" id="classjenes_1_1utils_1_1multitasking_1_1_runner_html_a6ec13cf0fb2ff03461a3a397421505cf"><div class="ttname"><a href="classjenes_1_1utils_1_1multitasking_1_1_runner.html#a6ec13cf0fb2ff03461a3a397421505cf">jenes.utils.multitasking.Runner.onEvaluationBegin</a></div><div class="ttdeci">void onEvaluationBegin(Population pop, boolean forced)</div><div class="ttdef"><b>Definition:</b> <a href="_runner_8java_source.html#l00124">Runner.java:124</a></div></div>
+<div class="ttc" id="classjenes_1_1utils_1_1multitasking_1_1_runner_html_a699ccf526b6116f97abc09e4ce390c89"><div class="ttname"><a href="classjenes_1_1utils_1_1multitasking_1_1_runner.html#a699ccf526b6116f97abc09e4ce390c89">jenes.utils.multitasking.Runner.algorithm</a></div><div class="ttdeci">GeneticAlgorithm algorithm</div><div class="ttdef"><b>Definition:</b> <a href="_runner_8java_source.html#l00040">Runner.java:40</a></div></div>
+<div class="ttc" id="classjenes_1_1utils_1_1multitasking_1_1_runner_html_ae222d69f44508fc432c05074272e0ae3"><div class="ttname"><a href="classjenes_1_1utils_1_1multitasking_1_1_runner.html#ae222d69f44508fc432c05074272e0ae3">jenes.utils.multitasking.Runner.execute</a></div><div class="ttdeci">final void execute(GeneticAlgorithm algoritm)</div><div class="ttdef"><b>Definition:</b> <a href="_runner_8java_source.html#l00061">Runner.java:61</a></div></div>
+<div class="ttc" id="classjenes_1_1utils_1_1multitasking_1_1_runner_html_adad9fb400d736e55bcd3dfdf07742437"><div class="ttname"><a href="classjenes_1_1utils_1_1multitasking_1_1_runner.html#adad9fb400d736e55bcd3dfdf07742437">jenes.utils.multitasking.Runner.setAlgorithm</a></div><div class="ttdeci">void setAlgorithm(GeneticAlgorithm algorithm)</div><div class="ttdef"><b>Definition:</b> <a href="_runner_8java_source.html#l00091">Runner.java:91</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Sábado, 23 de Noviembre de 2013 21:00:51 para Jenes 2.0 por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

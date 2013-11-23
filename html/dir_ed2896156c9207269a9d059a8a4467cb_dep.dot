@@ -1,0 +1,9 @@
+digraph "C:/Users/Ayo/Desktop/jenes 2.0/src/jenes/tutorials/old/problem4" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_ef30465ad283d2c9261a48472e49d20d {
+    graph [ bgcolor="#ddddee", pencolor="black", label="old" fontname="Helvetica", fontsize="10", URL="dir_ef30465ad283d2c9261a48472e49d20d.html"]
+  dir_ed2896156c9207269a9d059a8a4467cb [shape=box, label="problem4", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_ed2896156c9207269a9d059a8a4467cb.html"];
+  }
+}

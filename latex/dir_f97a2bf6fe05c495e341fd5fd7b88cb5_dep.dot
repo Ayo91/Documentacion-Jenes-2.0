@@ -1,0 +1,13 @@
+digraph "C:/Users/Ayo/Desktop/jenes 2.0/src/jenes/stage" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_12f2200cf1e99b3d3381c7cc6a32cc41 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="jenes" fontname="Helvetica", fontsize="10", URL="dir_12f2200cf1e99b3d3381c7cc6a32cc41.html"]
+  subgraph clusterdir_f97a2bf6fe05c495e341fd5fd7b88cb5 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_f97a2bf6fe05c495e341fd5fd7b88cb5.html"];
+    dir_f97a2bf6fe05c495e341fd5fd7b88cb5 [shape=plaintext label="stage"];
+    dir_7a9aca08c39cddbbbe73f347502aecc2 [shape=box label="operator" color="red" fillcolor="white" style="filled" URL="dir_7a9aca08c39cddbbbe73f347502aecc2.html"];
+  }
+  }
+}

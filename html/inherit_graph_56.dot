@@ -1,0 +1,7 @@
+digraph "Representación gráfica de la clase"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="jenes.tutorials.problem3.\lTravelSalesmanProblem",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classjenes_1_1tutorials_1_1problem3_1_1_travel_salesman_problem.html"];
+}

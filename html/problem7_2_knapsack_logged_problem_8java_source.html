@@ -1,0 +1,312 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Jenes 2.0: Fichero Fuente C:/Users/Ayo/Desktop/jenes 2.0/src/jenes/tutorials/problem7/KnapsackLoggedProblem.java</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Jenes 2.0
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="namespaces.html"><span>Paquetes</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_12f2200cf1e99b3d3381c7cc6a32cc41.html">jenes</a></li><li class="navelem"><a class="el" href="dir_98c53756bcb1ac0f94696f1827dc85d3.html">tutorials</a></li><li class="navelem"><a class="el" href="dir_3bcc8aa9eff91cfbac41e89e44ac1761.html">problem7</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">KnapsackLoggedProblem.java</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="problem7_2_knapsack_logged_problem_8java.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * JENES</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * A time asnd memory efficient Java library for genetic algorithms and more </span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Copyright (C) 2011 Intelligentia srl</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * This program is free software: you can redistribute it and/or modify</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * the Free Software Foundation, either version 3 of the License, or</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * (at your option) any later version.</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> *  This program is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> *  but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> *  GNU General Public License for more details.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> *  You should have received a copy of the GNU General Public License</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> *  along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;. </span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="namespacejenes_1_1tutorials_1_1problem7.html">   19</a></span>&#160;<span class="keyword">package </span>jenes.tutorials.problem7;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">import</span> java.io.File;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">import</span> java.io.FileNotFoundException;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">import</span> java.io.IOException;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">import</span> jenes.GenerationEventListener;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">import</span> jenes.GeneticAlgorithm;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">import</span> <a class="code" href="classjenes_1_1chromosome_1_1_boolean_chromosome.html">jenes.chromosome.BooleanChromosome</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">import</span> <a class="code" href="classjenes_1_1utils_1_1_random.html">jenes.utils.Random</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">import</span> jenes.population.Individual;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">import</span> jenes.population.Population;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">import</span> jenes.population.Population.Statistics;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">import</span> jenes.population.Population.Statistics.Group;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">import</span> <a class="code" href="classjenes_1_1statistics_1_1_statistics_logger.html">jenes.statistics.StatisticsLogger</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">import</span> <a class="code" href="classjenes_1_1tutorials_1_1utils_1_1_utils.html">jenes.tutorials.utils.Utils</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">import</span> <a class="code" href="classjenes_1_1tutorials_1_1problem6_1_1_knapsack_g_a.html">jenes.tutorials.problem6.KnapsackGA</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">import</span> <a class="code" href="classjenes_1_1utils_1_1_c_s_v_logger.html">jenes.utils.CSVLogger</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">import</span> <a class="code" href="classjenes_1_1utils_1_1_x_l_s_logger.html">jenes.utils.XLSLogger</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classjenes_1_1tutorials_1_1problem7_1_1_knapsack_logged_problem.html">   44</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classjenes_1_1tutorials_1_1problem7_1_1_knapsack_logged_problem.html">KnapsackLoggedProblem</a> {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keywordtype">int</span> POPSIZE = 20;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keywordtype">int</span> GENERATION_LIMIT = 100;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keywordtype">double</span>[] WEIGHTS = {1, 5, 3, 2, 8, 6, 4, 7, 9, 6};</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keywordtype">double</span>[] UTILITIES = {7, 2, 7, 1, 6, 4, 2, 8, 9, 2};</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">private</span> <a class="code" href="classjenes_1_1tutorials_1_1problem6_1_1_knapsack_g_a.html">KnapsackGA</a> algorithm;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">double</span>[] utilities;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">double</span>[] weights;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">private</span> <a class="code" href="classjenes_1_1statistics_1_1_statistics_logger.html">StatisticsLogger</a> csvlogger;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">private</span> <a class="code" href="classjenes_1_1statistics_1_1_statistics_logger.html">StatisticsLogger</a> xlslogge1;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">private</span> <a class="code" href="classjenes_1_1statistics_1_1_statistics_logger.html">StatisticsLogger</a> xlslogge2;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">private</span> <a class="code" href="classjenes_1_1utils_1_1_x_l_s_logger.html">XLSLogger</a> xlslogge3;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">int</span> exec;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">private</span> <span class="keyword">final</span> String FOLDER = <span class="stringliteral">&quot;files.Tutorial7&quot;</span> + File.separatorChar;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classjenes_1_1tutorials_1_1problem7_1_1_knapsack_logged_problem.html#a0ab9bce9861fb1a721cb682910fec3dc">   60</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classjenes_1_1tutorials_1_1problem7_1_1_knapsack_logged_problem.html#a0ab9bce9861fb1a721cb682910fec3dc">KnapsackLoggedProblem</a>(<span class="keywordtype">double</span>[] utilities, <span class="keywordtype">double</span>[] weights) <span class="keywordflow">throws</span> IOException {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        algorithm = <span class="keyword">new</span> <a class="code" href="classjenes_1_1tutorials_1_1problem6_1_1_knapsack_g_a.html">KnapsackGA</a>(POPSIZE, GENERATION_LIMIT, utilities, weights);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        this.weights = weights;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        this.utilities = utilities;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        csvlogger = <span class="keyword">new</span> <a class="code" href="classjenes_1_1statistics_1_1_statistics_logger.html">StatisticsLogger</a>(</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                <span class="keyword">new</span> <a class="code" href="classjenes_1_1utils_1_1_c_s_v_logger.html">CSVLogger</a>(<span class="keyword">new</span> String[]{<span class="stringliteral">&quot;LegalHighestScore&quot;</span>, <span class="stringliteral">&quot;LegalScoreAvg&quot;</span>, <span class="stringliteral">&quot;LegalScoreDev&quot;</span>}, FOLDER + <span class="stringliteral">&quot;knapsackproblem.csv&quot;</span>));</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        xlslogge1 = <span class="keyword">new</span> <a class="code" href="classjenes_1_1statistics_1_1_statistics_logger.html">StatisticsLogger</a>(</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                <span class="keyword">new</span> <a class="code" href="classjenes_1_1utils_1_1_x_l_s_logger.html">XLSLogger</a>(<span class="keyword">new</span> String[]{<span class="stringliteral">&quot;LegalHighestScore&quot;</span>, <span class="stringliteral">&quot;LegalScoreAvg&quot;</span>, <span class="stringliteral">&quot;LegalScoreDev&quot;</span>}, FOLDER + <span class="stringliteral">&quot;knapsack1.log.xls&quot;</span>));</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        xlslogge2 = <span class="keyword">new</span> <a class="code" href="classjenes_1_1statistics_1_1_statistics_logger.html">StatisticsLogger</a>(</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                <span class="keyword">new</span> <a class="code" href="classjenes_1_1utils_1_1_x_l_s_logger.html">XLSLogger</a>(<span class="keyword">new</span> String[]{<span class="stringliteral">&quot;LegalHighestScore&quot;</span>, <span class="stringliteral">&quot;LegalScoreAvg&quot;</span>, <span class="stringliteral">&quot;IllegalScoreAvg&quot;</span>}, FOLDER + <span class="stringliteral">&quot;knapsack2.log.xls&quot;</span>, FOLDER + <span class="stringliteral">&quot;knapsack.tpl.xls&quot;</span>));</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        xlslogge3 = <span class="keyword">new</span> <a class="code" href="classjenes_1_1utils_1_1_x_l_s_logger.html">XLSLogger</a>(<span class="keyword">new</span> String[]{<span class="stringliteral">&quot;LegalHighestScore&quot;</span>, <span class="stringliteral">&quot;LegalScoreAvg&quot;</span>, </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="stringliteral">&quot;LegalScoreDev&quot;</span>, <span class="stringliteral">&quot;Legals individuals&quot;</span>}, FOLDER + <span class="stringliteral">&quot;knapsack3.log.xls&quot;</span>, FOLDER + <span class="stringliteral">&quot;knapsack3.tpl.xls&quot;</span>);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    @SuppressWarnings(<span class="stringliteral">&quot;unchecked&quot;</span>)</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classjenes_1_1tutorials_1_1problem7_1_1_knapsack_logged_problem.html#a433dd1c6435246eec5fdead858ef3237">   80</a></span>&#160;    public <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1tutorials_1_1problem7_1_1_knapsack_logged_problem.html#a433dd1c6435246eec5fdead858ef3237">run</a>() {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        this.algorithm.evolve();</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        Statistics stat = algorithm.getCurrentPopulation().getStatistics();</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        Group allLegals = stat.getGroup(Population.LEGALS);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        Individual solution = allLegals.get(0);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        System.out.println(solution.getChromosome());</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        System.out.format(<span class="stringliteral">&quot;W: %f U: %f\n&quot;</span>, algorithm.getWeightOf(solution), algorithm.<a class="code" href="classjenes_1_1tutorials_1_1problem6_1_1_knapsack_g_a.html#a77be24cd9e25a9306562826f56113641">getUtilityOf</a>(solution));</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    }</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="classjenes_1_1tutorials_1_1problem7_1_1_knapsack_logged_problem.html#adac9e9311a429d0c41e8d4c9d7a1afb6">   90</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code" href="classjenes_1_1tutorials_1_1problem7_1_1_knapsack_logged_problem.html#adac9e9311a429d0c41e8d4c9d7a1afb6">getCapacity</a>() {</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordflow">return</span> this.algorithm.getCapacity();</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="classjenes_1_1tutorials_1_1problem7_1_1_knapsack_logged_problem.html#a7aad6283e4dcd58ee08550a6682c747d">   94</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1tutorials_1_1problem7_1_1_knapsack_logged_problem.html#a7aad6283e4dcd58ee08550a6682c747d">setCapacity</a>(<span class="keywordtype">double</span> c) {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        this.algorithm.setCapacity(c);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="classjenes_1_1tutorials_1_1problem7_1_1_knapsack_logged_problem.html#aa5a5916fe82cdf200e5f9210d673dc35">   98</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">double</span>[] <a class="code" href="classjenes_1_1tutorials_1_1problem7_1_1_knapsack_logged_problem.html#aa5a5916fe82cdf200e5f9210d673dc35">getUtilities</a>() {</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordflow">return</span> utilities;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    }</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="classjenes_1_1tutorials_1_1problem7_1_1_knapsack_logged_problem.html#a23b4289088720e543640ae4f1743a129">  102</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">double</span>[] <a class="code" href="classjenes_1_1tutorials_1_1problem7_1_1_knapsack_logged_problem.html#a23b4289088720e543640ae4f1743a129">getWeights</a>() {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keywordflow">return</span> weights;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="classjenes_1_1tutorials_1_1problem7_1_1_knapsack_logged_problem.html#a541dbb7113b95fa6e579502e847ac36f">  106</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <a class="code" href="classjenes_1_1tutorials_1_1problem7_1_1_knapsack_logged_problem.html">KnapsackLoggedProblem</a> <a class="code" href="classjenes_1_1tutorials_1_1problem7_1_1_knapsack_logged_problem.html#a541dbb7113b95fa6e579502e847ac36f">build</a>(<span class="keywordtype">int</span> n) <span class="keywordflow">throws</span> FileNotFoundException, IOException {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <a class="code" href="classjenes_1_1utils_1_1_random.html">Random</a> r = Random.getInstance();</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordtype">double</span>[] utilities = <span class="keyword">new</span> <span class="keywordtype">double</span>[n];</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n; ++i) {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            utilities[i] = r.nextInt(10);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        }</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keywordtype">double</span>[] weights = <span class="keyword">new</span> <span class="keywordtype">double</span>[n];</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n; ++i) {</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            weights[i] = r.nextInt(10);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        }</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classjenes_1_1tutorials_1_1problem7_1_1_knapsack_logged_problem.html#a0ab9bce9861fb1a721cb682910fec3dc">KnapsackLoggedProblem</a>(utilities, weights);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    }</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="classjenes_1_1tutorials_1_1problem7_1_1_knapsack_logged_problem.html#ab2896c85405a58a8a2c3474375bf2ac8">  123</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1tutorials_1_1problem7_1_1_knapsack_logged_problem.html#ab2896c85405a58a8a2c3474375bf2ac8">main</a>(String[] args) <span class="keywordflow">throws</span> FileNotFoundException, IOException {</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        Utils.printHeader();</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        System.out.println();</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        System.out.println(<span class="stringliteral">&quot;TUTORIAL 7:&quot;</span>);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        System.out.println(<span class="stringliteral">&quot;Logging the Knapsack Problem.&quot;</span>);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        System.out.println();</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keyword">final</span> <a class="code" href="classjenes_1_1tutorials_1_1problem7_1_1_knapsack_logged_problem.html">KnapsackLoggedProblem</a> prb = KnapsackLoggedProblem.build(20);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        System.out.println(<span class="stringliteral">&quot;Utilities: &quot;</span> + toString(prb.getUtilities()));</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        System.out.println(<span class="stringliteral">&quot;  Weights: &quot;</span> + toString(prb.getWeights()));</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        System.out.println();</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        GenerationEventListener&lt;BooleanChromosome&gt; logger1 = <span class="keyword">new</span> GenerationEventListener&lt;BooleanChromosome&gt;() {</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;            <span class="keyword">public</span> <span class="keywordtype">void</span> onGeneration(GeneticAlgorithm ga, <span class="keywordtype">long</span> time) {</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                Population.Statistics stats = ga.getCurrentPopulation().getStatistics();</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                prb.csvlogger.record(stats);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                prb.xlslogge1.record(stats);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                prb.xlslogge2.record(stats);</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            }</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        };</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        prb.algorithm.addGenerationEventListener(logger1);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        System.out.println(<span class="stringliteral">&quot;50 random elements, capacity 50&quot;</span>);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        prb.setCapacity(50);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        prb.run();</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        System.out.println();</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        System.out.println(<span class="stringliteral">&quot;Saving the logs ...&quot;</span>);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        prb.csvlogger.close();</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        prb.xlslogge1.close();</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        prb.xlslogge2.close();</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        System.out.println(<span class="stringliteral">&quot;Done.&quot;</span>);</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        prb.algorithm.removeGenerationEventListener(logger1);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        GenerationEventListener&lt;BooleanChromosome&gt; logger2 = <span class="keyword">new</span> GenerationEventListener&lt;BooleanChromosome&gt;() {</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            <span class="keyword">public</span> <span class="keywordtype">void</span> onGeneration(GeneticAlgorithm ga, <span class="keywordtype">long</span> time) {</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                Population.Statistics stats = ga.getCurrentPopulation().getStatistics();</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                Group legals = stats.getGroup(Population.LEGALS);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                prb.xlslogge3.put(<span class="stringliteral">&quot;LegalHighestScore&quot;</span>, legals.getMax());</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                prb.xlslogge3.put(<span class="stringliteral">&quot;LegalScoreAvg&quot;</span>, legals.getMin());</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                prb.xlslogge3.put(<span class="stringliteral">&quot;LegalScoreDev&quot;</span> , prb.exec);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                prb.xlslogge3.put(<span class="stringliteral">&quot;Legals individuals&quot;</span>, legals);</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                prb.xlslogge3.log();</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            }</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        };</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        prb.algorithm.addGenerationEventListener(logger2);</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        System.out.println();</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        System.out.println(<span class="stringliteral">&quot;Repeating 10 times: 20 random elements, capacity 50&quot;</span>);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        <span class="keywordflow">for</span> (prb.exec = 0; prb.exec &lt; 10; ++prb.exec) {</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            System.out.println((prb.exec + 1) + <span class="stringliteral">&quot; of 10&quot;</span>);</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;            prb.run();</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        }</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        prb.xlslogge3.close();</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        System.out.println(<span class="stringliteral">&quot;Done.&quot;</span>);</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    }</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keyword">private</span> <span class="keyword">static</span> String toString(<span class="keywordtype">double</span>[] values) {</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        String s = <span class="stringliteral">&quot;[&quot;</span>;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; values.length; ++i) {</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            s += values[i] + (i &lt; values.length - 1 ? <span class="stringliteral">&quot; &quot;</span> : <span class="stringliteral">&quot;]&quot;</span>);</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        }</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        <span class="keywordflow">return</span> s;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    }</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;}</div>
+<div class="ttc" id="classjenes_1_1statistics_1_1_statistics_logger_html"><div class="ttname"><a href="classjenes_1_1statistics_1_1_statistics_logger.html">jenes.statistics.StatisticsLogger</a></div><div class="ttdef"><b>Definition:</b> <a href="_statistics_logger_8java_source.html#l00063">StatisticsLogger.java:63</a></div></div>
+<div class="ttc" id="classjenes_1_1tutorials_1_1problem7_1_1_knapsack_logged_problem_html_a0ab9bce9861fb1a721cb682910fec3dc"><div class="ttname"><a href="classjenes_1_1tutorials_1_1problem7_1_1_knapsack_logged_problem.html#a0ab9bce9861fb1a721cb682910fec3dc">jenes.tutorials.problem7.KnapsackLoggedProblem.KnapsackLoggedProblem</a></div><div class="ttdeci">KnapsackLoggedProblem(double[] utilities, double[] weights)</div><div class="ttdef"><b>Definition:</b> <a href="problem7_2_knapsack_logged_problem_8java_source.html#l00060">KnapsackLoggedProblem.java:60</a></div></div>
+<div class="ttc" id="classjenes_1_1tutorials_1_1problem7_1_1_knapsack_logged_problem_html_a433dd1c6435246eec5fdead858ef3237"><div class="ttname"><a href="classjenes_1_1tutorials_1_1problem7_1_1_knapsack_logged_problem.html#a433dd1c6435246eec5fdead858ef3237">jenes.tutorials.problem7.KnapsackLoggedProblem.run</a></div><div class="ttdeci">void run()</div><div class="ttdef"><b>Definition:</b> <a href="problem7_2_knapsack_logged_problem_8java_source.html#l00080">KnapsackLoggedProblem.java:80</a></div></div>
+<div class="ttc" id="classjenes_1_1tutorials_1_1problem7_1_1_knapsack_logged_problem_html"><div class="ttname"><a href="classjenes_1_1tutorials_1_1problem7_1_1_knapsack_logged_problem.html">jenes.tutorials.problem7.KnapsackLoggedProblem</a></div><div class="ttdef"><b>Definition:</b> <a href="problem7_2_knapsack_logged_problem_8java_source.html#l00044">KnapsackLoggedProblem.java:44</a></div></div>
+<div class="ttc" id="classjenes_1_1utils_1_1_x_l_s_logger_html"><div class="ttname"><a href="classjenes_1_1utils_1_1_x_l_s_logger.html">jenes.utils.XLSLogger</a></div><div class="ttdef"><b>Definition:</b> <a href="_x_l_s_logger_8java_source.html#l00061">XLSLogger.java:61</a></div></div>
+<div class="ttc" id="classjenes_1_1tutorials_1_1problem7_1_1_knapsack_logged_problem_html_aa5a5916fe82cdf200e5f9210d673dc35"><div class="ttname"><a href="classjenes_1_1tutorials_1_1problem7_1_1_knapsack_logged_problem.html#aa5a5916fe82cdf200e5f9210d673dc35">jenes.tutorials.problem7.KnapsackLoggedProblem.getUtilities</a></div><div class="ttdeci">double[] getUtilities()</div><div class="ttdef"><b>Definition:</b> <a href="problem7_2_knapsack_logged_problem_8java_source.html#l00098">KnapsackLoggedProblem.java:98</a></div></div>
+<div class="ttc" id="classjenes_1_1tutorials_1_1problem7_1_1_knapsack_logged_problem_html_adac9e9311a429d0c41e8d4c9d7a1afb6"><div class="ttname"><a href="classjenes_1_1tutorials_1_1problem7_1_1_knapsack_logged_problem.html#adac9e9311a429d0c41e8d4c9d7a1afb6">jenes.tutorials.problem7.KnapsackLoggedProblem.getCapacity</a></div><div class="ttdeci">double getCapacity()</div><div class="ttdef"><b>Definition:</b> <a href="problem7_2_knapsack_logged_problem_8java_source.html#l00090">KnapsackLoggedProblem.java:90</a></div></div>
+<div class="ttc" id="classjenes_1_1tutorials_1_1problem7_1_1_knapsack_logged_problem_html_a7aad6283e4dcd58ee08550a6682c747d"><div class="ttname"><a href="classjenes_1_1tutorials_1_1problem7_1_1_knapsack_logged_problem.html#a7aad6283e4dcd58ee08550a6682c747d">jenes.tutorials.problem7.KnapsackLoggedProblem.setCapacity</a></div><div class="ttdeci">void setCapacity(double c)</div><div class="ttdef"><b>Definition:</b> <a href="problem7_2_knapsack_logged_problem_8java_source.html#l00094">KnapsackLoggedProblem.java:94</a></div></div>
+<div class="ttc" id="classjenes_1_1utils_1_1_c_s_v_logger_html"><div class="ttname"><a href="classjenes_1_1utils_1_1_c_s_v_logger.html">jenes.utils.CSVLogger</a></div><div class="ttdef"><b>Definition:</b> <a href="_c_s_v_logger_8java_source.html#l00036">CSVLogger.java:36</a></div></div>
+<div class="ttc" id="classjenes_1_1tutorials_1_1problem6_1_1_knapsack_g_a_html"><div class="ttname"><a href="classjenes_1_1tutorials_1_1problem6_1_1_knapsack_g_a.html">jenes.tutorials.problem6.KnapsackGA</a></div><div class="ttdef"><b>Definition:</b> <a href="problem6_2_knapsack_g_a_8java_source.html#l00042">KnapsackGA.java:42</a></div></div>
+<div class="ttc" id="classjenes_1_1tutorials_1_1problem7_1_1_knapsack_logged_problem_html_ab2896c85405a58a8a2c3474375bf2ac8"><div class="ttname"><a href="classjenes_1_1tutorials_1_1problem7_1_1_knapsack_logged_problem.html#ab2896c85405a58a8a2c3474375bf2ac8">jenes.tutorials.problem7.KnapsackLoggedProblem.main</a></div><div class="ttdeci">static void main(String[] args)</div><div class="ttdef"><b>Definition:</b> <a href="problem7_2_knapsack_logged_problem_8java_source.html#l00123">KnapsackLoggedProblem.java:123</a></div></div>
+<div class="ttc" id="classjenes_1_1tutorials_1_1problem7_1_1_knapsack_logged_problem_html_a23b4289088720e543640ae4f1743a129"><div class="ttname"><a href="classjenes_1_1tutorials_1_1problem7_1_1_knapsack_logged_problem.html#a23b4289088720e543640ae4f1743a129">jenes.tutorials.problem7.KnapsackLoggedProblem.getWeights</a></div><div class="ttdeci">double[] getWeights()</div><div class="ttdef"><b>Definition:</b> <a href="problem7_2_knapsack_logged_problem_8java_source.html#l00102">KnapsackLoggedProblem.java:102</a></div></div>
+<div class="ttc" id="classjenes_1_1tutorials_1_1problem7_1_1_knapsack_logged_problem_html_a541dbb7113b95fa6e579502e847ac36f"><div class="ttname"><a href="classjenes_1_1tutorials_1_1problem7_1_1_knapsack_logged_problem.html#a541dbb7113b95fa6e579502e847ac36f">jenes.tutorials.problem7.KnapsackLoggedProblem.build</a></div><div class="ttdeci">static KnapsackLoggedProblem build(int n)</div><div class="ttdef"><b>Definition:</b> <a href="problem7_2_knapsack_logged_problem_8java_source.html#l00106">KnapsackLoggedProblem.java:106</a></div></div>
+<div class="ttc" id="classjenes_1_1tutorials_1_1utils_1_1_utils_html"><div class="ttname"><a href="classjenes_1_1tutorials_1_1utils_1_1_utils.html">jenes.tutorials.utils.Utils</a></div><div class="ttdef"><b>Definition:</b> <a href="_utils_8java_source.html#l00031">Utils.java:31</a></div></div>
+<div class="ttc" id="classjenes_1_1chromosome_1_1_boolean_chromosome_html"><div class="ttname"><a href="classjenes_1_1chromosome_1_1_boolean_chromosome.html">jenes.chromosome.BooleanChromosome</a></div><div class="ttdef"><b>Definition:</b> <a href="_boolean_chromosome_8java_source.html#l00032">BooleanChromosome.java:32</a></div></div>
+<div class="ttc" id="classjenes_1_1tutorials_1_1problem6_1_1_knapsack_g_a_html_a77be24cd9e25a9306562826f56113641"><div class="ttname"><a href="classjenes_1_1tutorials_1_1problem6_1_1_knapsack_g_a.html#a77be24cd9e25a9306562826f56113641">jenes.tutorials.problem6.KnapsackGA.getUtilityOf</a></div><div class="ttdeci">double getUtilityOf(Individual&lt; BooleanChromosome &gt; individual)</div><div class="ttdef"><b>Definition:</b> <a href="problem6_2_knapsack_g_a_8java_source.html#l00112">KnapsackGA.java:112</a></div></div>
+<div class="ttc" id="classjenes_1_1utils_1_1_random_html"><div class="ttname"><a href="classjenes_1_1utils_1_1_random.html">jenes.utils.Random</a></div><div class="ttdef"><b>Definition:</b> <a href="_random_8java_source.html#l00037">Random.java:37</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Sábado, 23 de Noviembre de 2013 21:00:50 para Jenes 2.0 por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

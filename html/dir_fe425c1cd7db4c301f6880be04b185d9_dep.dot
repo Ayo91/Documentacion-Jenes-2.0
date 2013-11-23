@@ -1,0 +1,9 @@
+digraph "C:/Users/Ayo/Desktop/jenes 2.0/src/jenes/chromosome/codings" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_a865121f1fb24a03e6ef1b6d5f819127 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="chromosome" fontname="Helvetica", fontsize="10", URL="dir_a865121f1fb24a03e6ef1b6d5f819127.html"]
+  dir_fe425c1cd7db4c301f6880be04b185d9 [shape=box, label="codings", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_fe425c1cd7db4c301f6880be04b185d9.html"];
+  }
+}

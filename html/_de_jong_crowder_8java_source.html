@@ -1,0 +1,321 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Jenes 2.0: Fichero Fuente C:/Users/Ayo/Desktop/jenes 2.0/src/jenes/stage/operator/common/DeJongCrowder.java</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Jenes 2.0
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="namespaces.html"><span>Paquetes</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_12f2200cf1e99b3d3381c7cc6a32cc41.html">jenes</a></li><li class="navelem"><a class="el" href="dir_f97a2bf6fe05c495e341fd5fd7b88cb5.html">stage</a></li><li class="navelem"><a class="el" href="dir_7a9aca08c39cddbbbe73f347502aecc2.html">operator</a></li><li class="navelem"><a class="el" href="dir_3026c930e1c2a8db495b82daa9b0f1de.html">common</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">DeJongCrowder.java</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_de_jong_crowder_8java.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * JENES</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * A time and memory efficient Java library for genetic algorithms and more </span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Copyright (C) 2011 Intelligentia srl</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * This program is free software: you can redistribute it and/or modify</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * the Free Software Foundation, either version 3 of the License, or</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * (at your option) any later version.</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> *  This program is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> *  but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> *  GNU General Public License for more details.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> *  You should have received a copy of the GNU General Public License</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> *  along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;. </span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="namespacejenes_1_1stage_1_1operator_1_1common.html">   19</a></span>&#160;<span class="keyword">package </span>jenes.stage.operator.common;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">import</span> jenes.population.Fitness;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">import</span> jenes.chromosome.Chromosome;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">import</span> jenes.population.Individual;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">import</span> jenes.population.Population;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">import</span> jenes.stage.AbstractStage;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">import</span> jenes.stage.operator.Crossover;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">import</span> jenes.stage.operator.Crowder;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">import</span> jenes.stage.operator.Mutator;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">import</span> jenes.stage.operator.Selector;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html">   37</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span>DeJongCrowder&lt;T <span class="keyword">extends</span> Chromosome&gt; extends Crowder&lt;T&gt; {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">enum</span> SelectionMethod {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        ROULETTE, TOURNAMENT</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">enum</span> CrossoverMethod {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        SINGLEPOINT, TWOPOINTS</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">enum</span> MutationMethod {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        NONE, SIMPLE</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    </div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#a21277e6e0728d4e83cc353337bc5f66d">   58</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> SelectionMethod DEFAULT_SELECTION_METHOD = SelectionMethod.TOURNAMENT;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#a2798047916292a1449952a7274f9f26d">   60</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> CrossoverMethod DEFAULT_CROSSOVER_METHOD = CrossoverMethod.SINGLEPOINT;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#a522c94dff2a39743f6dfddec03a2ce47">   62</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keywordtype">double</span> DEFAULT_CROSSOVER_PROBABILITY = 0.8;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#a19680564524e8d194044526740001c84">   64</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keywordtype">double</span> DEFAULT_MUTATION_PROBABILITY = 0.02;</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#a7e7afe01b26af0cdd28d392ab7866576">   66</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keywordtype">int</span> DEFAULT_CROWDING_FACTOR = 2;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    </div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#a6486b0225d345afd81b86dd04772d5ba">   69</a></span>&#160;    <span class="keyword">protected</span> Selector&lt;T&gt; selector = null;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    </div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#ad876594787797e723425c09d74d0a05d">   72</a></span>&#160;    <span class="keyword">protected</span> <span class="keywordtype">int</span> <a class="code" href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#ad876594787797e723425c09d74d0a05d">crowdingFactor</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#a3a856be20539434c822eecf5fc099657">   80</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#a3a856be20539434c822eecf5fc099657">DeJongCrowder</a>(<span class="keyword">final</span> <span class="keywordtype">int</span> sr, <span class="keyword">final</span> <span class="keywordtype">int</span> cf) {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keyword">this</span>(sr,</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                cf,</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                DEFAULT_SELECTION_METHOD,</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                DEFAULT_CROSSOVER_METHOD,</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                DEFAULT_CROSSOVER_PROBABILITY,</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                DEFAULT_MUTATION_PROBABILITY);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#a552f2f1d77a10c3ae9fb8c94924fb798">   96</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#a552f2f1d77a10c3ae9fb8c94924fb798">DeJongCrowder</a>(<span class="keyword">final</span> <span class="keywordtype">int</span> sr, <span class="keyword">final</span> <span class="keywordtype">int</span> cf, <span class="keyword">final</span> SelectionMethod selmethod) {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keyword">this</span>(sr,</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                cf,</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                selmethod,</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                DEFAULT_CROSSOVER_METHOD,</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                DEFAULT_CROSSOVER_PROBABILITY,</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                DEFAULT_MUTATION_PROBABILITY);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#a50f143494ddff28214ac72497b0de52a">  114</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#a50f143494ddff28214ac72497b0de52a">DeJongCrowder</a>(<span class="keyword">final</span> <span class="keywordtype">int</span> sr, <span class="keyword">final</span> <span class="keywordtype">int</span> cf, <span class="keyword">final</span> SelectionMethod selmethod, <span class="keyword">final</span> CrossoverMethod crossmethod) {</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keyword">this</span>(sr,</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                cf,</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                selmethod,</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                crossmethod,</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                DEFAULT_CROSSOVER_PROBABILITY,</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                DEFAULT_MUTATION_PROBABILITY);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    }</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#a31f097247f16221e2074ddc05d198349">  133</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#a31f097247f16221e2074ddc05d198349">DeJongCrowder</a>(<span class="keyword">final</span> <span class="keywordtype">int</span> sr, <span class="keyword">final</span> <span class="keywordtype">int</span> cf, <span class="keyword">final</span> SelectionMethod selmethod, <span class="keyword">final</span> CrossoverMethod crossmethod, <span class="keyword">final</span> <span class="keywordtype">double</span> crossover, <span class="keyword">final</span> <span class="keywordtype">double</span> mutation) {</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        this.selector =</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                selmethod == SelectionMethod.TOURNAMENT ? <span class="keyword">new</span> TournamentSelector&lt;T&gt;(2) : <span class="keyword">new</span> RouletteWheelSelector&lt;T&gt;();</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        this.selector.setSelectionRate(sr);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        Crossover&lt;T&gt; crossover_op =</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                crossmethod == CrossoverMethod.SINGLEPOINT ? <span class="keyword">new</span> OnePointCrossover&lt;T&gt;(crossover) : <span class="keyword">new</span> TwoPointsCrossover&lt;T&gt;(crossover);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        Mutator&lt;T&gt; mutator = mutation &gt; 0</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                ? <span class="keyword">new</span> SimpleMutator&lt;T&gt;(mutation) : null;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        this.crowdingFactor = cf;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        this.body.appendStage(crossover_op);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keywordflow">if</span> (mutator != null) {</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            this.body.appendStage(mutator);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        }</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        this.elitist = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    }</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
+<div class="line"><a name="l00164"></a><span class="lineno"><a class="line" href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#a97d47f09a66cf05e1cfb7630410de686">  164</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#a97d47f09a66cf05e1cfb7630410de686">DeJongCrowder</a>(<span class="keyword">final</span> <span class="keywordtype">int</span> sr, <span class="keyword">final</span> <span class="keywordtype">int</span> cf, <span class="keyword">final</span> Selector&lt;T&gt; selector, <span class="keyword">final</span> AbstractStage&lt;T&gt;... stages) {</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        this.selector = selector;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        this.selector.setSelectionRate(sr);</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        this.crowdingFactor = cf;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        <span class="keywordflow">for</span> (AbstractStage&lt;T&gt; s : stages) {</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            this.body.appendStage(s);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        }</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        this.elitist = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    }</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
+<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#af34ed99b72eedd09864a9c447179b04e">  183</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">int</span> <a class="code" href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#af34ed99b72eedd09864a9c447179b04e">getCrowdingFactor</a>() {</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        <span class="keywordflow">return</span> this.crowdingFactor;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    }</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
+<div class="line"><a name="l00192"></a><span class="lineno"><a class="line" href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#a3420256f796449f9f486e6dc85c52f0d">  192</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#a3420256f796449f9f486e6dc85c52f0d">setCrowdingFactor</a>(<span class="keywordtype">int</span> cf) {</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        this.crowdingFactor = cf;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    }</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
+<div class="line"><a name="l00201"></a><span class="lineno"><a class="line" href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#aeae8a98bdc6da2261e6071ca62c5a066">  201</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">int</span> <a class="code" href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#aeae8a98bdc6da2261e6071ca62c5a066">getSelectionRate</a>() {</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        <span class="keywordflow">return</span> this.selector.getSelectionRate();</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    }</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
+<div class="line"><a name="l00209"></a><span class="lineno"><a class="line" href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#a4d1a71c514bb8ffaeba9a13434dc3635">  209</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#a4d1a71c514bb8ffaeba9a13434dc3635">setSelectionRate</a>(<span class="keywordtype">int</span> sr) {</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        this.selector.setSelectionRate(sr);</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    }</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;</div>
+<div class="line"><a name="l00217"></a><span class="lineno"><a class="line" href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#ac407367e2e9ecad45bab4253ca920a1a">  217</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> Selector&lt;T&gt; <a class="code" href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#ac407367e2e9ecad45bab4253ca920a1a">getSelector</a>() {</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        <span class="keywordflow">return</span> this.selector;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    }</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;</div>
+<div class="line"><a name="l00225"></a><span class="lineno"><a class="line" href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#a880fdcaa7ccc39a3f5512b4bd58e74ad">  225</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#a880fdcaa7ccc39a3f5512b4bd58e74ad">setSelector</a>(Selector&lt;T&gt; selector) {</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        this.selector = selector;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    }</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    @Override</div>
+<div class="line"><a name="l00230"></a><span class="lineno"><a class="line" href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#a98f463e26bf3fd0fd703320007302594">  230</a></span>&#160;    <span class="keyword">protected</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#a98f463e26bf3fd0fd703320007302594">preselect</a>(Population&lt;T&gt; in, Population&lt;T&gt; out) {</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        selector.process(in, out);</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    }</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    @Override</div>
+<div class="line"><a name="l00235"></a><span class="lineno"><a class="line" href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#a7d659276ad2103199080458c85acf59e">  235</a></span>&#160;    <span class="keyword">protected</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#a7d659276ad2103199080458c85acf59e">replace</a>(Population&lt;T&gt; initial, Population&lt;T&gt; preselected, Population&lt;T&gt; evolved, Population&lt;T&gt; out) {</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        out.setAs(initial);</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        <span class="keywordtype">int</span> len = out.size();</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        <span class="keywordtype">double</span>[] diff = null;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <span class="keywordflow">for</span> (Individual&lt;T&gt; offspring : evolved) {</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;            Individual&lt;T&gt; r = null;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;            <span class="keywordtype">double</span> s = Double.NEGATIVE_INFINITY;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; crowdingFactor; ++i) {</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                <span class="keywordtype">int</span> k = this.random.nextInt(len);</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                Individual&lt;T&gt; ind = out.getIndividual(k);</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                diff = Chromosome.Util.getDifference(offspring.getChromosome(), ind.getChromosome(), diff);</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                <span class="keywordtype">double</span> sm = similarity(diff);</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;                <span class="keywordflow">if</span> (sm &gt; s) {</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                    r = ind;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                    s = sm;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                }</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;            }</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;            <span class="keywordflow">if</span> (elitist) {</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;                Fitness fit = this.getFitness();</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;                <span class="keywordtype">boolean</span> better = fit != null ? fit.dominates(offspring, r) : Fitness.dominates(offspring, r, <span class="keyword">this</span>.biggerIsBetter);</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                <span class="keywordflow">if</span> (better) {</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;                    r.setAs(offspring);</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;                }</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;                r.setAs(offspring);</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;            }</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        }</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    }</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    @Deprecated</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    @Override</div>
+<div class="line"><a name="l00279"></a><span class="lineno"><a class="line" href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#a75bf0d077c6bff093600f1f4c333d3d1">  279</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#a75bf0d077c6bff093600f1f4c333d3d1">setBiggerIsBetter</a>(<span class="keywordtype">boolean</span> flag, <span class="keywordtype">boolean</span> recursively) {</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        super.setBiggerIsBetter(flag, recursively);</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        this.selector.setBiggerIsBetter(flag);</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    }</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    @Override</div>
+<div class="line"><a name="l00290"></a><span class="lineno"><a class="line" href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#a856473a5ced464b1923545059c9f2e67">  290</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#a856473a5ced464b1923545059c9f2e67">setFitness</a>(Fitness fit, <span class="keywordtype">boolean</span> recursively) {</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        super.setFitness(fit, recursively);</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        this.selector.setFitness(fit);</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    }</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;}</div>
+<div class="ttc" id="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_html_a3a856be20539434c822eecf5fc099657"><div class="ttname"><a href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#a3a856be20539434c822eecf5fc099657">jenes.stage.operator.common.DeJongCrowder&lt; T extends Chromosome &gt;.DeJongCrowder</a></div><div class="ttdeci">DeJongCrowder(final int sr, final int cf)</div><div class="ttdef"><b>Definition:</b> <a href="_de_jong_crowder_8java_source.html#l00080">DeJongCrowder.java:80</a></div></div>
+<div class="ttc" id="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_html_a31f097247f16221e2074ddc05d198349"><div class="ttname"><a href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#a31f097247f16221e2074ddc05d198349">jenes.stage.operator.common.DeJongCrowder&lt; T extends Chromosome &gt;.DeJongCrowder</a></div><div class="ttdeci">DeJongCrowder(final int sr, final int cf, final SelectionMethod selmethod, final CrossoverMethod crossmethod, final double crossover, final double mutation)</div><div class="ttdef"><b>Definition:</b> <a href="_de_jong_crowder_8java_source.html#l00133">DeJongCrowder.java:133</a></div></div>
+<div class="ttc" id="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_html_ac407367e2e9ecad45bab4253ca920a1a"><div class="ttname"><a href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#ac407367e2e9ecad45bab4253ca920a1a">jenes.stage.operator.common.DeJongCrowder&lt; T extends Chromosome &gt;.getSelector</a></div><div class="ttdeci">final Selector&lt; T &gt; getSelector()</div><div class="ttdef"><b>Definition:</b> <a href="_de_jong_crowder_8java_source.html#l00217">DeJongCrowder.java:217</a></div></div>
+<div class="ttc" id="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_html_a50f143494ddff28214ac72497b0de52a"><div class="ttname"><a href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#a50f143494ddff28214ac72497b0de52a">jenes.stage.operator.common.DeJongCrowder&lt; T extends Chromosome &gt;.DeJongCrowder</a></div><div class="ttdeci">DeJongCrowder(final int sr, final int cf, final SelectionMethod selmethod, final CrossoverMethod crossmethod)</div><div class="ttdef"><b>Definition:</b> <a href="_de_jong_crowder_8java_source.html#l00114">DeJongCrowder.java:114</a></div></div>
+<div class="ttc" id="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_html_a3420256f796449f9f486e6dc85c52f0d"><div class="ttname"><a href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#a3420256f796449f9f486e6dc85c52f0d">jenes.stage.operator.common.DeJongCrowder&lt; T extends Chromosome &gt;.setCrowdingFactor</a></div><div class="ttdeci">void setCrowdingFactor(int cf)</div><div class="ttdef"><b>Definition:</b> <a href="_de_jong_crowder_8java_source.html#l00192">DeJongCrowder.java:192</a></div></div>
+<div class="ttc" id="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_html_af34ed99b72eedd09864a9c447179b04e"><div class="ttname"><a href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#af34ed99b72eedd09864a9c447179b04e">jenes.stage.operator.common.DeJongCrowder&lt; T extends Chromosome &gt;.getCrowdingFactor</a></div><div class="ttdeci">final int getCrowdingFactor()</div><div class="ttdef"><b>Definition:</b> <a href="_de_jong_crowder_8java_source.html#l00183">DeJongCrowder.java:183</a></div></div>
+<div class="ttc" id="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_html_a856473a5ced464b1923545059c9f2e67"><div class="ttname"><a href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#a856473a5ced464b1923545059c9f2e67">jenes.stage.operator.common.DeJongCrowder&lt; T extends Chromosome &gt;.setFitness</a></div><div class="ttdeci">void setFitness(Fitness fit, boolean recursively)</div><div class="ttdef"><b>Definition:</b> <a href="_de_jong_crowder_8java_source.html#l00290">DeJongCrowder.java:290</a></div></div>
+<div class="ttc" id="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_html_aeae8a98bdc6da2261e6071ca62c5a066"><div class="ttname"><a href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#aeae8a98bdc6da2261e6071ca62c5a066">jenes.stage.operator.common.DeJongCrowder&lt; T extends Chromosome &gt;.getSelectionRate</a></div><div class="ttdeci">final int getSelectionRate()</div><div class="ttdef"><b>Definition:</b> <a href="_de_jong_crowder_8java_source.html#l00201">DeJongCrowder.java:201</a></div></div>
+<div class="ttc" id="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_html_a97d47f09a66cf05e1cfb7630410de686"><div class="ttname"><a href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#a97d47f09a66cf05e1cfb7630410de686">jenes.stage.operator.common.DeJongCrowder&lt; T extends Chromosome &gt;.DeJongCrowder</a></div><div class="ttdeci">DeJongCrowder(final int sr, final int cf, final Selector&lt; T &gt; selector, final AbstractStage&lt; T &gt;...stages)</div><div class="ttdef"><b>Definition:</b> <a href="_de_jong_crowder_8java_source.html#l00164">DeJongCrowder.java:164</a></div></div>
+<div class="ttc" id="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_html_a552f2f1d77a10c3ae9fb8c94924fb798"><div class="ttname"><a href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#a552f2f1d77a10c3ae9fb8c94924fb798">jenes.stage.operator.common.DeJongCrowder&lt; T extends Chromosome &gt;.DeJongCrowder</a></div><div class="ttdeci">DeJongCrowder(final int sr, final int cf, final SelectionMethod selmethod)</div><div class="ttdef"><b>Definition:</b> <a href="_de_jong_crowder_8java_source.html#l00096">DeJongCrowder.java:96</a></div></div>
+<div class="ttc" id="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_html_a880fdcaa7ccc39a3f5512b4bd58e74ad"><div class="ttname"><a href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#a880fdcaa7ccc39a3f5512b4bd58e74ad">jenes.stage.operator.common.DeJongCrowder&lt; T extends Chromosome &gt;.setSelector</a></div><div class="ttdeci">void setSelector(Selector&lt; T &gt; selector)</div><div class="ttdef"><b>Definition:</b> <a href="_de_jong_crowder_8java_source.html#l00225">DeJongCrowder.java:225</a></div></div>
+<div class="ttc" id="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_html_a75bf0d077c6bff093600f1f4c333d3d1"><div class="ttname"><a href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#a75bf0d077c6bff093600f1f4c333d3d1">jenes.stage.operator.common.DeJongCrowder&lt; T extends Chromosome &gt;.setBiggerIsBetter</a></div><div class="ttdeci">void setBiggerIsBetter(boolean flag, boolean recursively)</div><div class="ttdef"><b>Definition:</b> <a href="_de_jong_crowder_8java_source.html#l00279">DeJongCrowder.java:279</a></div></div>
+<div class="ttc" id="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_html_ad876594787797e723425c09d74d0a05d"><div class="ttname"><a href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#ad876594787797e723425c09d74d0a05d">jenes.stage.operator.common.DeJongCrowder&lt; T extends Chromosome &gt;.crowdingFactor</a></div><div class="ttdeci">int crowdingFactor</div><div class="ttdef"><b>Definition:</b> <a href="_de_jong_crowder_8java_source.html#l00072">DeJongCrowder.java:72</a></div></div>
+<div class="ttc" id="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_html_a98f463e26bf3fd0fd703320007302594"><div class="ttname"><a href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#a98f463e26bf3fd0fd703320007302594">jenes.stage.operator.common.DeJongCrowder&lt; T extends Chromosome &gt;.preselect</a></div><div class="ttdeci">void preselect(Population&lt; T &gt; in, Population&lt; T &gt; out)</div><div class="ttdef"><b>Definition:</b> <a href="_de_jong_crowder_8java_source.html#l00230">DeJongCrowder.java:230</a></div></div>
+<div class="ttc" id="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_html_a7d659276ad2103199080458c85acf59e"><div class="ttname"><a href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#a7d659276ad2103199080458c85acf59e">jenes.stage.operator.common.DeJongCrowder&lt; T extends Chromosome &gt;.replace</a></div><div class="ttdeci">void replace(Population&lt; T &gt; initial, Population&lt; T &gt; preselected, Population&lt; T &gt; evolved, Population&lt; T &gt; out)</div><div class="ttdef"><b>Definition:</b> <a href="_de_jong_crowder_8java_source.html#l00235">DeJongCrowder.java:235</a></div></div>
+<div class="ttc" id="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_html_a4d1a71c514bb8ffaeba9a13434dc3635"><div class="ttname"><a href="classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4.html#a4d1a71c514bb8ffaeba9a13434dc3635">jenes.stage.operator.common.DeJongCrowder&lt; T extends Chromosome &gt;.setSelectionRate</a></div><div class="ttdeci">void setSelectionRate(int sr)</div><div class="ttdef"><b>Definition:</b> <a href="_de_jong_crowder_8java_source.html#l00209">DeJongCrowder.java:209</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Sábado, 23 de Noviembre de 2013 21:00:50 para Jenes 2.0 por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

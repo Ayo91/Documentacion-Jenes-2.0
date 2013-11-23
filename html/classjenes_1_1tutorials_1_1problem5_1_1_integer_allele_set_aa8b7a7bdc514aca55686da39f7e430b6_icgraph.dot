@@ -1,0 +1,11 @@
+digraph "jenes.tutorials.problem5.IntegerAlleleSet.IntegerAlleleSet"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="jenes.tutorials.problem5.\lIntegerAlleleSet.IntegerAlleleSet",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="jenes.tutorials.problem5.\lIntegerAlleleSet.createRandom",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classjenes_1_1tutorials_1_1problem5_1_1_integer_allele_set.html#af241f0e8dd6564fb5b4c0047eb150bac"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="jenes.tutorials.problem5.\lIntegerAlleleSet.createUniform",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classjenes_1_1tutorials_1_1problem5_1_1_integer_allele_set.html#a20d2ef7f0a59edafa82345db48fcefa3"];
+}

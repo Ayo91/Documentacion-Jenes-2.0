@@ -1,0 +1,603 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Jenes 2.0: Fichero Fuente C:/Users/Ayo/Desktop/jenes 2.0/src/jenes/chromosome/BitwiseChromosome.java</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Jenes 2.0
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="namespaces.html"><span>Paquetes</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_12f2200cf1e99b3d3381c7cc6a32cc41.html">jenes</a></li><li class="navelem"><a class="el" href="dir_a865121f1fb24a03e6ef1b6d5f819127.html">chromosome</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">BitwiseChromosome.java</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_bitwise_chromosome_8java.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * JENES</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * A time and memory efficient Java library for genetic algorithms and more </span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Copyright (C) 2011 Intelligentia srl</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * This program is free software: you can redistribute it and/or modify</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * the Free Software Foundation, either version 3 of the License, or</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * (at your option) any later version.</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> *  This program is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> *  but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> *  GNU General Public License for more details.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> *  You should have received a copy of the GNU General Public License</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> *  along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;. </span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">package </span>jenes.chromosome;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">import</span> <a class="code" href="classjenes_1_1utils_1_1_random.html">jenes.utils.Random</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html">   47</a></span>&#160;<span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">class </span><a class="code" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html">BitwiseChromosome</a> <span class="keyword">implements</span> Chromosome&lt;BitwiseChromosome&gt; {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">enum</span> BitSize {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        BIT1(1, 0x1),</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        BIT8(8, 0xFF),</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        BIT16(16, 0xFFFF),</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        BIT32(32, 0xFFFFFFFF);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">int</span> BITS;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">int</span> MASK;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        BitSize(<span class="keywordtype">int</span> bits, <span class="keywordtype">int</span> mask) {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            this.BITS = bits;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            this.MASK = mask;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">abstract</span> <span class="keyword">class </span>BitCoding&lt;T&gt; {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keyword">public</span> <span class="keyword">final</span> BitSize SIZE;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="keyword">protected</span> BitCoding(<span class="keyword">final</span> BitSize size) {</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            this.SIZE = size;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        }</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        <span class="keyword">public</span> <span class="keyword">abstract</span> T decode(<span class="keywordtype">int</span> bits);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keywordtype">int</span> encode(T obj);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    }</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">int</span> genes[];</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keyword">private</span> BitCoding coding;   <span class="comment">//the coding used</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">int</span> slots;          <span class="comment">//number of available positions within an integer</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">int</span> size;           <span class="comment">//number of objects encoded by the chromosome</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">int</span> bits;           <span class="comment">//number of bits for coding an object</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">int</span> load;           <span class="comment">//number of bits used within each integer</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
+<div class="line"><a name="l00164"></a><span class="lineno"><a class="line" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a87547c87419943bded51820cbc1ae830">  164</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a87547c87419943bded51820cbc1ae830">BitwiseChromosome</a>(<span class="keyword">final</span> <span class="keywordtype">int</span> size) {</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <span class="keyword">this</span>(size, null);</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    }</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
+<div class="line"><a name="l00175"></a><span class="lineno"><a class="line" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a9109a8205e447db9032f29494f0d9b3d">  175</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a9109a8205e447db9032f29494f0d9b3d">BitwiseChromosome</a>(<span class="keyword">final</span> <span class="keywordtype">int</span> size, <span class="keyword">final</span> BitCoding coding) {</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        this.coding = coding;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        this.bits = (this.coding != null ? this.coding.SIZE.BITS : Integer.SIZE);</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        this.slots = Integer.SIZE / this.bits;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        this.size = size;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        this.load = this.bits * this.slots;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        this.genes = <span class="keyword">new</span> <span class="keywordtype">int</span>[size / slots + (size % slots &gt; 0 ? 1 : 0)];</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    }</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
+<div class="line"><a name="l00189"></a><span class="lineno"><a class="line" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a90798d86b6c1871c441b562e0b1d50ca">  189</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a90798d86b6c1871c441b562e0b1d50ca">BitwiseChromosome</a>(<span class="keyword">final</span> <a class="code" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html">BitwiseChromosome</a> chromosome) {</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        this.genes = <span class="keyword">new</span> <span class="keywordtype">int</span>[chromosome.genes.length];</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        System.arraycopy(chromosome.genes, 0, this.genes, 0, chromosome.genes.length);</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        this.bits = chromosome.bits;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        this.slots = chromosome.slots;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        this.size = chromosome.size;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        this.load = chromosome.load;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        this.coding = chromosome.coding;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    }</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
+<div class="line"><a name="l00205"></a><span class="lineno"><a class="line" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a905b92cd6dc14db9d2b9276f1a6686e9">  205</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> BitCoding <a class="code" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a905b92cd6dc14db9d2b9276f1a6686e9">getType</a>() {</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        <span class="keywordflow">return</span> this.coding;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    }</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;</div>
+<div class="line"><a name="l00214"></a><span class="lineno"><a class="line" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#ae59ae8f495ec9d5aa15712cee7c0b313">  214</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">int</span> <a class="code" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#ae59ae8f495ec9d5aa15712cee7c0b313">getSize</a>() {</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        <span class="keywordflow">return</span> this.size;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    }</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div>
+<div class="line"><a name="l00224"></a><span class="lineno"><a class="line" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#af817cb2110fc6b8d415e46377ddd4911">  224</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">int</span> <a class="code" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#af817cb2110fc6b8d415e46377ddd4911">getIntValueAt</a>(<span class="keyword">final</span> <span class="keywordtype">int</span> index) {</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <span class="keywordflow">return</span> genes[index];</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    }</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;</div>
+<div class="line"><a name="l00234"></a><span class="lineno"><a class="line" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a3cbcf428333a0dc4209ce2c820054542">  234</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a3cbcf428333a0dc4209ce2c820054542">setIntValueAt</a>(<span class="keyword">final</span> <span class="keywordtype">int</span> index, <span class="keyword">final</span> <span class="keywordtype">int</span> value) {</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        this.genes[index] = value;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    }</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
+<div class="line"><a name="l00243"></a><span class="lineno"><a class="line" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a36e6b8c849d563a359245763116667d5">  243</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">int</span> <a class="code" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a36e6b8c849d563a359245763116667d5">getIntSize</a>() {</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        <span class="keywordflow">return</span> this.genes.length;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    }</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;</div>
+<div class="line"><a name="l00254"></a><span class="lineno"><a class="line" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a3061d34e1f0c0faa915d4da7ea2f615c">  254</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> Object <a class="code" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a3061d34e1f0c0faa915d4da7ea2f615c">getValueAt</a>(<span class="keyword">final</span> <span class="keywordtype">int</span> index) {</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        <span class="keywordflow">if</span> (index &lt; 0 || index &gt;= size) {</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> ArrayIndexOutOfBoundsException();</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        }</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        <span class="keywordflow">if</span> (coding != null) {</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;            <span class="keywordtype">int</span> k = index / slots;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;            <span class="keywordtype">int</span> h = index % slots;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;            <span class="comment">// WARNING: The following solution does not preserve the sign. </span></div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;            <span class="comment">// For example if we consider the chromosome xx xx F1 xx</span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;            <span class="comment">// this becomes 00 00 00 F1 that is positive. Instead it should be FF FF FF F1</span></div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;            <span class="comment">// int v = (genes[k] &gt;&gt; (slots - h -1)*coding.SIZE.BITS) &amp; coding.SIZE.MASK; </span></div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;            <span class="comment">// The following solution preserves the sign.</span></div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;            <span class="comment">// Indeed the first line moves the value at the head: xx xx F1 xx becomes F1 00 00 00</span></div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;            <span class="comment">// The second line moves the head value to the bottom preserving the sign: F1 00 00 00 -&gt; FF FF FF F1</span></div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;            <span class="keywordtype">int</span> v = genes[k] &lt;&lt; h * coding.SIZE.BITS;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;            v &gt;&gt;= (slots - 1) * coding.SIZE.BITS;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;            <span class="keywordflow">return</span> coding.decode(v);</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;            <span class="keywordflow">return</span> genes[index];</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        }</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    }</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;</div>
+<div class="line"><a name="l00286"></a><span class="lineno"><a class="line" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#aaa42be8f0c26735e8a8d603d9b743b6a">  286</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#aaa42be8f0c26735e8a8d603d9b743b6a">setValue</a>(<span class="keyword">final</span> <span class="keywordtype">int</span> index, <span class="keyword">final</span> Object value) {</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        <span class="keywordflow">if</span> (index &lt; 0 || index &gt;= size) {</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> ArrayIndexOutOfBoundsException();</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        }</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        <span class="keywordflow">if</span> (coding != null) {</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;            <span class="keywordtype">int</span> k = index / slots;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;            <span class="keywordtype">int</span> h = index % slots;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;            <span class="keywordtype">int</span> v = coding.encode(value);</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;            <span class="keywordtype">int</span> mask = coding.SIZE.MASK &lt;&lt; ((slots - 1 - h) * coding.SIZE.BITS);</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;            genes[k] &amp;= ~mask;</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;            v = v &lt;&lt; ((slots - 1 - h) * coding.SIZE.BITS);</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;            genes[k] |= (mask &amp; v);</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;            genes[index] = ((Integer) value).intValue();</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        }</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    }</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;</div>
+<div class="line"><a name="l00316"></a><span class="lineno"><a class="line" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a05ce80f3729d007c5d550eef5969ac86">  316</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">int</span> <a class="code" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a05ce80f3729d007c5d550eef5969ac86">getBitValueAt</a>(<span class="keyword">final</span> <span class="keywordtype">int</span> index) {</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        <span class="keywordflow">if</span> (index &lt; 0 || index &gt;= this.<a class="code" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a0da8899c89f8b1f222526acf1d2e8519">length</a>()) {</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> ArrayIndexOutOfBoundsException();</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        }</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        <span class="keywordtype">int</span> i1 = genes[index / load];</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        <span class="keywordtype">int</span> offset = load - (index % load) - 1;</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        <span class="keywordflow">return</span> (i1 &gt;&gt; (offset)) &amp; 1;</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    }</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;</div>
+<div class="line"><a name="l00333"></a><span class="lineno"><a class="line" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a2e746b511933914d4be452573ac5ab7c">  333</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a2e746b511933914d4be452573ac5ab7c">setBitValueAt</a>(<span class="keyword">final</span> <span class="keywordtype">int</span> index, <span class="keyword">final</span> <span class="keywordtype">int</span> bit) {</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        <span class="keywordflow">if</span> (bit != 0 &amp;&amp; bit != 1) {</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> IllegalArgumentException();</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        }</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        <span class="keywordtype">int</span> i1 = genes[index / load];</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        <span class="keywordtype">int</span> offset = load - (index % load) - 1;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        <span class="keywordtype">int</span> mask = 1 &lt;&lt; offset;</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        this.genes[i1] = (this.genes[i1] &amp; (~mask)) | (bit &lt;&lt; offset);</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    }</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;</div>
+<div class="line"><a name="l00354"></a><span class="lineno"><a class="line" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a2d711baa2a74ccb064d33ef73edbd464">  354</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a2d711baa2a74ccb064d33ef73edbd464">cross</a>(<span class="keyword">final</span> <a class="code" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html">BitwiseChromosome</a> chromosome, <span class="keyword">final</span> <span class="keywordtype">int</span> from, <span class="keyword">final</span> <span class="keywordtype">int</span> to) {</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        <span class="keywordflow">if</span> (to &lt;= from) {</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        }</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        <span class="keywordtype">int</span> end = to + 1;</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        <span class="keywordtype">int</span> minlen = this.length();</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        <span class="keywordflow">if</span> (minlen &gt; chromosome.<a class="code" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a0da8899c89f8b1f222526acf1d2e8519">length</a>()) {</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;            minlen = chromosome.length();</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;        }</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        <span class="keywordflow">if</span> (end &gt; minlen) {</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;            this.cross(chromosome, from);</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;            <span class="keywordtype">int</span> i1 = from / load;</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;            <span class="keywordtype">int</span> i2 = end / load;</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;            <span class="keywordtype">int</span> offset_from = load - (from % load);</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;            <span class="keywordtype">int</span> offset_to = load - (end % load);</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;            this.bitcross(offset_from, i1, chromosome, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = i1 + 1; i &lt; i2; ++i) {</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;                <span class="keywordtype">int</span> v = chromosome.genes[i];</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;                chromosome.genes[i] = this.genes[i];</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;                this.genes[i] = v;</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;            }</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;            this.bitcross(offset_to, i2, chromosome, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;            <span class="comment">// this is  necessary when the cross points fall on the same index</span></div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;            <span class="keywordflow">if</span> (i1 == i2) {</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;                <span class="keywordtype">int</span> v = chromosome.genes[i1];</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;                chromosome.genes[i1] = this.genes[i1];</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;                this.genes[i1] = v;</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;            }</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;        }</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    }</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;</div>
+<div class="line"><a name="l00402"></a><span class="lineno"><a class="line" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a933b1991999fa3b586c1739744751725">  402</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a933b1991999fa3b586c1739744751725">cross</a>(<span class="keyword">final</span> <a class="code" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html">BitwiseChromosome</a> chromosome, <span class="keyword">final</span> <span class="keywordtype">int</span> from) {</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;        <span class="keywordtype">int</span> minlen = this.length();</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;        <span class="keywordflow">if</span> (minlen &gt; chromosome.<a class="code" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a0da8899c89f8b1f222526acf1d2e8519">length</a>()) {</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;            minlen = chromosome.length();</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;        }</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;        <span class="keywordflow">if</span> (from &gt; minlen) {</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;        }</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;        <span class="keywordtype">int</span> i1 = from / load;</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;        <span class="keywordtype">int</span> offset = load - (from % load);</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; i1; ++i) {</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;            <span class="keywordtype">int</span> v = chromosome.genes[i];</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;            chromosome.genes[i] = this.genes[i];</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;            this.genes[i] = v;</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;        }</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;        this.bitcross(offset, i1, chromosome, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;        <span class="keywordtype">int</span>[] gtmp = this.genes;</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;        this.genes = chromosome.genes;</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;        chromosome.genes = gtmp;</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    }</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;    <span class="keyword">private</span> <span class="keyword">final</span> <span class="keywordtype">void</span> bitcross(<span class="keyword">final</span> <span class="keywordtype">int</span> offset, <span class="keyword">final</span> <span class="keywordtype">int</span> index, <span class="keyword">final</span> <a class="code" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html">BitwiseChromosome</a> chromosome, <span class="keyword">final</span> <span class="keywordtype">boolean</span> after) {</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;        <span class="comment">// If offset is 0 and the crossover is on left,</span></div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;        <span class="comment">// or the offset is the last bit and the crossover is on right</span></div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;        <span class="comment">// there is nothing to cross;</span></div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;        <span class="keywordflow">if</span> (offset == 0 &amp;&amp; !after || offset == bits - 1 &amp;&amp; after) {</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;        }</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;        <span class="keywordtype">int</span> mask = 0xFFFFFFFF &gt;&gt;&gt; (Integer.SIZE - offset);</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;        <span class="keywordflow">if</span> (!after) {</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;            mask = ~mask;</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;        }</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;        <span class="keywordtype">int</span> v_this = this.genes[index];</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;        <span class="keywordtype">int</span> v_chrom = chromosome.genes[index];</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;        this.genes[index] = (v_this &amp; ~mask) | (v_chrom &amp; mask);</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;        chromosome.genes[index] = (v_chrom &amp; ~mask) | (v_this &amp; mask);</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;    }</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;</div>
+<div class="line"><a name="l00468"></a><span class="lineno"><a class="line" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a41c9858f7ef05194011d1e227fea3584">  468</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">boolean</span> <a class="code" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a41c9858f7ef05194011d1e227fea3584">equals</a>(<span class="keyword">final</span> <a class="code" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html">BitwiseChromosome</a> chromosome) {</div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;        <span class="keywordflow">if</span> (this.<a class="code" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a0da8899c89f8b1f222526acf1d2e8519">length</a>() != chromosome.<a class="code" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a0da8899c89f8b1f222526acf1d2e8519">length</a>()) {</div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;        }</div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; this.length(); ++i) {</div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;            <span class="keywordflow">if</span> (genes[i] != chromosome.genes[i]) {</div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;            }</div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;        }</div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;    }</div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;</div>
+<div class="line"><a name="l00487"></a><span class="lineno"><a class="line" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a0da8899c89f8b1f222526acf1d2e8519">  487</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">int</span> <a class="code" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a0da8899c89f8b1f222526acf1d2e8519">length</a>() {</div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;        <span class="keywordflow">return</span> this.size * this.bits;</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;    }</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;</div>
+<div class="line"><a name="l00496"></a><span class="lineno"><a class="line" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a5878e8d0ace81cfb617f75109c02855d">  496</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">int</span> <a class="code" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a5878e8d0ace81cfb617f75109c02855d">getIntLength</a>() {</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;        <span class="keywordflow">return</span> this.genes.length;</div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;    }</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;</div>
+<div class="line"><a name="l00505"></a><span class="lineno"><a class="line" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a1a79d4c9c671d2f735d57d64c59dfdb8">  505</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a1a79d4c9c671d2f735d57d64c59dfdb8">randomize</a>(<span class="keyword">final</span> <span class="keywordtype">int</span> pos) {</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;        <span class="keywordtype">int</span> index = pos / load;</div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;        <span class="keywordtype">int</span> offset = load - (pos % load) - 1;</div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;        <span class="keywordtype">int</span> mask = 1 &lt;&lt; offset;</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;        <span class="keywordtype">int</span> i = Random.getInstance().nextInt(2);</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;        this.genes[index] = (this.genes[index] &amp; (~mask)) | (i &lt;&lt; offset);</div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;    }</div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;</div>
+<div class="line"><a name="l00516"></a><span class="lineno"><a class="line" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a8028fde93528b7b51313f6c311b2b640">  516</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a8028fde93528b7b51313f6c311b2b640">randomize</a>() {</div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;        <span class="keywordtype">int</span> len = this.length();</div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; len; i++) {</div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;            this.randomize(i);</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;        }</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;    }</div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;</div>
+<div class="line"><a name="l00530"></a><span class="lineno"><a class="line" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#ab02c791be30c931cae793289185e459f">  530</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#ab02c791be30c931cae793289185e459f">leftShift</a>(<span class="keyword">final</span> <span class="keywordtype">int</span> from, <span class="keyword">final</span> <span class="keywordtype">int</span> to) {</div>
+<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;</div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;        <span class="keywordflow">if</span> (to &lt;= from) {</div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;        }</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;        <span class="keywordtype">int</span> i1 = from / load;</div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;        <span class="keywordtype">int</span> offset1 = load - (from % load) - 1; <span class="comment">//(Integer.SIZE-from-1) % Integer.SIZE;</span></div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;</div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;        <span class="keywordtype">int</span> i2 = to / load;</div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;        <span class="keywordtype">int</span> offset2 = load - (to % load) - 1; <span class="comment">//(Integer.SIZE-to-1) % Integer.SIZE;</span></div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;</div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;        <span class="keywordtype">int</span> bit = (this.genes[i1] &gt;&gt; offset1) &amp; 1;</div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;</div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;        <span class="keywordflow">if</span> (i1 == i2) {</div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;            this.bitshift(i1, offset2, offset1, bit);</div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;            bit = this.bitshift(i2, offset2, load - 1, bit);</div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = i2 - 1; i &gt; i1; --i) {</div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;                bit = this.bitshift(i1, load - 1, 0, bit);</div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;            }</div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;            this.bitshift(i1, 0, offset1, bit);</div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;        }</div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;</div>
+<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;    }</div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;</div>
+<div class="line"><a name="l00563"></a><span class="lineno"><a class="line" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#afb689c4b268f7954214a9d0e13c6141e">  563</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#afb689c4b268f7954214a9d0e13c6141e">rightShift</a>(<span class="keyword">final</span> <span class="keywordtype">int</span> from, <span class="keyword">final</span> <span class="keywordtype">int</span> to) {</div>
+<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;</div>
+<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;        <span class="keywordflow">if</span> (to &lt;= from) {</div>
+<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;        }</div>
+<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;</div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;        <span class="keywordtype">int</span> i1 = from / Integer.SIZE;</div>
+<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;        <span class="keywordtype">int</span> offset1 = Integer.SIZE - (from % Integer.SIZE) - 1; <span class="comment">//(Integer.SIZE-from-1) % Integer.SIZE;</span></div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;</div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;        <span class="keywordtype">int</span> i2 = to / Integer.SIZE;</div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;        <span class="keywordtype">int</span> offset2 = Integer.SIZE - (to % Integer.SIZE) - 1; <span class="comment">//(Integer.SIZE-to-1) % Integer.SIZE;</span></div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;</div>
+<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;        <span class="keywordtype">int</span> bit = (this.genes[i2] &gt;&gt; offset2) &amp; 1;</div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;</div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;        <span class="keywordflow">if</span> (i1 == i2) {</div>
+<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;            this.bitshift(i1, offset1, offset2, bit);</div>
+<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;            bit = this.bitshift(i1, offset1, 0, bit);</div>
+<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = i1 + 1; i &lt; i2; ++i) {</div>
+<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;                bit = this.bitshift(i1, 0, Integer.SIZE - 1, bit);</div>
+<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;            }</div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;            this.bitshift(i2, Integer.SIZE - 1, offset2, bit);</div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;        }</div>
+<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;    }</div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;</div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;    <span class="keyword">private</span> <span class="keyword">final</span> <span class="keywordtype">int</span> bitshift(<span class="keyword">final</span> <span class="keywordtype">int</span> index, <span class="keyword">final</span> <span class="keywordtype">int</span> from, <span class="keyword">final</span> <span class="keywordtype">int</span> to, <span class="keyword">final</span> <span class="keywordtype">int</span> bit) {</div>
+<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;        <span class="keywordflow">if</span> (from &gt; to) {</div>
+<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;            <span class="comment">// right shift</span></div>
+<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;            <span class="keywordtype">int</span> submask_1 = to == 0 ? 0 : (0xFFFFFFFF &gt;&gt;&gt; (bits - to));</div>
+<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;            <span class="keywordtype">int</span> submask_2 = (from + 1) == bits ? 0 : (0xFFFFFFFF &lt;&lt; (from + 1));</div>
+<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;            <span class="keywordtype">int</span> mask = ~(submask_1 ^ submask_2);</div>
+<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;</div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;            <span class="keywordtype">int</span> value = this.genes[index] &amp; mask;</div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;            <span class="keywordtype">int</span> b = (this.genes[index] &gt;&gt;&gt; (to)) &amp; 1;</div>
+<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;            this.genes[index] = ((value &gt;&gt;&gt; 1 | bit &lt;&lt; from) &amp; mask) | (this.genes[index] &amp; ~mask);</div>
+<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;</div>
+<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;            <span class="keywordflow">return</span> b;</div>
+<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;            <span class="comment">// left shift</span></div>
+<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;            <span class="keywordtype">int</span> submask_1 = from == 0 ? 0 : (0xFFFFFFFF &gt;&gt;&gt; (bits - from));</div>
+<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;            <span class="keywordtype">int</span> submask_2 = (to + 1) == bits ? 0 : (0xFFFFFFFF &lt;&lt; (to + 1));</div>
+<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;</div>
+<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;            <span class="keywordtype">int</span> mask = ~(submask_1 ^ submask_2);</div>
+<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;            <span class="keywordtype">int</span> value = this.genes[index] &amp; mask;</div>
+<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;            <span class="keywordtype">int</span> b = (value &gt;&gt; to) &amp; 1;</div>
+<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;</div>
+<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;            this.genes[index] = ((value &lt;&lt; 1 | bit &lt;&lt; from) &amp; mask) | (this.genes[index] &amp; ~mask);</div>
+<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;</div>
+<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;            <span class="keywordflow">return</span> b;</div>
+<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;        }</div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;    }</div>
+<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;</div>
+<div class="line"><a name="l00629"></a><span class="lineno"><a class="line" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#aa4fbad5a25ae14e9524a6ff0ec2536ca">  629</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#aa4fbad5a25ae14e9524a6ff0ec2536ca">setAs</a>(<span class="keyword">final</span> <a class="code" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html">BitwiseChromosome</a> chromosome) {</div>
+<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;        <span class="keywordflow">if</span> (chromosome.genes.length != <span class="keyword">this</span>.genes.length) {</div>
+<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;            this.genes = <span class="keyword">new</span> <span class="keywordtype">int</span>[chromosome.genes.length];</div>
+<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;        }</div>
+<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;        System.arraycopy(chromosome.genes, 0, this.genes, 0, chromosome.genes.length);</div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;        this.bits = chromosome.bits;</div>
+<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;        this.slots = chromosome.slots;</div>
+<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;        this.size = chromosome.size;</div>
+<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;        this.coding = chromosome.coding;</div>
+<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;        this.load = chromosome.load;</div>
+<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;    }</div>
+<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;</div>
+<div class="line"><a name="l00646"></a><span class="lineno"><a class="line" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#ae5be5fc21ff47526230a8a13ca945c08">  646</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#ae5be5fc21ff47526230a8a13ca945c08">setDefaultValueAt</a>(<span class="keyword">final</span> <span class="keywordtype">int</span> pos) {</div>
+<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;        <span class="keywordtype">int</span> index = pos / load;</div>
+<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;        <span class="keywordtype">int</span> offset = load - (pos % load) - 1;</div>
+<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;</div>
+<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;        <span class="keywordtype">int</span> mask = 1 &gt;&gt; offset;</div>
+<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;        this.genes[index] = (this.genes[index] &amp; (~mask));</div>
+<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;    }</div>
+<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;</div>
+<div class="line"><a name="l00660"></a><span class="lineno"><a class="line" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#afac4935f0e1d92b6b1aaf9de024e8cbb">  660</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#afac4935f0e1d92b6b1aaf9de024e8cbb">swap</a>(<span class="keyword">final</span> <span class="keywordtype">int</span> pos1, <span class="keyword">final</span> <span class="keywordtype">int</span> pos2) {</div>
+<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;</div>
+<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;        <span class="keywordtype">int</span> i1 = pos1 / load;</div>
+<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;        <span class="keywordtype">int</span> offset1 = load - (pos1 % load) - 1;</div>
+<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;        <span class="keywordtype">int</span> v1 = this.genes[i1];</div>
+<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;        <span class="keywordtype">int</span> m1 = 1 &lt;&lt; offset1;</div>
+<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;        <span class="keywordtype">int</span> b1 = (this.genes[i1] &gt;&gt; offset1) &amp; 1;</div>
+<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;</div>
+<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;        <span class="keywordtype">int</span> i2 = pos2 / load;</div>
+<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;        <span class="keywordtype">int</span> offset2 = load - (pos2 % load) - 1;</div>
+<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;        <span class="keywordtype">int</span> v2 = this.genes[i2];</div>
+<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;        <span class="keywordtype">int</span> m2 = 1 &lt;&lt; offset2;</div>
+<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;        <span class="keywordtype">int</span> b2 = (this.genes[i2] &gt;&gt; offset2) &amp; 1;</div>
+<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;</div>
+<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;        <span class="keywordflow">if</span> (i1 == i2) {</div>
+<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;            this.genes[i1] = (v1 &amp; ~(m1 | m2)) | (b1 &lt;&lt; offset2) | (b2 &lt;&lt; offset1);</div>
+<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;            this.genes[i1] = (v1 &amp; ~m1) | (b2 &lt;&lt; offset1);</div>
+<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;            this.genes[i2] = (v2 &amp; ~m2) | (b1 &lt;&lt; offset2);</div>
+<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;        }</div>
+<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;    }</div>
+<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;</div>
+<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;    @Override</div>
+<div class="line"><a name="l00688"></a><span class="lineno"><a class="line" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a2140b588068c430eaea7e9a7a5fe6b00">  688</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <a class="code" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html">BitwiseChromosome</a> <a class="code" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a2140b588068c430eaea7e9a7a5fe6b00">clone</a>() {</div>
+<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a87547c87419943bded51820cbc1ae830">BitwiseChromosome</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;    }</div>
+<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;</div>
+<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;    @Override</div>
+<div class="line"><a name="l00693"></a><span class="lineno"><a class="line" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a33de872210289a305bc869c61a02eddb">  693</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a33de872210289a305bc869c61a02eddb">difference</a>(<a class="code" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html">BitwiseChromosome</a> chromosome, <span class="keywordtype">double</span>[] diff) {</div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;        <span class="keywordtype">int</span> len = this.genes.length;</div>
+<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;        <span class="keywordflow">if</span> (chromosome.genes.length &lt; len) {</div>
+<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;            len = chromosome.genes.length;</div>
+<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;        }</div>
+<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;</div>
+<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; len; ++i) {</div>
+<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;            diff[i] = this.genes[i] - chromosome.genes[i];</div>
+<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;        }</div>
+<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;</div>
+<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;    }</div>
+<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;</div>
+<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;    @Override</div>
+<div class="line"><a name="l00706"></a><span class="lineno"><a class="line" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#aa191192f94ce72a631237674d81ae393">  706</a></span>&#160;    <span class="keyword">public</span> Object[] <a class="code" href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#aa191192f94ce72a631237674d81ae393">toArray</a>() {</div>
+<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;        Integer[] toReturn = <span class="keyword">new</span> Integer[this.genes.length];</div>
+<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> g = 0; g &lt; this.genes.length; g++) {</div>
+<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;            toReturn[g] = this.genes[g];</div>
+<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;        }</div>
+<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;        <span class="keywordflow">return</span> toReturn;</div>
+<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;    }</div>
+<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;<span class="comment">//    public static void main(String[] args) {</span></div>
+<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;    <span class="comment">//      BitwiseChromosome chrom1 = new BitwiseChromosome(4,new ByteCoding());</span></div>
+<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;    <span class="comment">//      chrom1.setIntValueAt(0, 0);</span></div>
+<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;    <span class="comment">//      chrom1.setBitValueAt(31,1);</span></div>
+<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;    <span class="comment">//      chrom1.setBitValueAt(30,1);</span></div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;    <span class="comment">//      chrom1.setBitValueAt(29,1);</span></div>
+<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;    <span class="comment">//      chrom1.setBitValueAt(28,1);</span></div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;    <span class="comment">//      System.out.println(chrom1.getIntValueAt(0));</span></div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;<span class="comment">     * chrom1:001,10101 01111001 01010110 10111010 00110011 00011101 01100101 01101001 00110101 01111001 010,10110 10111010</span></div>
+<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;<span class="comment">     * chrom2:001,10011 00011101 01100101 01101001 00110101 01111001 01010110 10111010 00110011 00011101 011,00101 01101001</span></div>
+<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;<span class="comment">     * mi aspetto:</span></div>
+<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;<span class="comment">     * 001,10011 00011101 01100101 01101001 00110101 01111001 01010110 10111010 00110011 00011101 011,10110 10111010</span></div>
+<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;<span class="comment">     * 001,10101 01111001 01010110 10111010 00110011 00011101 01100101 01101001 00110101 01111001 010,00101 01101001</span></div>
+<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;    <span class="comment">//      BitwiseChromosome chrom1 = new BitwiseChromosome(12,new ByteCoding());</span></div>
+<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;    <span class="comment">//      chrom1.setIntValueAt(0, 897144506);</span></div>
+<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;    <span class="comment">//      chrom1.setIntValueAt(1, 857564521);</span></div>
+<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;    <span class="comment">//      chrom1.setIntValueAt(2, 897144506);</span></div>
+<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;    <span class="comment">//      BitwiseChromosome chrom2 = new BitwiseChromosome(12,new ByteCoding());</span></div>
+<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;    <span class="comment">//      chrom2.setIntValueAt(0, 857564521);</span></div>
+<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;    <span class="comment">//      chrom2.setIntValueAt(1, 897144506);</span></div>
+<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;    <span class="comment">//      chrom2.setIntValueAt(2, 857564521);</span></div>
+<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;    <span class="comment">//      chrom1.cross(chrom2, 3,82);</span></div>
+<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;    <span class="comment">//      System.out.println(chrom1.getIntValueAt(0));</span></div>
+<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;    <span class="comment">//      System.out.println(chrom1.getIntValueAt(1));</span></div>
+<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;    <span class="comment">//      System.out.println(chrom1.getIntValueAt(2));</span></div>
+<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;    <span class="comment">//      System.out.println();</span></div>
+<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;    <span class="comment">//      System.out.println(chrom2.getIntValueAt(0));</span></div>
+<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;    <span class="comment">//      System.out.println(chrom2.getIntValueAt(1));</span></div>
+<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;    <span class="comment">//      System.out.println(chrom2.getIntValueAt(2));      </span></div>
+<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;<span class="comment">//    }</span></div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;}</div>
+<div class="ttc" id="classjenes_1_1chromosome_1_1_bitwise_chromosome_html_a33de872210289a305bc869c61a02eddb"><div class="ttname"><a href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a33de872210289a305bc869c61a02eddb">jenes.chromosome.BitwiseChromosome.difference</a></div><div class="ttdeci">void difference(BitwiseChromosome chromosome, double[] diff)</div><div class="ttdef"><b>Definition:</b> <a href="_bitwise_chromosome_8java_source.html#l00693">BitwiseChromosome.java:693</a></div></div>
+<div class="ttc" id="classjenes_1_1chromosome_1_1_bitwise_chromosome_html_a36e6b8c849d563a359245763116667d5"><div class="ttname"><a href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a36e6b8c849d563a359245763116667d5">jenes.chromosome.BitwiseChromosome.getIntSize</a></div><div class="ttdeci">final int getIntSize()</div><div class="ttdef"><b>Definition:</b> <a href="_bitwise_chromosome_8java_source.html#l00243">BitwiseChromosome.java:243</a></div></div>
+<div class="ttc" id="classjenes_1_1chromosome_1_1_bitwise_chromosome_html_aa191192f94ce72a631237674d81ae393"><div class="ttname"><a href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#aa191192f94ce72a631237674d81ae393">jenes.chromosome.BitwiseChromosome.toArray</a></div><div class="ttdeci">Object[] toArray()</div><div class="ttdef"><b>Definition:</b> <a href="_bitwise_chromosome_8java_source.html#l00706">BitwiseChromosome.java:706</a></div></div>
+<div class="ttc" id="classjenes_1_1chromosome_1_1_bitwise_chromosome_html_ae5be5fc21ff47526230a8a13ca945c08"><div class="ttname"><a href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#ae5be5fc21ff47526230a8a13ca945c08">jenes.chromosome.BitwiseChromosome.setDefaultValueAt</a></div><div class="ttdeci">final void setDefaultValueAt(final int pos)</div><div class="ttdef"><b>Definition:</b> <a href="_bitwise_chromosome_8java_source.html#l00646">BitwiseChromosome.java:646</a></div></div>
+<div class="ttc" id="classjenes_1_1chromosome_1_1_bitwise_chromosome_html_a3cbcf428333a0dc4209ce2c820054542"><div class="ttname"><a href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a3cbcf428333a0dc4209ce2c820054542">jenes.chromosome.BitwiseChromosome.setIntValueAt</a></div><div class="ttdeci">final void setIntValueAt(final int index, final int value)</div><div class="ttdef"><b>Definition:</b> <a href="_bitwise_chromosome_8java_source.html#l00234">BitwiseChromosome.java:234</a></div></div>
+<div class="ttc" id="classjenes_1_1chromosome_1_1_bitwise_chromosome_html_a905b92cd6dc14db9d2b9276f1a6686e9"><div class="ttname"><a href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a905b92cd6dc14db9d2b9276f1a6686e9">jenes.chromosome.BitwiseChromosome.getType</a></div><div class="ttdeci">final BitCoding getType()</div><div class="ttdef"><b>Definition:</b> <a href="_bitwise_chromosome_8java_source.html#l00205">BitwiseChromosome.java:205</a></div></div>
+<div class="ttc" id="classjenes_1_1chromosome_1_1_bitwise_chromosome_html_afac4935f0e1d92b6b1aaf9de024e8cbb"><div class="ttname"><a href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#afac4935f0e1d92b6b1aaf9de024e8cbb">jenes.chromosome.BitwiseChromosome.swap</a></div><div class="ttdeci">final void swap(final int pos1, final int pos2)</div><div class="ttdef"><b>Definition:</b> <a href="_bitwise_chromosome_8java_source.html#l00660">BitwiseChromosome.java:660</a></div></div>
+<div class="ttc" id="classjenes_1_1chromosome_1_1_bitwise_chromosome_html_a9109a8205e447db9032f29494f0d9b3d"><div class="ttname"><a href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a9109a8205e447db9032f29494f0d9b3d">jenes.chromosome.BitwiseChromosome.BitwiseChromosome</a></div><div class="ttdeci">BitwiseChromosome(final int size, final BitCoding coding)</div><div class="ttdef"><b>Definition:</b> <a href="_bitwise_chromosome_8java_source.html#l00175">BitwiseChromosome.java:175</a></div></div>
+<div class="ttc" id="classjenes_1_1chromosome_1_1_bitwise_chromosome_html_ae59ae8f495ec9d5aa15712cee7c0b313"><div class="ttname"><a href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#ae59ae8f495ec9d5aa15712cee7c0b313">jenes.chromosome.BitwiseChromosome.getSize</a></div><div class="ttdeci">final int getSize()</div><div class="ttdef"><b>Definition:</b> <a href="_bitwise_chromosome_8java_source.html#l00214">BitwiseChromosome.java:214</a></div></div>
+<div class="ttc" id="classjenes_1_1chromosome_1_1_bitwise_chromosome_html_ab02c791be30c931cae793289185e459f"><div class="ttname"><a href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#ab02c791be30c931cae793289185e459f">jenes.chromosome.BitwiseChromosome.leftShift</a></div><div class="ttdeci">final void leftShift(final int from, final int to)</div><div class="ttdef"><b>Definition:</b> <a href="_bitwise_chromosome_8java_source.html#l00530">BitwiseChromosome.java:530</a></div></div>
+<div class="ttc" id="classjenes_1_1chromosome_1_1_bitwise_chromosome_html_afb689c4b268f7954214a9d0e13c6141e"><div class="ttname"><a href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#afb689c4b268f7954214a9d0e13c6141e">jenes.chromosome.BitwiseChromosome.rightShift</a></div><div class="ttdeci">final void rightShift(final int from, final int to)</div><div class="ttdef"><b>Definition:</b> <a href="_bitwise_chromosome_8java_source.html#l00563">BitwiseChromosome.java:563</a></div></div>
+<div class="ttc" id="classjenes_1_1chromosome_1_1_bitwise_chromosome_html_a933b1991999fa3b586c1739744751725"><div class="ttname"><a href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a933b1991999fa3b586c1739744751725">jenes.chromosome.BitwiseChromosome.cross</a></div><div class="ttdeci">final void cross(final BitwiseChromosome chromosome, final int from)</div><div class="ttdef"><b>Definition:</b> <a href="_bitwise_chromosome_8java_source.html#l00402">BitwiseChromosome.java:402</a></div></div>
+<div class="ttc" id="classjenes_1_1chromosome_1_1_bitwise_chromosome_html_a1a79d4c9c671d2f735d57d64c59dfdb8"><div class="ttname"><a href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a1a79d4c9c671d2f735d57d64c59dfdb8">jenes.chromosome.BitwiseChromosome.randomize</a></div><div class="ttdeci">final void randomize(final int pos)</div><div class="ttdef"><b>Definition:</b> <a href="_bitwise_chromosome_8java_source.html#l00505">BitwiseChromosome.java:505</a></div></div>
+<div class="ttc" id="classjenes_1_1chromosome_1_1_bitwise_chromosome_html_a5878e8d0ace81cfb617f75109c02855d"><div class="ttname"><a href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a5878e8d0ace81cfb617f75109c02855d">jenes.chromosome.BitwiseChromosome.getIntLength</a></div><div class="ttdeci">final int getIntLength()</div><div class="ttdef"><b>Definition:</b> <a href="_bitwise_chromosome_8java_source.html#l00496">BitwiseChromosome.java:496</a></div></div>
+<div class="ttc" id="classjenes_1_1chromosome_1_1_bitwise_chromosome_html_a41c9858f7ef05194011d1e227fea3584"><div class="ttname"><a href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a41c9858f7ef05194011d1e227fea3584">jenes.chromosome.BitwiseChromosome.equals</a></div><div class="ttdeci">final boolean equals(final BitwiseChromosome chromosome)</div><div class="ttdef"><b>Definition:</b> <a href="_bitwise_chromosome_8java_source.html#l00468">BitwiseChromosome.java:468</a></div></div>
+<div class="ttc" id="classjenes_1_1chromosome_1_1_bitwise_chromosome_html_a3061d34e1f0c0faa915d4da7ea2f615c"><div class="ttname"><a href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a3061d34e1f0c0faa915d4da7ea2f615c">jenes.chromosome.BitwiseChromosome.getValueAt</a></div><div class="ttdeci">final Object getValueAt(final int index)</div><div class="ttdef"><b>Definition:</b> <a href="_bitwise_chromosome_8java_source.html#l00254">BitwiseChromosome.java:254</a></div></div>
+<div class="ttc" id="classjenes_1_1chromosome_1_1_bitwise_chromosome_html_a2d711baa2a74ccb064d33ef73edbd464"><div class="ttname"><a href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a2d711baa2a74ccb064d33ef73edbd464">jenes.chromosome.BitwiseChromosome.cross</a></div><div class="ttdeci">final void cross(final BitwiseChromosome chromosome, final int from, final int to)</div><div class="ttdef"><b>Definition:</b> <a href="_bitwise_chromosome_8java_source.html#l00354">BitwiseChromosome.java:354</a></div></div>
+<div class="ttc" id="classjenes_1_1chromosome_1_1_bitwise_chromosome_html_a2140b588068c430eaea7e9a7a5fe6b00"><div class="ttname"><a href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a2140b588068c430eaea7e9a7a5fe6b00">jenes.chromosome.BitwiseChromosome.clone</a></div><div class="ttdeci">final BitwiseChromosome clone()</div><div class="ttdef"><b>Definition:</b> <a href="_bitwise_chromosome_8java_source.html#l00688">BitwiseChromosome.java:688</a></div></div>
+<div class="ttc" id="classjenes_1_1chromosome_1_1_bitwise_chromosome_html_a8028fde93528b7b51313f6c311b2b640"><div class="ttname"><a href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a8028fde93528b7b51313f6c311b2b640">jenes.chromosome.BitwiseChromosome.randomize</a></div><div class="ttdeci">final void randomize()</div><div class="ttdef"><b>Definition:</b> <a href="_bitwise_chromosome_8java_source.html#l00516">BitwiseChromosome.java:516</a></div></div>
+<div class="ttc" id="classjenes_1_1chromosome_1_1_bitwise_chromosome_html_af817cb2110fc6b8d415e46377ddd4911"><div class="ttname"><a href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#af817cb2110fc6b8d415e46377ddd4911">jenes.chromosome.BitwiseChromosome.getIntValueAt</a></div><div class="ttdeci">final int getIntValueAt(final int index)</div><div class="ttdef"><b>Definition:</b> <a href="_bitwise_chromosome_8java_source.html#l00224">BitwiseChromosome.java:224</a></div></div>
+<div class="ttc" id="classjenes_1_1chromosome_1_1_bitwise_chromosome_html_a05ce80f3729d007c5d550eef5969ac86"><div class="ttname"><a href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a05ce80f3729d007c5d550eef5969ac86">jenes.chromosome.BitwiseChromosome.getBitValueAt</a></div><div class="ttdeci">final int getBitValueAt(final int index)</div><div class="ttdef"><b>Definition:</b> <a href="_bitwise_chromosome_8java_source.html#l00316">BitwiseChromosome.java:316</a></div></div>
+<div class="ttc" id="classjenes_1_1chromosome_1_1_bitwise_chromosome_html"><div class="ttname"><a href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html">jenes.chromosome.BitwiseChromosome</a></div><div class="ttdef"><b>Definition:</b> <a href="_bitwise_chromosome_8java_source.html#l00047">BitwiseChromosome.java:47</a></div></div>
+<div class="ttc" id="classjenes_1_1chromosome_1_1_bitwise_chromosome_html_a87547c87419943bded51820cbc1ae830"><div class="ttname"><a href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a87547c87419943bded51820cbc1ae830">jenes.chromosome.BitwiseChromosome.BitwiseChromosome</a></div><div class="ttdeci">BitwiseChromosome(final int size)</div><div class="ttdef"><b>Definition:</b> <a href="_bitwise_chromosome_8java_source.html#l00164">BitwiseChromosome.java:164</a></div></div>
+<div class="ttc" id="classjenes_1_1chromosome_1_1_bitwise_chromosome_html_a90798d86b6c1871c441b562e0b1d50ca"><div class="ttname"><a href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a90798d86b6c1871c441b562e0b1d50ca">jenes.chromosome.BitwiseChromosome.BitwiseChromosome</a></div><div class="ttdeci">BitwiseChromosome(final BitwiseChromosome chromosome)</div><div class="ttdef"><b>Definition:</b> <a href="_bitwise_chromosome_8java_source.html#l00189">BitwiseChromosome.java:189</a></div></div>
+<div class="ttc" id="classjenes_1_1chromosome_1_1_bitwise_chromosome_html_aa4fbad5a25ae14e9524a6ff0ec2536ca"><div class="ttname"><a href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#aa4fbad5a25ae14e9524a6ff0ec2536ca">jenes.chromosome.BitwiseChromosome.setAs</a></div><div class="ttdeci">final void setAs(final BitwiseChromosome chromosome)</div><div class="ttdef"><b>Definition:</b> <a href="_bitwise_chromosome_8java_source.html#l00629">BitwiseChromosome.java:629</a></div></div>
+<div class="ttc" id="classjenes_1_1chromosome_1_1_bitwise_chromosome_html_a0da8899c89f8b1f222526acf1d2e8519"><div class="ttname"><a href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a0da8899c89f8b1f222526acf1d2e8519">jenes.chromosome.BitwiseChromosome.length</a></div><div class="ttdeci">final int length()</div><div class="ttdef"><b>Definition:</b> <a href="_bitwise_chromosome_8java_source.html#l00487">BitwiseChromosome.java:487</a></div></div>
+<div class="ttc" id="classjenes_1_1chromosome_1_1_bitwise_chromosome_html_a2e746b511933914d4be452573ac5ab7c"><div class="ttname"><a href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#a2e746b511933914d4be452573ac5ab7c">jenes.chromosome.BitwiseChromosome.setBitValueAt</a></div><div class="ttdeci">final void setBitValueAt(final int index, final int bit)</div><div class="ttdef"><b>Definition:</b> <a href="_bitwise_chromosome_8java_source.html#l00333">BitwiseChromosome.java:333</a></div></div>
+<div class="ttc" id="classjenes_1_1chromosome_1_1_bitwise_chromosome_html_aaa42be8f0c26735e8a8d603d9b743b6a"><div class="ttname"><a href="classjenes_1_1chromosome_1_1_bitwise_chromosome.html#aaa42be8f0c26735e8a8d603d9b743b6a">jenes.chromosome.BitwiseChromosome.setValue</a></div><div class="ttdeci">final void setValue(final int index, final Object value)</div><div class="ttdef"><b>Definition:</b> <a href="_bitwise_chromosome_8java_source.html#l00286">BitwiseChromosome.java:286</a></div></div>
+<div class="ttc" id="classjenes_1_1utils_1_1_random_html"><div class="ttname"><a href="classjenes_1_1utils_1_1_random.html">jenes.utils.Random</a></div><div class="ttdef"><b>Definition:</b> <a href="_random_8java_source.html#l00037">Random.java:37</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Sábado, 23 de Noviembre de 2013 21:00:49 para Jenes 2.0 por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

@@ -1,0 +1,9 @@
+digraph "jenes.chromosome.ObjectChromosome.equals"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="jenes.chromosome.ObjectChromosome.equals",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="jenes.chromosome.ObjectChromosome.length",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classjenes_1_1chromosome_1_1_object_chromosome.html#a12ff61d91455ed5915bcf71c889ea1dd"];
+}

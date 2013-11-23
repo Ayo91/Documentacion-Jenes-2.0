@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Jenes 2.0: Fichero Fuente C:/Users/Ayo/Desktop/jenes 2.0/src/jenes/utils/CSVLogger.java</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Jenes 2.0
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="namespaces.html"><span>Paquetes</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_12f2200cf1e99b3d3381c7cc6a32cc41.html">jenes</a></li><li class="navelem"><a class="el" href="dir_fba9f71ed58fee33ebb3ba606d7667cb.html">utils</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">CSVLogger.java</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_c_s_v_logger_8java.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * JENES</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * A time and memory efficient Java library for genetic algorithms and more </span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Copyright (C) 2011 Intelligentia srl</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * This program is free software: you can redistribute it and/or modify</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * the Free Software Foundation, either version 3 of the License, or</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * (at your option) any later version.</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> *  This program is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> *  but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> *  GNU General Public License for more details.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> *  You should have received a copy of the GNU General Public License</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> *  along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;. </span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">package </span>jenes.utils;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">import</span> java.io.FileNotFoundException;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">import</span> java.io.PrintWriter;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">import</span> java.io.StringWriter;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classjenes_1_1utils_1_1_c_s_v_logger.html">   36</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classjenes_1_1utils_1_1_c_s_v_logger.html">CSVLogger</a> <span class="keyword">extends</span> <a class="code" href="classjenes_1_1utils_1_1_abstract_logger.html">AbstractLogger</a> {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">boolean</span> header = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">private</span> StringWriter buffer;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">private</span> PrintWriter out;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">private</span> String separator;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">boolean</span> started = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classjenes_1_1utils_1_1_c_s_v_logger.html#a8cac9e217f74d86b4e26b025d8e1381c">   53</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classjenes_1_1utils_1_1_c_s_v_logger.html#a8cac9e217f74d86b4e26b025d8e1381c">CSVLogger</a>(String[] <a class="code" href="classjenes_1_1utils_1_1_abstract_logger.html#a3a2030876857a0512fae7e0ad400c570">schema</a>) <span class="keywordflow">throws</span> FileNotFoundException {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;       <span class="keyword">this</span>(<a class="code" href="classjenes_1_1utils_1_1_abstract_logger.html#a3a2030876857a0512fae7e0ad400c570">schema</a>, <span class="stringliteral">&quot;jenes.log.csv&quot;</span>, <span class="stringliteral">&quot;\t&quot;</span>, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classjenes_1_1utils_1_1_c_s_v_logger.html#a52ccc76492a8a16e018198bcfa702360">   65</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classjenes_1_1utils_1_1_c_s_v_logger.html#a52ccc76492a8a16e018198bcfa702360">CSVLogger</a>(String[] <a class="code" href="classjenes_1_1utils_1_1_abstract_logger.html#a3a2030876857a0512fae7e0ad400c570">schema</a>, String filename) <span class="keywordflow">throws</span> FileNotFoundException {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;       <span class="keyword">this</span>(<a class="code" href="classjenes_1_1utils_1_1_abstract_logger.html#a3a2030876857a0512fae7e0ad400c570">schema</a>, filename, <span class="stringliteral">&quot;\t&quot;</span>, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="classjenes_1_1utils_1_1_c_s_v_logger.html#ad6242d77cf75372bfbf55e9b0973bfb4">   78</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classjenes_1_1utils_1_1_c_s_v_logger.html#ad6242d77cf75372bfbf55e9b0973bfb4">CSVLogger</a>(String[] <a class="code" href="classjenes_1_1utils_1_1_abstract_logger.html#a3a2030876857a0512fae7e0ad400c570">schema</a>, String filename, String separator) <span class="keywordflow">throws</span> FileNotFoundException {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;       <span class="keyword">this</span>(<a class="code" href="classjenes_1_1utils_1_1_abstract_logger.html#a3a2030876857a0512fae7e0ad400c570">schema</a>, filename, separator, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="classjenes_1_1utils_1_1_c_s_v_logger.html#ad39241223c9d49bfa34a21db4aa1f8b1">   93</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classjenes_1_1utils_1_1_c_s_v_logger.html#ad39241223c9d49bfa34a21db4aa1f8b1">CSVLogger</a>(String[] <a class="code" href="classjenes_1_1utils_1_1_abstract_logger.html#a3a2030876857a0512fae7e0ad400c570">schema</a>, String filename, String separator, <span class="keywordtype">boolean</span> header) <span class="keywordflow">throws</span> FileNotFoundException {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;       super(<a class="code" href="classjenes_1_1utils_1_1_abstract_logger.html#a3a2030876857a0512fae7e0ad400c570">schema</a>);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;       this.out = <span class="keyword">new</span> PrintWriter(filename);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;       this.separator = separator;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;       this.header = header;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;       this.buffer = <span class="keyword">new</span> StringWriter();</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="classjenes_1_1utils_1_1_c_s_v_logger.html#a00671f9154ae65398d676e6526fa08f2">  106</a></span>&#160;    <span class="keyword">public</span> PrintWriter <a class="code" href="classjenes_1_1utils_1_1_c_s_v_logger.html#a00671f9154ae65398d676e6526fa08f2">getOut</a>() {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordflow">return</span> this.out;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    @Override</div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="classjenes_1_1utils_1_1_c_s_v_logger.html#a863bcfda3e93b023949a81e7f6d149e7">  111</a></span>&#160;    <span class="keyword">protected</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1utils_1_1_c_s_v_logger.html#a863bcfda3e93b023949a81e7f6d149e7">store</a>() {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keywordflow">if</span>( !started ) {</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            <span class="keywordflow">if</span>(this.header) this.writeHeader();</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            this.started = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        }</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        String line = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keywordtype">boolean</span> first = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordflow">for</span>( String key : <a class="code" href="classjenes_1_1utils_1_1_abstract_logger.html#ae85e356ad12255a9c5ec8f9f25659ef7">record</a>.keySet()  ) {</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            line += (first ? <span class="stringliteral">&quot;&quot;</span> : separator+<span class="stringliteral">&quot; &quot;</span>) + <a class="code" href="classjenes_1_1utils_1_1_abstract_logger.html#ae85e356ad12255a9c5ec8f9f25659ef7">record</a>.get(key);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            first = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        }</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        buffer.write(line + <span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    }</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    @Override</div>
+<div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="classjenes_1_1utils_1_1_c_s_v_logger.html#a09a4f4fc362db6d4090d75642521ee65">  129</a></span>&#160;    <span class="keyword">protected</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1utils_1_1_c_s_v_logger.html#a09a4f4fc362db6d4090d75642521ee65">doSave</a>() {</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        out.print( buffer );</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        out.flush();</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        buffer = <span class="keyword">new</span> StringWriter();</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    }</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    @Override</div>
+<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="classjenes_1_1utils_1_1_c_s_v_logger.html#ac89f6fe5bd609fcc02ca7adf1407f279">  136</a></span>&#160;    <span class="keyword">protected</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1utils_1_1_c_s_v_logger.html#ac89f6fe5bd609fcc02ca7adf1407f279">doClose</a>() {</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        this.out.close();</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    }</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">void</span> writeHeader() {</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        String hd = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        <span class="keywordtype">boolean</span> first = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <span class="keywordflow">for</span>( String s : <a class="code" href="classjenes_1_1utils_1_1_abstract_logger.html#a3a2030876857a0512fae7e0ad400c570">schema</a> ) {</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            hd += (first ? <span class="stringliteral">&quot;&quot;</span> : separator+<span class="stringliteral">&quot; &quot;</span>) + s;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            first = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        }</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        out.println(hd);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    }</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    </div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;}</div>
+<div class="ttc" id="classjenes_1_1utils_1_1_c_s_v_logger_html_a52ccc76492a8a16e018198bcfa702360"><div class="ttname"><a href="classjenes_1_1utils_1_1_c_s_v_logger.html#a52ccc76492a8a16e018198bcfa702360">jenes.utils.CSVLogger.CSVLogger</a></div><div class="ttdeci">CSVLogger(String[] schema, String filename)</div><div class="ttdef"><b>Definition:</b> <a href="_c_s_v_logger_8java_source.html#l00065">CSVLogger.java:65</a></div></div>
+<div class="ttc" id="classjenes_1_1utils_1_1_c_s_v_logger_html_ad39241223c9d49bfa34a21db4aa1f8b1"><div class="ttname"><a href="classjenes_1_1utils_1_1_c_s_v_logger.html#ad39241223c9d49bfa34a21db4aa1f8b1">jenes.utils.CSVLogger.CSVLogger</a></div><div class="ttdeci">CSVLogger(String[] schema, String filename, String separator, boolean header)</div><div class="ttdef"><b>Definition:</b> <a href="_c_s_v_logger_8java_source.html#l00093">CSVLogger.java:93</a></div></div>
+<div class="ttc" id="classjenes_1_1utils_1_1_c_s_v_logger_html_a8cac9e217f74d86b4e26b025d8e1381c"><div class="ttname"><a href="classjenes_1_1utils_1_1_c_s_v_logger.html#a8cac9e217f74d86b4e26b025d8e1381c">jenes.utils.CSVLogger.CSVLogger</a></div><div class="ttdeci">CSVLogger(String[] schema)</div><div class="ttdef"><b>Definition:</b> <a href="_c_s_v_logger_8java_source.html#l00053">CSVLogger.java:53</a></div></div>
+<div class="ttc" id="classjenes_1_1utils_1_1_abstract_logger_html_ae85e356ad12255a9c5ec8f9f25659ef7"><div class="ttname"><a href="classjenes_1_1utils_1_1_abstract_logger.html#ae85e356ad12255a9c5ec8f9f25659ef7">jenes.utils.AbstractLogger.record</a></div><div class="ttdeci">Map&lt; String, Object &gt; record</div><div class="ttdef"><b>Definition:</b> <a href="_abstract_logger_8java_source.html#l00040">AbstractLogger.java:40</a></div></div>
+<div class="ttc" id="classjenes_1_1utils_1_1_c_s_v_logger_html"><div class="ttname"><a href="classjenes_1_1utils_1_1_c_s_v_logger.html">jenes.utils.CSVLogger</a></div><div class="ttdef"><b>Definition:</b> <a href="_c_s_v_logger_8java_source.html#l00036">CSVLogger.java:36</a></div></div>
+<div class="ttc" id="classjenes_1_1utils_1_1_c_s_v_logger_html_a863bcfda3e93b023949a81e7f6d149e7"><div class="ttname"><a href="classjenes_1_1utils_1_1_c_s_v_logger.html#a863bcfda3e93b023949a81e7f6d149e7">jenes.utils.CSVLogger.store</a></div><div class="ttdeci">void store()</div><div class="ttdef"><b>Definition:</b> <a href="_c_s_v_logger_8java_source.html#l00111">CSVLogger.java:111</a></div></div>
+<div class="ttc" id="classjenes_1_1utils_1_1_c_s_v_logger_html_a09a4f4fc362db6d4090d75642521ee65"><div class="ttname"><a href="classjenes_1_1utils_1_1_c_s_v_logger.html#a09a4f4fc362db6d4090d75642521ee65">jenes.utils.CSVLogger.doSave</a></div><div class="ttdeci">void doSave()</div><div class="ttdef"><b>Definition:</b> <a href="_c_s_v_logger_8java_source.html#l00129">CSVLogger.java:129</a></div></div>
+<div class="ttc" id="classjenes_1_1utils_1_1_c_s_v_logger_html_ac89f6fe5bd609fcc02ca7adf1407f279"><div class="ttname"><a href="classjenes_1_1utils_1_1_c_s_v_logger.html#ac89f6fe5bd609fcc02ca7adf1407f279">jenes.utils.CSVLogger.doClose</a></div><div class="ttdeci">void doClose()</div><div class="ttdef"><b>Definition:</b> <a href="_c_s_v_logger_8java_source.html#l00136">CSVLogger.java:136</a></div></div>
+<div class="ttc" id="classjenes_1_1utils_1_1_c_s_v_logger_html_a00671f9154ae65398d676e6526fa08f2"><div class="ttname"><a href="classjenes_1_1utils_1_1_c_s_v_logger.html#a00671f9154ae65398d676e6526fa08f2">jenes.utils.CSVLogger.getOut</a></div><div class="ttdeci">PrintWriter getOut()</div><div class="ttdef"><b>Definition:</b> <a href="_c_s_v_logger_8java_source.html#l00106">CSVLogger.java:106</a></div></div>
+<div class="ttc" id="classjenes_1_1utils_1_1_abstract_logger_html"><div class="ttname"><a href="classjenes_1_1utils_1_1_abstract_logger.html">jenes.utils.AbstractLogger</a></div><div class="ttdef"><b>Definition:</b> <a href="_abstract_logger_8java_source.html#l00034">AbstractLogger.java:34</a></div></div>
+<div class="ttc" id="classjenes_1_1utils_1_1_abstract_logger_html_a3a2030876857a0512fae7e0ad400c570"><div class="ttname"><a href="classjenes_1_1utils_1_1_abstract_logger.html#a3a2030876857a0512fae7e0ad400c570">jenes.utils.AbstractLogger.schema</a></div><div class="ttdeci">List&lt; String &gt; schema</div><div class="ttdef"><b>Definition:</b> <a href="_abstract_logger_8java_source.html#l00037">AbstractLogger.java:37</a></div></div>
+<div class="ttc" id="classjenes_1_1utils_1_1_c_s_v_logger_html_ad6242d77cf75372bfbf55e9b0973bfb4"><div class="ttname"><a href="classjenes_1_1utils_1_1_c_s_v_logger.html#ad6242d77cf75372bfbf55e9b0973bfb4">jenes.utils.CSVLogger.CSVLogger</a></div><div class="ttdeci">CSVLogger(String[] schema, String filename, String separator)</div><div class="ttdef"><b>Definition:</b> <a href="_c_s_v_logger_8java_source.html#l00078">CSVLogger.java:78</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Sábado, 23 de Noviembre de 2013 21:00:51 para Jenes 2.0 por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

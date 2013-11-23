@@ -1,0 +1,13 @@
+digraph "C:/Users/Ayo/Desktop/jenes 2.0/src/jenes/chromosome" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_12f2200cf1e99b3d3381c7cc6a32cc41 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="jenes" fontname="Helvetica", fontsize="10", URL="dir_12f2200cf1e99b3d3381c7cc6a32cc41.html"]
+  subgraph clusterdir_a865121f1fb24a03e6ef1b6d5f819127 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_a865121f1fb24a03e6ef1b6d5f819127.html"];
+    dir_a865121f1fb24a03e6ef1b6d5f819127 [shape=plaintext label="chromosome"];
+    dir_fe425c1cd7db4c301f6880be04b185d9 [shape=box label="codings" color="black" fillcolor="white" style="filled" URL="dir_fe425c1cd7db4c301f6880be04b185d9.html"];
+  }
+  }
+}

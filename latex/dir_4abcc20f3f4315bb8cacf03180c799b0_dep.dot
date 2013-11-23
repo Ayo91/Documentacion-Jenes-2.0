@@ -1,0 +1,9 @@
+digraph "C:/Users/Ayo/Desktop/jenes 2.0/src/jenes/utils/multitasking" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_fba9f71ed58fee33ebb3ba606d7667cb {
+    graph [ bgcolor="#ddddee", pencolor="black", label="utils" fontname="Helvetica", fontsize="10", URL="dir_fba9f71ed58fee33ebb3ba606d7667cb.html"]
+  dir_4abcc20f3f4315bb8cacf03180c799b0 [shape=box, label="multitasking", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_4abcc20f3f4315bb8cacf03180c799b0.html"];
+  }
+}

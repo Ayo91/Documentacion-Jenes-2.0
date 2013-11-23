@@ -1,0 +1,9 @@
+digraph "C:/Users/Ayo/Desktop/jenes 2.0/src/jenes/statistics" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_12f2200cf1e99b3d3381c7cc6a32cc41 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="jenes" fontname="Helvetica", fontsize="10", URL="dir_12f2200cf1e99b3d3381c7cc6a32cc41.html"]
+  dir_6e8de1099b7bd949e45a916e52d9aa34 [shape=box, label="statistics", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_6e8de1099b7bd949e45a916e52d9aa34.html"];
+  }
+}

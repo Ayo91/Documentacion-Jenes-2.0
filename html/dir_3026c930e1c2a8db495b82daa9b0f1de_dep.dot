@@ -1,0 +1,9 @@
+digraph "C:/Users/Ayo/Desktop/jenes 2.0/src/jenes/stage/operator/common" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_7a9aca08c39cddbbbe73f347502aecc2 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="operator" fontname="Helvetica", fontsize="10", URL="dir_7a9aca08c39cddbbbe73f347502aecc2.html"]
+  dir_3026c930e1c2a8db495b82daa9b0f1de [shape=box, label="common", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_3026c930e1c2a8db495b82daa9b0f1de.html"];
+  }
+}

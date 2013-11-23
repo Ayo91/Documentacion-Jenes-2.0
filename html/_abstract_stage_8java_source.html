@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Jenes 2.0: Fichero Fuente C:/Users/Ayo/Desktop/jenes 2.0/src/jenes/stage/AbstractStage.java</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Jenes 2.0
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="namespaces.html"><span>Paquetes</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_12f2200cf1e99b3d3381c7cc6a32cc41.html">jenes</a></li><li class="navelem"><a class="el" href="dir_f97a2bf6fe05c495e341fd5fd7b88cb5.html">stage</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">AbstractStage.java</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_abstract_stage_8java.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * JENES</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * A time and memory efficient Java library for genetic algorithms and more </span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Copyright (C) 2011 Intelligentia srl</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * This program is free software: you can redistribute it and/or modify</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * the Free Software Foundation, either version 3 of the License, or</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * (at your option) any later version.</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> *  This program is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> *  but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> *  GNU General Public License for more details.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> *  You should have received a copy of the GNU General Public License</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> *  along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;. </span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="namespacejenes_1_1stage.html">   19</a></span>&#160;<span class="keyword">package </span>jenes.stage;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">import</span> jenes.population.Fitness;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">import</span> jenes.GeneticAlgorithm;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">import</span> jenes.chromosome.Chromosome;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">import</span> jenes.population.Population;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4.html">   48</a></span>&#160;<span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class </span>AbstractStage&lt;T <span class="keyword">extends</span> Chromosome&gt; {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4.html#a751aba4f46b29d22592d48422ffa75f9">   51</a></span>&#160;    <span class="keyword">protected</span> GeneticAlgorithm&lt;T&gt; <a class="code" href="classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4.html#a751aba4f46b29d22592d48422ffa75f9">ga</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4.html#a11da35af3fe950eef9882b03e13690d4">   53</a></span>&#160;    <span class="keyword">protected</span> <span class="keywordtype">boolean</span> biggerIsBetter = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4.html#a697ab8239c1ae2a99445cd7f5fbca45d">   55</a></span>&#160;    <span class="keyword">protected</span> Fitness&lt;T&gt; fitness = null;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">boolean</span> fitnessChanged = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keywordtype">void</span> process(Population&lt;T&gt; in, Population&lt;T&gt; out) <span class="keywordflow">throws</span> <a class="code" href="classjenes_1_1stage_1_1_stage_exception.html">StageException</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4.html#af16b278b3f7a6d9fd78e742621b956e5">   81</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4.html#af16b278b3f7a6d9fd78e742621b956e5">init</a>(GeneticAlgorithm&lt;T&gt; ga) <span class="keywordflow">throws</span> <a class="code" href="classjenes_1_1stage_1_1_stage_exception.html">StageException</a> {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        this.ga = ga;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4.html#a68d4104c004b50abf7b12ffc94122ddc">   90</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4.html#a68d4104c004b50abf7b12ffc94122ddc">dispose</a>() throws <a class="code" href="classjenes_1_1stage_1_1_stage_exception.html">StageException</a> {</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="comment">//do nothing</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4.html#ac20363682ebc9214d9253ff157a06a2d">  100</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">boolean</span> <a class="code" href="classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4.html#ac20363682ebc9214d9253ff157a06a2d">isBiggerBetter</a>() {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keywordflow">return</span> this.biggerIsBetter;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4.html#adfddd6664c7f9f2eeba94d59de6fcebf">  113</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4.html#adfddd6664c7f9f2eeba94d59de6fcebf">setBiggerIsBetter</a>(<span class="keywordtype">boolean</span> flags) {</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        this.setBiggerIsBetter(flags, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    }</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4.html#a003250025de6f005e247a05b107e5e8f">  125</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4.html#a003250025de6f005e247a05b107e5e8f">setBiggerIsBetter</a>(<span class="keywordtype">boolean</span> flag, <span class="keywordtype">boolean</span> recursively) {</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        this.biggerIsBetter = flag;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        this.setFitness(null, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    }</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4.html#a9de5f0a09b7791fe1e93123ada1c434a">  134</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> Fitness&lt;T&gt; <a class="code" href="classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4.html#a9de5f0a09b7791fe1e93123ada1c434a">getFitness</a>() {</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="keywordflow">return</span> this.fitness;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    }</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4.html#ad60267d0a803c2991ac3ef02ababef2b">  142</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4.html#ad60267d0a803c2991ac3ef02ababef2b">setFitness</a>(Fitness&lt;T&gt; fit) {</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        this.setFitness(fit, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    }</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno"><a class="line" href="classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4.html#aff1c8307dc89c4fcf7f253b50a87464d">  152</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4.html#aff1c8307dc89c4fcf7f253b50a87464d">setFitness</a>(Fitness&lt;T&gt; fit, <span class="keywordtype">boolean</span> recursively) {</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        this.fitnessChanged = this.fitness != null &amp;&amp; fit != this.fitness;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        this.fitness = fit;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    }</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
+<div class="line"><a name="l00161"></a><span class="lineno"><a class="line" href="classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4.html#a811a041cd505ad8400b3c8b2aa36f4a9">  161</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">boolean</span> <a class="code" href="classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4.html#a811a041cd505ad8400b3c8b2aa36f4a9">isFitnessChanged</a>() {</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="keywordflow">return</span> this.fitnessChanged;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    }</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;}</div>
+<div class="ttc" id="classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4_html_a003250025de6f005e247a05b107e5e8f"><div class="ttname"><a href="classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4.html#a003250025de6f005e247a05b107e5e8f">jenes.stage.AbstractStage&lt; T extends Chromosome &gt;.setBiggerIsBetter</a></div><div class="ttdeci">void setBiggerIsBetter(boolean flag, boolean recursively)</div><div class="ttdef"><b>Definition:</b> <a href="_abstract_stage_8java_source.html#l00125">AbstractStage.java:125</a></div></div>
+<div class="ttc" id="classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4_html_aff1c8307dc89c4fcf7f253b50a87464d"><div class="ttname"><a href="classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4.html#aff1c8307dc89c4fcf7f253b50a87464d">jenes.stage.AbstractStage&lt; T extends Chromosome &gt;.setFitness</a></div><div class="ttdeci">void setFitness(Fitness&lt; T &gt; fit, boolean recursively)</div><div class="ttdef"><b>Definition:</b> <a href="_abstract_stage_8java_source.html#l00152">AbstractStage.java:152</a></div></div>
+<div class="ttc" id="classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4_html_ac20363682ebc9214d9253ff157a06a2d"><div class="ttname"><a href="classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4.html#ac20363682ebc9214d9253ff157a06a2d">jenes.stage.AbstractStage&lt; T extends Chromosome &gt;.isBiggerBetter</a></div><div class="ttdeci">boolean isBiggerBetter()</div><div class="ttdef"><b>Definition:</b> <a href="_abstract_stage_8java_source.html#l00100">AbstractStage.java:100</a></div></div>
+<div class="ttc" id="classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4_html_a751aba4f46b29d22592d48422ffa75f9"><div class="ttname"><a href="classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4.html#a751aba4f46b29d22592d48422ffa75f9">jenes.stage.AbstractStage&lt; T extends Chromosome &gt;.ga</a></div><div class="ttdeci">GeneticAlgorithm&lt; T &gt; ga</div><div class="ttdef"><b>Definition:</b> <a href="_abstract_stage_8java_source.html#l00051">AbstractStage.java:51</a></div></div>
+<div class="ttc" id="classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4_html_af16b278b3f7a6d9fd78e742621b956e5"><div class="ttname"><a href="classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4.html#af16b278b3f7a6d9fd78e742621b956e5">jenes.stage.AbstractStage&lt; T extends Chromosome &gt;.init</a></div><div class="ttdeci">void init(GeneticAlgorithm&lt; T &gt; ga)</div><div class="ttdef"><b>Definition:</b> <a href="_abstract_stage_8java_source.html#l00081">AbstractStage.java:81</a></div></div>
+<div class="ttc" id="classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4_html_ad60267d0a803c2991ac3ef02ababef2b"><div class="ttname"><a href="classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4.html#ad60267d0a803c2991ac3ef02ababef2b">jenes.stage.AbstractStage&lt; T extends Chromosome &gt;.setFitness</a></div><div class="ttdeci">void setFitness(Fitness&lt; T &gt; fit)</div><div class="ttdef"><b>Definition:</b> <a href="_abstract_stage_8java_source.html#l00142">AbstractStage.java:142</a></div></div>
+<div class="ttc" id="classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4_html_a68d4104c004b50abf7b12ffc94122ddc"><div class="ttname"><a href="classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4.html#a68d4104c004b50abf7b12ffc94122ddc">jenes.stage.AbstractStage&lt; T extends Chromosome &gt;.dispose</a></div><div class="ttdeci">void dispose()</div><div class="ttdef"><b>Definition:</b> <a href="_abstract_stage_8java_source.html#l00090">AbstractStage.java:90</a></div></div>
+<div class="ttc" id="classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4_html_a9de5f0a09b7791fe1e93123ada1c434a"><div class="ttname"><a href="classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4.html#a9de5f0a09b7791fe1e93123ada1c434a">jenes.stage.AbstractStage&lt; T extends Chromosome &gt;.getFitness</a></div><div class="ttdeci">final Fitness&lt; T &gt; getFitness()</div><div class="ttdef"><b>Definition:</b> <a href="_abstract_stage_8java_source.html#l00134">AbstractStage.java:134</a></div></div>
+<div class="ttc" id="classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4_html_a811a041cd505ad8400b3c8b2aa36f4a9"><div class="ttname"><a href="classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4.html#a811a041cd505ad8400b3c8b2aa36f4a9">jenes.stage.AbstractStage&lt; T extends Chromosome &gt;.isFitnessChanged</a></div><div class="ttdeci">boolean isFitnessChanged()</div><div class="ttdef"><b>Definition:</b> <a href="_abstract_stage_8java_source.html#l00161">AbstractStage.java:161</a></div></div>
+<div class="ttc" id="classjenes_1_1stage_1_1_stage_exception_html"><div class="ttname"><a href="classjenes_1_1stage_1_1_stage_exception.html">jenes.stage.StageException</a></div><div class="ttdef"><b>Definition:</b> <a href="_stage_exception_8java_source.html#l00030">StageException.java:30</a></div></div>
+<div class="ttc" id="classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4_html_adfddd6664c7f9f2eeba94d59de6fcebf"><div class="ttname"><a href="classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4.html#adfddd6664c7f9f2eeba94d59de6fcebf">jenes.stage.AbstractStage&lt; T extends Chromosome &gt;.setBiggerIsBetter</a></div><div class="ttdeci">void setBiggerIsBetter(boolean flags)</div><div class="ttdef"><b>Definition:</b> <a href="_abstract_stage_8java_source.html#l00113">AbstractStage.java:113</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Sábado, 23 de Noviembre de 2013 21:00:50 para Jenes 2.0 por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

@@ -1,0 +1,848 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Jenes 2.0: Fichero Fuente C:/Users/Ayo/Desktop/jenes 2.0/src/jenes/GeneticAlgorithm.java</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Jenes 2.0
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="namespaces.html"><span>Paquetes</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_12f2200cf1e99b3d3381c7cc6a32cc41.html">jenes</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">GeneticAlgorithm.java</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_genetic_algorithm_8java.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * JENES</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * A time and memory efficient Java library for genetic algorithms and more </span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Copyright (C) 2011 Intelligentia srl</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * This program is free software: you can redistribute it and/or modify</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * the Free Software Foundation, either version 3 of the License, or</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * (at your option) any later version.</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> *  This program is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> *  but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> *  GNU General Public License for more details.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> *  You should have received a copy of the GNU General Public License</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> *  along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;. </span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">package </span>jenes;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">import</span> jenes.population.Fitness;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">import</span> <a class="code" href="classjenes_1_1utils_1_1_random.html">jenes.utils.Random</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">import</span> java.util.ArrayList;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">import</span> java.util.List;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">import</span> jenes.chromosome.Chromosome;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">import</span> jenes.population.Individual;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">import</span> jenes.population.Pool;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">import</span> jenes.population.Population;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">import</span> jenes.stage.AbstractStage;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">import</span> jenes.stage.Sequence;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">import</span> <a class="code" href="classjenes_1_1stage_1_1_stage_exception.html">jenes.stage.StageException</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">import</span> jenes.statistics.StatisticsLogger.LoggableStatistics;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">import</span> <a class="code" href="classjenes_1_1utils_1_1multitasking_1_1_runner.html">jenes.utils.multitasking.Runner</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00184"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html">  184</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span>GeneticAlgorithm&lt;T <span class="keyword">extends</span> Chromosome&gt; {</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
+<div class="line"><a name="l00187"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a2492ee1b00f5631a1c1b1c6f15ea3421">  187</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keywordtype">int</span> DEFAULT_GENERATION_LIMIT = 100;</div>
+<div class="line"><a name="l00189"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a23df2e338c3439d7457ff6a150c573e1">  189</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keywordtype">int</span> DEFAULT_HISTORY_SIZE = 2;</div>
+<div class="line"><a name="l00191"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#aa64b297086826bfbda1fbaccebe4cb24">  191</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keywordtype">int</span> MIN_HISTORY_SIZE = 2;</div>
+<div class="line"><a name="l00193"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#acd26085cf69c68d607ef08d0bf829224">  193</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keywordtype">int</span> MAX_HISTORY_SIZE = 100;</div>
+<div class="line"><a name="l00195"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a0040f9dbb0018e8bb28dde97dacac7d8">  195</a></span>&#160;    <span class="keyword">protected</span> Sequence&lt;T&gt; <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a0040f9dbb0018e8bb28dde97dacac7d8">body</a>;</div>
+<div class="line"><a name="l00200"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#afc23d5cbab5434f5ec5684cda9434b93">  200</a></span>&#160;    <span class="keyword">protected</span> Statistics statistics = null;</div>
+<div class="line"><a name="l00202"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#ac5a1ddc5e78e2b81c754eb990a91f17b">  202</a></span>&#160;    <span class="keyword">protected</span> <span class="keywordtype">int</span> generation = 0;</div>
+<div class="line"><a name="l00204"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#adcb3e16398451c2e318de21d77b51d35">  204</a></span>&#160;    <span class="keyword">protected</span> <span class="keywordtype">double</span> randomization = 1.0;</div>
+<div class="line"><a name="l00206"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a6677c80cf6ad470a0124fc2fa3051310">  206</a></span>&#160;    <span class="keyword">protected</span> <span class="keywordtype">int</span> <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a6677c80cf6ad470a0124fc2fa3051310">generationLimit</a>;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="keyword">private</span> <a class="code" href="classjenes_1_1utils_1_1multitasking_1_1_runner.html">Runner</a> runner;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">enum</span> ElitismStrategy {</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        RANDOM,</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        WORST</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    };</div>
+<div class="line"><a name="l00223"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#ac4280b01e7da0ddc049050b19e28b8b9">  223</a></span>&#160;    <span class="keyword">protected</span> <span class="keywordtype">int</span> elitism = 0;</div>
+<div class="line"><a name="l00225"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#aacba3e1823ba66a2dd6d3c902f8ff719">  225</a></span>&#160;    <span class="keyword">protected</span> ElitismStrategy elitismStrategy = ElitismStrategy.WORST;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="comment">     * These fields are kept private as they are critical for the algorithm</span></div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="comment">     * evolution</span></div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">int</span> historySize;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <span class="keyword">private</span> Population&lt;T&gt; history[];</div>
+<div class="line"><a name="l00234"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#ab6535da7a5097e18e6305d0f26f7cf5f">  234</a></span>&#160;    <span class="keyword">protected</span> Population&lt;T&gt; initialPopulation = null;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="comment">     * These fields are kept private as they are critical for the algorithm</span></div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="comment">     * evolution</span></div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <span class="keyword">private</span> Population&lt;T&gt; currentPopulation = null;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <span class="keyword">private</span> Population&lt;T&gt; nextPopulation = null;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <span class="keyword">private</span> Pool&lt;T&gt; pool = null;</div>
+<div class="line"><a name="l00245"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a53540867ddd13889614232b3cbea6d6f">  245</a></span>&#160;    <span class="keyword">protected</span> List&lt;AlgorithmEventListener&lt;T&gt;&gt; <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a53540867ddd13889614232b3cbea6d6f">algorithmListeners</a>;</div>
+<div class="line"><a name="l00247"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a265c4e10d321e68ae5757abf68d88739">  247</a></span>&#160;    <span class="keyword">protected</span> List&lt;GenerationEventListener&lt;T&gt;&gt; <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a265c4e10d321e68ae5757abf68d88739">generationListeners</a>;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">enum</span> ResizeStrategy {</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        NONE,</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        AUTO,</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        EMPTY</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    };</div>
+<div class="line"><a name="l00260"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a56f08a1d1f3355921b83f08745dbb3b3">  260</a></span>&#160;    <span class="keyword">protected</span> ResizeStrategy resizeStrategy = ResizeStrategy.AUTO;</div>
+<div class="line"><a name="l00262"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#adb627d0c6d6744f53ef5c3b7506913e9">  262</a></span>&#160;    <span class="keyword">protected</span> <span class="keywordtype">boolean</span> fullEvaluationForced = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00264"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a1579283e210144ba90b937be0911a028">  264</a></span>&#160;    <span class="keyword">protected</span> <a class="code" href="classjenes_1_1utils_1_1_random.html">Random</a> random = Random.getInstance();</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
+<div class="line"><a name="l00271"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#acfda239e0d2154eb26a7be4f6aa1315d">  271</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#acfda239e0d2154eb26a7be4f6aa1315d">GeneticAlgorithm</a>() {</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        <span class="keyword">this</span>(null, null, DEFAULT_GENERATION_LIMIT);</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    }</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;</div>
+<div class="line"><a name="l00283"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#aede3d2fbd3c3d1cf04a4e419649cae93">  283</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#aede3d2fbd3c3d1cf04a4e419649cae93">GeneticAlgorithm</a>(<span class="keyword">final</span> Population&lt;T&gt; pop) {</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        <span class="keyword">this</span>(null, pop, DEFAULT_GENERATION_LIMIT);</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    }</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;</div>
+<div class="line"><a name="l00297"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#afe0501230c1645d2a6cdf54af2672639">  297</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#afe0501230c1645d2a6cdf54af2672639">GeneticAlgorithm</a>(<span class="keyword">final</span> Population&lt;T&gt; pop, <span class="keyword">final</span> <span class="keywordtype">int</span> genlimit) {</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        <span class="keyword">this</span>(null, pop, genlimit);</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    }</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;</div>
+<div class="line"><a name="l00306"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#aefcf45276a730906c98ff8de90b6c48e">  306</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#aefcf45276a730906c98ff8de90b6c48e">GeneticAlgorithm</a>(<span class="keyword">final</span> Fitness fitness) {</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        <span class="keyword">this</span>(fitness, null, DEFAULT_GENERATION_LIMIT);</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    }</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;</div>
+<div class="line"><a name="l00318"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a08a57814b09412baed3146d2cc6e2174">  318</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a08a57814b09412baed3146d2cc6e2174">GeneticAlgorithm</a>(<span class="keyword">final</span> Fitness fitness, <span class="keyword">final</span> Population&lt;T&gt; pop) {</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        <span class="keyword">this</span>(fitness, pop, DEFAULT_GENERATION_LIMIT);</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    }</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;</div>
+<div class="line"><a name="l00332"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#af3997e737162629c161c04a65dd830a0">  332</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#af3997e737162629c161c04a65dd830a0">GeneticAlgorithm</a>(<span class="keyword">final</span> Fitness fitness, <span class="keyword">final</span> Population&lt;T&gt; pop, <span class="keyword">final</span> <span class="keywordtype">int</span> genlimit) {</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        this.initialPopulation = pop;</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        <span class="keywordflow">if</span> (pop != null) {</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;            pool = pop.getPool();</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        }</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        this.generationLimit = genlimit;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        this.body = <span class="keyword">new</span> Sequence&lt;T&gt;();</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        this.setFitness(fitness);</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        <span class="comment">// historySize provides the number of elements used by history</span></div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;        <span class="comment">// history size is set to maximum in order to avoid the array</span></div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        <span class="comment">// re-allocation in memory</span></div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;        this.historySize = DEFAULT_HISTORY_SIZE;</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        this.history = <span class="keyword">new</span> Population[MAX_HISTORY_SIZE];</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; this.historySize; ++i) {</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;            this.history[i] = <span class="keyword">new</span> Population&lt;T&gt;();</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;            this.history[i].setPool(pool);</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;        }</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;        this.algorithmListeners = <span class="keyword">new</span> ArrayList&lt;AlgorithmEventListener&lt;T&gt;&gt;();</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        this.generationListeners = <span class="keyword">new</span> ArrayList&lt;GenerationEventListener&lt;T&gt;&gt;();</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        <span class="comment">//XXX fixes some issue in TimSorter for ArrayList in jdk 7.0</span></div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        System.setProperty(<span class="stringliteral">&quot;java.util.Arrays.useLegacyMergeSort&quot;</span>, <span class="stringliteral">&quot;true&quot;</span>);</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    }</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;</div>
+<div class="line"><a name="l00368"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a687996ee45582145be24e2086fc8c210">  368</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> Fitness <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a687996ee45582145be24e2086fc8c210">getFitness</a>() {</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;        <span class="keywordflow">return</span> this.body.getFitness();</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    }</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;</div>
+<div class="line"><a name="l00377"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#aff762153c3f11a2ad83936867ca31617">  377</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#aff762153c3f11a2ad83936867ca31617">setFitness</a>(Fitness fitness) {</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        this.body.setFitness(fitness);</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    }</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;</div>
+<div class="line"><a name="l00385"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a7d5cb4716cbc586aa85774c5dc934d15">  385</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">boolean</span> <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a7d5cb4716cbc586aa85774c5dc934d15">isFitnessChanged</a>() {</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;        <span class="keywordflow">return</span> this.body.isFitnessChanged();</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    }</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;</div>
+<div class="line"><a name="l00393"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a63ea13380fe4a30d1eabd394e44d6e96">  393</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classjenes_1_1utils_1_1multitasking_1_1_runner.html">Runner</a> <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a63ea13380fe4a30d1eabd394e44d6e96">getRunner</a>() {</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;        <span class="keywordflow">return</span> runner;</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    }</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;</div>
+<div class="line"><a name="l00402"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a6ff8bcd8e9049106c7959637e4e10e70">  402</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a6ff8bcd8e9049106c7959637e4e10e70">setRunner</a>(<a class="code" href="classjenes_1_1utils_1_1multitasking_1_1_runner.html">Runner</a> runner) {</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;        this.runner = runner;</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;        this.runner.setAlgorithm(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    }</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;</div>
+<div class="line"><a name="l00413"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a7e5f06abe9e8661cdb38bd0fa663da6c">  413</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a7e5f06abe9e8661cdb38bd0fa663da6c">setRandomSeed</a>(<span class="keywordtype">long</span> seed) {</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;        this.random.setSeed(seed); <span class="comment">// XXX check for production mode: in a same JDK env. different parallels execution may be affected by this requirement</span></div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    }</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;</div>
+<div class="line"><a name="l00424"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#ab52be3b0fcd2f424ae191ff4e642edf3">  424</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">int</span> <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#ab52be3b0fcd2f424ae191ff4e642edf3">getHistorySize</a>() {</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;        <span class="keywordflow">return</span> this.historySize;</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;    }</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;</div>
+<div class="line"><a name="l00433"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#ad254fc6b2ff476bc7f7837d03e677786">  433</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> Pool&lt;T&gt; <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#ad254fc6b2ff476bc7f7837d03e677786">getPool</a>() {</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;        <span class="keywordflow">return</span> this.pool;</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;    }</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;</div>
+<div class="line"><a name="l00442"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a71407144e93e7522d2d474c25781d65c">  442</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a71407144e93e7522d2d474c25781d65c">setHistorySize</a>(<span class="keywordtype">int</span> hs) {</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;        <span class="keywordflow">if</span> (hs &lt; MIN_HISTORY_SIZE) {</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;            hs = MIN_HISTORY_SIZE;</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (hs &gt; MAX_HISTORY_SIZE) {</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;            hs = MAX_HISTORY_SIZE;</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;        }</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;        <span class="comment">// If there is a need, new populations are created</span></div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = historySize; i &lt; hs; ++i) {</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;            history[i] = <span class="keyword">new</span> Population&lt;T&gt;();</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;        }</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;        <span class="comment">// Exceeding populations are discarded</span></div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = hs; i &lt; historySize; ++i) {</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;            history[i] = null;</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;        }</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;        this.historySize = hs;</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;    }</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;</div>
+<div class="line"><a name="l00475"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a99718490498059da48833dfbdfc8076e">  475</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> Population&lt;T&gt; <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a99718490498059da48833dfbdfc8076e">getHistoryAt</a>(<span class="keywordtype">int</span> pos) {</div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;        pos = pos &lt; 0 ? -pos : this.generation - pos;</div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;        <span class="keywordflow">return</span> pos &gt;= 0 &amp;&amp; pos &lt; this.historySize ? history[pos] : null;</div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;    }</div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;</div>
+<div class="line"><a name="l00488"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#ab5ff704fa1d7b01bcfc5f0ca36b20e34">  488</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> Population&lt;T&gt; <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#ab5ff704fa1d7b01bcfc5f0ca36b20e34">getInitialPopulation</a>() {</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;        <span class="keywordflow">return</span> this.initialPopulation;</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;    }</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;</div>
+<div class="line"><a name="l00501"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a855bc56ffb3e1704ced2fdf68cc96d8f">  501</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> Population&lt;T&gt; <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a855bc56ffb3e1704ced2fdf68cc96d8f">getCurrentPopulation</a>() {</div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;        <span class="keywordflow">return</span> this.currentPopulation;</div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;    }</div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;</div>
+<div class="line"><a name="l00514"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a5d22b21350638a64a66d3599b2777982">  514</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> Population&lt;T&gt; <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a5d22b21350638a64a66d3599b2777982">getNextPopulation</a>() {</div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;        <span class="keywordflow">return</span> this.nextPopulation;</div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;    }</div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;</div>
+<div class="line"><a name="l00523"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a8afdd855dc891b981cbf675c63db72c3">  523</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a8afdd855dc891b981cbf675c63db72c3">evolve</a>() throws <a class="code" href="classjenes_1_1_algorithm_exception.html">AlgorithmException</a> {</div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;        evolve(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;    }</div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;</div>
+<div class="line"><a name="l00532"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#afea32755ac446883e283d2eec6bc69fa">  532</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#afea32755ac446883e283d2eec6bc69fa">evolve</a>(<span class="keyword">final</span> Population&lt;T&gt; pop) {</div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;        this.initialPopulation = pop;</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;        evolve(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;    }</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;</div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;    @SuppressWarnings(<span class="stringliteral">&quot;unchecked&quot;</span>)</div>
+<div class="line"><a name="l00548"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#af8bb6842d525c274bfb8a3efc9ca5b23">  548</a></span>&#160;    public final <span class="keywordtype">void</span> evolve(<span class="keywordtype">boolean</span> restart) throws <a class="code" href="classjenes_1_1_algorithm_exception.html">AlgorithmException</a> {</div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;</div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;        this.body.init(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;</div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;        this.start(restart);</div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;</div>
+<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> limit = this.generationLimit;</div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;        <span class="keywordflow">for</span> (generation = 0; generation &lt; limit &amp;&amp; !end(); generation++) {</div>
+<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;</div>
+<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;            this.statistics.generations = generation + 1;</div>
+<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;            <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;                currentPopulation = history[0];</div>
+<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;                nextPopulation = history[this.historySize - 1];</div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;                nextPopulation.setAs(currentPopulation);</div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;</div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;                <span class="comment">// Because Sequence uses a temporary population, it can be used</span></div>
+<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;                <span class="comment">// nextPopulation</span></div>
+<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;                <span class="comment">// for both input and output parameters, in this way</span></div>
+<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;                <span class="comment">// memory is saved by avoiding the allocation of an additional</span></div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;                <span class="comment">// population.</span></div>
+<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;                <span class="comment">// (see Sequence.process)</span></div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;                this.body.process(nextPopulation, nextPopulation);</div>
+<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;</div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;                this.evaluatePopulation(nextPopulation, fullEvaluationForced);</div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;</div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = this.historySize - 1; i &gt; 0; i--) {</div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;                    history[i] = history[i - 1];</div>
+<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;                }</div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;                history[0] = nextPopulation;</div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;            } <span class="keywordflow">catch</span> (<a class="code" href="classjenes_1_1stage_1_1_stage_exception.html">StageException</a> e) {</div>
+<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;                this.statistics.exceptionTerminated = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> AlgorithmException(</div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;                        <span class="stringliteral">&quot;An error occured during the ga evolution&quot;</span>, e);</div>
+<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;            }</div>
+<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;            <span class="keywordflow">if</span> (elitism &gt; 0) {</div>
+<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;                this.applyElitism();</div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;            }</div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">long</span> now = System.currentTimeMillis();</div>
+<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;            this.statistics.generationEndTimes[generation] = now;</div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;            this.onGeneration(now);</div>
+<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;            <span class="keywordflow">for</span> (GenerationEventListener gel : generationListeners) {</div>
+<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;                gel.onGeneration(<span class="keyword">this</span>, now);</div>
+<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;            }</div>
+<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;</div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;            Pool&lt;T&gt; p = history[0].getPool();</div>
+<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;            <span class="keywordflow">if</span> (p != null) {</div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;                p.resize();</div>
+<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;            }</div>
+<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;        }</div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;        this.stop();</div>
+<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;    }</div>
+<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;</div>
+<div class="line"><a name="l00610"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a41376d72c82d4503693eebb3832cf772">  610</a></span>&#160;    <span class="keyword">protected</span> <span class="keywordtype">boolean</span> <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a41376d72c82d4503693eebb3832cf772">end</a>() {</div>
+<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;        <span class="comment">// override it for specific termination conditions</span></div>
+<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;    }</div>
+<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;</div>
+<div class="line"><a name="l00623"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a6fd4badfc67b0c2b0d43c6dd4a14875e">  623</a></span>&#160;    <span class="keyword">protected</span> <span class="keyword">final</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a6fd4badfc67b0c2b0d43c6dd4a14875e">start</a>(<span class="keywordtype">boolean</span> reset) {</div>
+<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;</div>
+<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;        <span class="keywordflow">if</span> (this.initialPopulation == null) {</div>
+<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="classjenes_1_1_algorithm_exception.html">AlgorithmException</a>(<span class="stringliteral">&quot;[Jenes]: It is not possible to start an algorithm with no initial population.&quot;</span>);</div>
+<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;        }</div>
+<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;</div>
+<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;        <span class="keywordflow">if</span> (this.runner != null) {</div>
+<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;            this.runner.start(reset);</div>
+<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;        }</div>
+<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;</div>
+<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;        this.statistics = <span class="keyword">new</span> Statistics(this.generationLimit);</div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;</div>
+<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;        this.generation = 0;</div>
+<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;</div>
+<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;        <span class="keywordtype">long</span> now = System.currentTimeMillis();</div>
+<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;        this.statistics.startTime = now;</div>
+<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;</div>
+<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;</div>
+<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;        this.onStart(now);</div>
+<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;        <span class="keywordflow">for</span> (AlgorithmEventListener&lt;T&gt; ael : algorithmListeners) {</div>
+<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;            ael.onAlgorithmStart(<span class="keyword">this</span>, now);</div>
+<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;        }</div>
+<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;</div>
+<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;        <span class="keywordflow">if</span> (reset || this.currentPopulation == null) {</div>
+<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;</div>
+<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; this.historySize; ++i) {</div>
+<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;                this.history[i].setPool(this.initialPopulation.getPool());</div>
+<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;            }</div>
+<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;</div>
+<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;            this.currentPopulation = history[0];</div>
+<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;            this.currentPopulation.setAs(this.initialPopulation);</div>
+<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;            <span class="keywordflow">if</span> (this.randomization &gt; 0) {</div>
+<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;                this.randomizePopulation(this.currentPopulation);</div>
+<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;            }</div>
+<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;        }</div>
+<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;        this.nextPopulation = null;</div>
+<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;</div>
+<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;        this.evaluatePopulation(this.currentPopulation);</div>
+<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;</div>
+<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> body_length = this.body.getSize();</div>
+<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; body_length; ++i) {</div>
+<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;            this.body.getStageAt(i).init(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;        }</div>
+<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;</div>
+<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;        now = System.currentTimeMillis();</div>
+<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;        this.statistics.initTime = now;</div>
+<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;</div>
+<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;        <span class="keywordflow">if</span> (this.runner != null) {</div>
+<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;            this.runner.onInit();</div>
+<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;        }</div>
+<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;</div>
+<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;        this.statistics.randomSeed = this.random.getSeed();</div>
+<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;</div>
+<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;        this.onInit(now);</div>
+<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;        <span class="keywordflow">for</span> (AlgorithmEventListener&lt;T&gt; ael : algorithmListeners) {</div>
+<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;            ael.onAlgorithmInit(<span class="keyword">this</span>, now);</div>
+<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;        }</div>
+<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;    }</div>
+<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;</div>
+<div class="line"><a name="l00687"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a6d0de9962bff7d63a4c197eeef6da7d0">  687</a></span>&#160;    <span class="keyword">protected</span> <span class="keyword">final</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a6d0de9962bff7d63a4c197eeef6da7d0">stop</a>() {</div>
+<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;</div>
+<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;        this.body.dispose();</div>
+<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;</div>
+<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;        <span class="keywordtype">long</span> now = System.currentTimeMillis();</div>
+<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;        this.statistics.stopTime = now;</div>
+<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;        this.statistics.executionTime = now - this.statistics.startTime;</div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;</div>
+<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;        this.onStop(now);</div>
+<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;        <span class="keywordflow">for</span> (AlgorithmEventListener&lt;T&gt; ael : algorithmListeners) {</div>
+<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;            ael.onAlgorithmStop(<span class="keyword">this</span>, now);</div>
+<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;        }</div>
+<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;</div>
+<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;        <span class="keywordflow">if</span> (this.runner != null) {</div>
+<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;            this.runner.stop();</div>
+<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;        }</div>
+<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;    }</div>
+<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;</div>
+<div class="line"><a name="l00713"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a0ed4a97cf7e3266913eaad8092913de3">  713</a></span>&#160;    <span class="keyword">protected</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a0ed4a97cf7e3266913eaad8092913de3">onStart</a>(<span class="keywordtype">long</span> time) {</div>
+<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;        <span class="comment">// do nothing; override it for a specific behavior</span></div>
+<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;    }</div>
+<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;</div>
+<div class="line"><a name="l00725"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a85479397ce0f8bd995b97fa91f4d6690">  725</a></span>&#160;    <span class="keyword">protected</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a85479397ce0f8bd995b97fa91f4d6690">onInit</a>(<span class="keywordtype">long</span> time) {</div>
+<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;        <span class="comment">// do nothing; override it for a specific behavior</span></div>
+<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;    }</div>
+<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;</div>
+<div class="line"><a name="l00737"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a04258af6f64ec98561b015651d20f9ea">  737</a></span>&#160;    <span class="keyword">protected</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a04258af6f64ec98561b015651d20f9ea">onStop</a>(<span class="keywordtype">long</span> time) {</div>
+<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;        <span class="comment">// do nothing; override it for a specific behavior</span></div>
+<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;    }</div>
+<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;</div>
+<div class="line"><a name="l00749"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#aed0d630f1e0b290bb87ba9ab8b164b89">  749</a></span>&#160;    <span class="keyword">protected</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#aed0d630f1e0b290bb87ba9ab8b164b89">onGeneration</a>(<span class="keywordtype">long</span> time) {</div>
+<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;        <span class="comment">// do nothing; override it for a specific behavior</span></div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;    }</div>
+<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;</div>
+<div class="line"><a name="l00761"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#ab90dc099bae1616275779f59f400a59b">  761</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#ab90dc099bae1616275779f59f400a59b">evaluatePopulation</a>(<span class="keyword">final</span> Population&lt;T&gt; population) {</div>
+<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;        this.evaluatePopulation(population, fullEvaluationForced);</div>
+<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;    }</div>
+<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;</div>
+<div class="line"><a name="l00775"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a4a04df077e2b7752248689668889a5a5">  775</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a4a04df077e2b7752248689668889a5a5">evaluatePopulation</a>(<span class="keyword">final</span> Population&lt;T&gt; population, <span class="keyword">final</span> <span class="keywordtype">boolean</span> forced) {</div>
+<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;</div>
+<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;        <span class="keywordflow">if</span> (this.runner != null) {</div>
+<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;            this.runner.onEvaluationBegin(population, forced);</div>
+<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;        }</div>
+<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;</div>
+<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;        <span class="comment">// notify to the population that</span></div>
+<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;        <span class="keywordflow">if</span> (this.getFitness() != null) {</div>
+<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;            population.setEvaluatedBy(this.getFitness());</div>
+<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;            population.setSortingBy(this.getFitness().getBiggerIsBetter());</div>
+<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;            <span class="comment">//this is done for backward compatibility</span></div>
+<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;            population.setEvaluatedBy(null);</div>
+<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;            population.setSortingBy(this.isBiggerBetter());</div>
+<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;        }</div>
+<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;</div>
+<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;        <span class="keywordtype">long</span> now = System.currentTimeMillis();</div>
+<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;        this.statistics.fitnessEvalStageBegin[this.generation] = now;</div>
+<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;</div>
+<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;        <span class="keywordflow">for</span> (Individual individual : population) {</div>
+<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;            <span class="keywordflow">if</span> (!individual.isEvaluated() || forced || this.isFitnessChanged()) {</div>
+<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;                <span class="keywordflow">if</span> (this.runner != null) {</div>
+<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;                    this.runner.evaluateIndividual(individual);</div>
+<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;                } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;                    this.evaluateIndividual(individual);</div>
+<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;                }</div>
+<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;</div>
+<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;                this.statistics.fitnessEvaluationNumbers++;</div>
+<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;            }</div>
+<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;        }</div>
+<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;</div>
+<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;        <span class="keywordflow">if</span> (this.runner != null) {</div>
+<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;            this.runner.onEvaluationEnd();</div>
+<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;        }</div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;</div>
+<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;        now = System.currentTimeMillis();</div>
+<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;        this.statistics.fitnessEvalStageEnd[this.generation] = now;</div>
+<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;        this.statistics.timeSpentInFitnessEval += now - statistics.fitnessEvalStageBegin[this.generation];</div>
+<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;</div>
+<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;    }</div>
+<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;</div>
+<div class="line"><a name="l00826"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a17d1c99e638312a18394c6d76dedb2f3">  826</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a17d1c99e638312a18394c6d76dedb2f3">evaluateIndividual</a>(<span class="keyword">final</span> Individual&lt;T&gt; individual) {</div>
+<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;        <span class="keywordflow">if</span> (this.getFitness() != null) {</div>
+<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;            this.getFitness().evaluate(individual);</div>
+<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;        }</div>
+<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;    }</div>
+<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;</div>
+<div class="line"><a name="l00850"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a7824bcf504331528000af8be62073d53">  850</a></span>&#160;    <span class="keyword">protected</span> <span class="keyword">final</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a7824bcf504331528000af8be62073d53">randomizePopulation</a>(<span class="keyword">final</span> Population&lt;T&gt; pop) {</div>
+<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">long</span> popSize = Math.round(pop.size() * this.randomization);</div>
+<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; popSize; i++) {</div>
+<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;            randomizeIndividual(pop.getIndividual(i));</div>
+<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;        }</div>
+<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;    }</div>
+<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;</div>
+<div class="line"><a name="l00869"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a7cefcc35bf6c98eb9b7c33c074b32d69">  869</a></span>&#160;    <span class="keyword">protected</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a7cefcc35bf6c98eb9b7c33c074b32d69">randomizeIndividual</a>(<span class="keyword">final</span> Individual&lt;T&gt; individual) {</div>
+<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;        individual.randomize();</div>
+<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;    }</div>
+<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;</div>
+<div class="line"><a name="l00882"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#acf14a43bc2c8bed69aa0334b18d58ba7">  882</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#acf14a43bc2c8bed69aa0334b18d58ba7">setRandomization</a>(<span class="keyword">final</span> <span class="keywordtype">boolean</span> value) {</div>
+<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;        this.randomization = value ? 1.0 : 0.0;</div>
+<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;    }</div>
+<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;</div>
+<div class="line"><a name="l00898"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a78cb20ba6256d06e7cd04696e697cc4e">  898</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a78cb20ba6256d06e7cd04696e697cc4e">setRandomization</a>(<span class="keyword">final</span> <span class="keywordtype">double</span> rate) {</div>
+<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;        <span class="keywordflow">if</span> (rate &lt; 0) {</div>
+<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;            this.randomization = 0;</div>
+<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (rate &gt; 1) {</div>
+<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;            this.randomization = 1;</div>
+<div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;            randomization = rate;</div>
+<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;        }</div>
+<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;    }</div>
+<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;</div>
+<div class="line"><a name="l00915"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#add75e6182615af89791921472d2fbc9f">  915</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">double</span> <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#add75e6182615af89791921472d2fbc9f">getRandomization</a>() {</div>
+<div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;        <span class="keywordflow">return</span> this.randomization;</div>
+<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;    }</div>
+<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;</div>
+<div class="line"><a name="l00924"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a25602ec654959a43a64f12e92251cb47">  924</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">int</span> <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a25602ec654959a43a64f12e92251cb47">getGeneration</a>() {</div>
+<div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;        <span class="keywordflow">return</span> this.generation;</div>
+<div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;    }</div>
+<div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;</div>
+<div class="line"><a name="l00934"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#ac6eceff2ad4a055f3c6047fb4c272ef3">  934</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">int</span> <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#ac6eceff2ad4a055f3c6047fb4c272ef3">getGenerationLimit</a>() {</div>
+<div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;        <span class="keywordflow">return</span> this.generationLimit;</div>
+<div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;    }</div>
+<div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;</div>
+<div class="line"><a name="l00945"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a1e4d04de7cf34838296ad6745ac046f5">  945</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a1e4d04de7cf34838296ad6745ac046f5">setGenerationLimit</a>(<span class="keyword">final</span> <span class="keywordtype">int</span> limit) {</div>
+<div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;        this.generationLimit = limit;</div>
+<div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;    }</div>
+<div class="line"><a name="l00948"></a><span class="lineno">  948</span>&#160;</div>
+<div class="line"><a name="l00956"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#aa0ab85fdb0cb1880a469044affbb32e7">  956</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#aa0ab85fdb0cb1880a469044affbb32e7">addStage</a>(<span class="keyword">final</span> AbstractStage&lt;T&gt; stage) {</div>
+<div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;        this.body.appendStage(stage);</div>
+<div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;    }</div>
+<div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;</div>
+<div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;    @Deprecated</div>
+<div class="line"><a name="l00969"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a34e6ea627850ec240d4c0bba39170d4b">  969</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">boolean</span> <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a34e6ea627850ec240d4c0bba39170d4b">isBiggerBetter</a>() {</div>
+<div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;        <span class="keywordflow">return</span> this.body.isBiggerBetter();</div>
+<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;    }</div>
+<div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;</div>
+<div class="line"><a name="l00983"></a><span class="lineno">  983</span>&#160;    @Deprecated</div>
+<div class="line"><a name="l00984"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#afcc4f944d2d47d757e177a22a660bfd3">  984</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#afcc4f944d2d47d757e177a22a660bfd3">setBiggerIsBetter</a>(<span class="keyword">final</span> <span class="keywordtype">boolean</span> flag) {</div>
+<div class="line"><a name="l00985"></a><span class="lineno">  985</span>&#160;        this.body.setBiggerIsBetter(flag);</div>
+<div class="line"><a name="l00986"></a><span class="lineno">  986</span>&#160;    }</div>
+<div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160;</div>
+<div class="line"><a name="l00992"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a7305deb720716287d256832f0bd44785">  992</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">boolean</span> <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a7305deb720716287d256832f0bd44785">isFullEvaluationForced</a>() {</div>
+<div class="line"><a name="l00993"></a><span class="lineno">  993</span>&#160;        <span class="keywordflow">return</span> this.fullEvaluationForced;</div>
+<div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;    }</div>
+<div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;</div>
+<div class="line"><a name="l01001"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a9fe6f2d66ffcbce1233194871cdfc5ae"> 1001</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a9fe6f2d66ffcbce1233194871cdfc5ae">setFullEvaluationForced</a>(<span class="keywordtype">boolean</span> flag) {</div>
+<div class="line"><a name="l01002"></a><span class="lineno"> 1002</span>&#160;        this.fullEvaluationForced = flag;</div>
+<div class="line"><a name="l01003"></a><span class="lineno"> 1003</span>&#160;    }</div>
+<div class="line"><a name="l01004"></a><span class="lineno"> 1004</span>&#160;</div>
+<div class="line"><a name="l01010"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a85647664d61cca550ed40dd70b074365"> 1010</a></span>&#160;    <span class="keyword">protected</span> <span class="keyword">final</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a85647664d61cca550ed40dd70b074365">applyElitism</a>() {</div>
+<div class="line"><a name="l01011"></a><span class="lineno"> 1011</span>&#160;        <span class="keywordtype">int</span> currentSize = currentPopulation.size();</div>
+<div class="line"><a name="l01012"></a><span class="lineno"> 1012</span>&#160;        <span class="keywordtype">int</span> nextSize = nextPopulation.size();</div>
+<div class="line"><a name="l01013"></a><span class="lineno"> 1013</span>&#160;</div>
+<div class="line"><a name="l01014"></a><span class="lineno"> 1014</span>&#160;        <span class="keywordtype">int</span> len = currentSize &lt; nextSize ? currentSize : nextSize;</div>
+<div class="line"><a name="l01015"></a><span class="lineno"> 1015</span>&#160;        <span class="keywordflow">if</span> (elitism &lt; len) {</div>
+<div class="line"><a name="l01016"></a><span class="lineno"> 1016</span>&#160;            len = elitism;</div>
+<div class="line"><a name="l01017"></a><span class="lineno"> 1017</span>&#160;        }</div>
+<div class="line"><a name="l01018"></a><span class="lineno"> 1018</span>&#160;</div>
+<div class="line"><a name="l01019"></a><span class="lineno"> 1019</span>&#160;        Fitness fit = this.getFitness();</div>
+<div class="line"><a name="l01020"></a><span class="lineno"> 1020</span>&#160;</div>
+<div class="line"><a name="l01021"></a><span class="lineno"> 1021</span>&#160;        <span class="keywordflow">if</span> (fit != null) {</div>
+<div class="line"><a name="l01022"></a><span class="lineno"> 1022</span>&#160;            fit.sort(currentPopulation);</div>
+<div class="line"><a name="l01023"></a><span class="lineno"> 1023</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l01024"></a><span class="lineno"> 1024</span>&#160;            Fitness.sort(currentPopulation, this.isBiggerBetter());</div>
+<div class="line"><a name="l01025"></a><span class="lineno"> 1025</span>&#160;        }</div>
+<div class="line"><a name="l01026"></a><span class="lineno"> 1026</span>&#160;</div>
+<div class="line"><a name="l01027"></a><span class="lineno"> 1027</span>&#160;        <span class="keywordflow">if</span> (this.elitismStrategy == ElitismStrategy.WORST) {</div>
+<div class="line"><a name="l01028"></a><span class="lineno"> 1028</span>&#160;            <span class="keywordflow">if</span> (fit != null) {</div>
+<div class="line"><a name="l01029"></a><span class="lineno"> 1029</span>&#160;                fit.sort(nextPopulation);</div>
+<div class="line"><a name="l01030"></a><span class="lineno"> 1030</span>&#160;            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l01031"></a><span class="lineno"> 1031</span>&#160;                Fitness.sort(nextPopulation, this.isBiggerBetter());</div>
+<div class="line"><a name="l01032"></a><span class="lineno"> 1032</span>&#160;            }</div>
+<div class="line"><a name="l01033"></a><span class="lineno"> 1033</span>&#160;</div>
+<div class="line"><a name="l01034"></a><span class="lineno"> 1034</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; len; i++) {</div>
+<div class="line"><a name="l01035"></a><span class="lineno"> 1035</span>&#160;                nextPopulation.getIndividual(nextSize - i - 1).setAs(</div>
+<div class="line"><a name="l01036"></a><span class="lineno"> 1036</span>&#160;                        currentPopulation.getIndividual(i));</div>
+<div class="line"><a name="l01037"></a><span class="lineno"> 1037</span>&#160;            }</div>
+<div class="line"><a name="l01038"></a><span class="lineno"> 1038</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l01039"></a><span class="lineno"> 1039</span>&#160;            <span class="comment">// ElitismStrategy.RANDOM</span></div>
+<div class="line"><a name="l01040"></a><span class="lineno"> 1040</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; len; i++) {</div>
+<div class="line"><a name="l01041"></a><span class="lineno"> 1041</span>&#160;                nextPopulation.getIndividual(random.nextInt(nextSize)).setAs(</div>
+<div class="line"><a name="l01042"></a><span class="lineno"> 1042</span>&#160;                        currentPopulation.getIndividual(i));</div>
+<div class="line"><a name="l01043"></a><span class="lineno"> 1043</span>&#160;            }</div>
+<div class="line"><a name="l01044"></a><span class="lineno"> 1044</span>&#160;        }</div>
+<div class="line"><a name="l01045"></a><span class="lineno"> 1045</span>&#160;    }</div>
+<div class="line"><a name="l01046"></a><span class="lineno"> 1046</span>&#160;</div>
+<div class="line"><a name="l01054"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a8bbf6df4fc231cfc88a7e879d2bbf814"> 1054</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">int</span> <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a8bbf6df4fc231cfc88a7e879d2bbf814">getElitism</a>() {</div>
+<div class="line"><a name="l01055"></a><span class="lineno"> 1055</span>&#160;        <span class="keywordflow">return</span> elitism;</div>
+<div class="line"><a name="l01056"></a><span class="lineno"> 1056</span>&#160;    }</div>
+<div class="line"><a name="l01057"></a><span class="lineno"> 1057</span>&#160;</div>
+<div class="line"><a name="l01066"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a27f67506714b18eb15d890bfa3d5b0ab"> 1066</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a27f67506714b18eb15d890bfa3d5b0ab">setElitism</a>(<span class="keyword">final</span> <span class="keywordtype">int</span> elitism) {</div>
+<div class="line"><a name="l01067"></a><span class="lineno"> 1067</span>&#160;        this.elitism = elitism;</div>
+<div class="line"><a name="l01068"></a><span class="lineno"> 1068</span>&#160;    }</div>
+<div class="line"><a name="l01069"></a><span class="lineno"> 1069</span>&#160;</div>
+<div class="line"><a name="l01076"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#ad227ba9924206ee18f69d24ea4ee4ab0"> 1076</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> ElitismStrategy <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#ad227ba9924206ee18f69d24ea4ee4ab0">getElitismStrategy</a>() {</div>
+<div class="line"><a name="l01077"></a><span class="lineno"> 1077</span>&#160;        <span class="keywordflow">return</span> this.elitismStrategy;</div>
+<div class="line"><a name="l01078"></a><span class="lineno"> 1078</span>&#160;    }</div>
+<div class="line"><a name="l01079"></a><span class="lineno"> 1079</span>&#160;</div>
+<div class="line"><a name="l01090"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#aedc89ba915f6a528ef4052eb31a8c467"> 1090</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#aedc89ba915f6a528ef4052eb31a8c467">setElitismStrategy</a>(<span class="keyword">final</span> ElitismStrategy es) {</div>
+<div class="line"><a name="l01091"></a><span class="lineno"> 1091</span>&#160;        this.elitismStrategy = es;</div>
+<div class="line"><a name="l01092"></a><span class="lineno"> 1092</span>&#160;    }</div>
+<div class="line"><a name="l01093"></a><span class="lineno"> 1093</span>&#160;</div>
+<div class="line"><a name="l01113"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a685af9b6322920d9431977fd25c5cf77"> 1113</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a685af9b6322920d9431977fd25c5cf77">setResizeStrategy</a>(<span class="keyword">final</span> ResizeStrategy rs) {</div>
+<div class="line"><a name="l01114"></a><span class="lineno"> 1114</span>&#160;        this.resizeStrategy = rs;</div>
+<div class="line"><a name="l01115"></a><span class="lineno"> 1115</span>&#160;    }</div>
+<div class="line"><a name="l01116"></a><span class="lineno"> 1116</span>&#160;</div>
+<div class="line"><a name="l01123"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a379c5a3789ba72941a081d32fbcc4474"> 1123</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> ResizeStrategy <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a379c5a3789ba72941a081d32fbcc4474">getResizeStrategy</a>() {</div>
+<div class="line"><a name="l01124"></a><span class="lineno"> 1124</span>&#160;        <span class="keywordflow">return</span> this.resizeStrategy;</div>
+<div class="line"><a name="l01125"></a><span class="lineno"> 1125</span>&#160;    }</div>
+<div class="line"><a name="l01126"></a><span class="lineno"> 1126</span>&#160;</div>
+<div class="line"><a name="l01133"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#aeab54a329fb6df5686a2fce4a8a8727a"> 1133</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> Sequence&lt;T&gt; <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#aeab54a329fb6df5686a2fce4a8a8727a">getBody</a>() {</div>
+<div class="line"><a name="l01134"></a><span class="lineno"> 1134</span>&#160;        <span class="keywordflow">return</span> this.body;</div>
+<div class="line"><a name="l01135"></a><span class="lineno"> 1135</span>&#160;    }</div>
+<div class="line"><a name="l01136"></a><span class="lineno"> 1136</span>&#160;</div>
+<div class="line"><a name="l01144"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a168e2b37b5351108e62d8fb887e1fae4"> 1144</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a168e2b37b5351108e62d8fb887e1fae4">addAlgorithmEventListener</a>(<span class="keyword">final</span> AlgorithmEventListener&lt;T&gt; ael) {</div>
+<div class="line"><a name="l01145"></a><span class="lineno"> 1145</span>&#160;        this.algorithmListeners.add(ael);</div>
+<div class="line"><a name="l01146"></a><span class="lineno"> 1146</span>&#160;    }</div>
+<div class="line"><a name="l01147"></a><span class="lineno"> 1147</span>&#160;</div>
+<div class="line"><a name="l01155"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a8cab61e04f54ed5abbda047815a1683d"> 1155</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a8cab61e04f54ed5abbda047815a1683d">removeAlgorithmEventListener</a>(</div>
+<div class="line"><a name="l01156"></a><span class="lineno"> 1156</span>&#160;            <span class="keyword">final</span> AlgorithmEventListener ael) {</div>
+<div class="line"><a name="l01157"></a><span class="lineno"> 1157</span>&#160;        this.algorithmListeners.remove(ael);</div>
+<div class="line"><a name="l01158"></a><span class="lineno"> 1158</span>&#160;    }</div>
+<div class="line"><a name="l01159"></a><span class="lineno"> 1159</span>&#160;</div>
+<div class="line"><a name="l01167"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#aa39f1ae905e67a5a3f7d7ad5cb25d276"> 1167</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#aa39f1ae905e67a5a3f7d7ad5cb25d276">addGenerationEventListener</a>(</div>
+<div class="line"><a name="l01168"></a><span class="lineno"> 1168</span>&#160;            <span class="keyword">final</span> GenerationEventListener&lt;T&gt; gel) {</div>
+<div class="line"><a name="l01169"></a><span class="lineno"> 1169</span>&#160;        this.generationListeners.add(gel);</div>
+<div class="line"><a name="l01170"></a><span class="lineno"> 1170</span>&#160;    }</div>
+<div class="line"><a name="l01171"></a><span class="lineno"> 1171</span>&#160;</div>
+<div class="line"><a name="l01179"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a33e632148218289d0bc43e202a804bf1"> 1179</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a33e632148218289d0bc43e202a804bf1">removeGenerationEventListener</a>(</div>
+<div class="line"><a name="l01180"></a><span class="lineno"> 1180</span>&#160;            <span class="keyword">final</span> GenerationEventListener gel) {</div>
+<div class="line"><a name="l01181"></a><span class="lineno"> 1181</span>&#160;        this.generationListeners.remove(gel);</div>
+<div class="line"><a name="l01182"></a><span class="lineno"> 1182</span>&#160;    }</div>
+<div class="line"><a name="l01183"></a><span class="lineno"> 1183</span>&#160;</div>
+<div class="line"><a name="l01190"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a484fcdba7cf2e4aa4a6ec1c0006e2193"> 1190</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> Statistics <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a484fcdba7cf2e4aa4a6ec1c0006e2193">getStatistics</a>() {</div>
+<div class="line"><a name="l01191"></a><span class="lineno"> 1191</span>&#160;        Statistics stats = <span class="keyword">new</span> Statistics(statistics.generationLimit);</div>
+<div class="line"><a name="l01192"></a><span class="lineno"> 1192</span>&#160;        this.updateStatistics(stats);</div>
+<div class="line"><a name="l01193"></a><span class="lineno"> 1193</span>&#160;        <span class="keywordflow">return</span> stats;</div>
+<div class="line"><a name="l01194"></a><span class="lineno"> 1194</span>&#160;    }</div>
+<div class="line"><a name="l01195"></a><span class="lineno"> 1195</span>&#160;</div>
+<div class="line"><a name="l01203"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a8a4f4965c968047c55a8b56240267a4f"> 1203</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a8a4f4965c968047c55a8b56240267a4f">updateStatistics</a>(<span class="keyword">final</span> Statistics stats) {</div>
+<div class="line"><a name="l01204"></a><span class="lineno"> 1204</span>&#160;        <span class="keywordflow">if</span> (stats != null) {</div>
+<div class="line"><a name="l01205"></a><span class="lineno"> 1205</span>&#160;            statistics.copyTo(stats);</div>
+<div class="line"><a name="l01206"></a><span class="lineno"> 1206</span>&#160;        }</div>
+<div class="line"><a name="l01207"></a><span class="lineno"> 1207</span>&#160;    }</div>
+<div class="line"><a name="l01208"></a><span class="lineno"> 1208</span>&#160;</div>
+<div class="line"><a name="l01209"></a><span class="lineno"> 1209</span>&#160;    @Override</div>
+<div class="line"><a name="l01210"></a><span class="lineno"><a class="line" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#af847a2a8cba2288fbddf726ec12eaf47"> 1210</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> String <a class="code" href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#af847a2a8cba2288fbddf726ec12eaf47">toString</a>() {</div>
+<div class="line"><a name="l01211"></a><span class="lineno"> 1211</span>&#160;        <span class="keywordflow">return</span> (getClass().getName());</div>
+<div class="line"><a name="l01212"></a><span class="lineno"> 1212</span>&#160;    }</div>
+<div class="line"><a name="l01213"></a><span class="lineno"> 1213</span>&#160;</div>
+<div class="line"><a name="l01218"></a><span class="lineno"> 1218</span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">class </span>Statistics <span class="keyword">extends</span> LoggableStatistics {</div>
+<div class="line"><a name="l01219"></a><span class="lineno"> 1219</span>&#160;</div>
+<div class="line"><a name="l01220"></a><span class="lineno"> 1220</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">long</span> startTime;</div>
+<div class="line"><a name="l01221"></a><span class="lineno"> 1221</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">long</span> stopTime;</div>
+<div class="line"><a name="l01222"></a><span class="lineno"> 1222</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">long</span> initTime;</div>
+<div class="line"><a name="l01223"></a><span class="lineno"> 1223</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">long</span> executionTime;</div>
+<div class="line"><a name="l01224"></a><span class="lineno"> 1224</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">int</span> generations;</div>
+<div class="line"><a name="l01225"></a><span class="lineno"> 1225</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">int</span> generationLimit;</div>
+<div class="line"><a name="l01226"></a><span class="lineno"> 1226</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">long</span>[] generationEndTimes;</div>
+<div class="line"><a name="l01227"></a><span class="lineno"> 1227</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">boolean</span> exceptionTerminated;</div>
+<div class="line"><a name="l01228"></a><span class="lineno"> 1228</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">int</span> fitnessEvaluationNumbers;</div>
+<div class="line"><a name="l01229"></a><span class="lineno"> 1229</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">long</span>[] fitnessEvalStageBegin;</div>
+<div class="line"><a name="l01230"></a><span class="lineno"> 1230</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">long</span>[] fitnessEvalStageEnd;</div>
+<div class="line"><a name="l01231"></a><span class="lineno"> 1231</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">long</span> timeSpentInFitnessEval;</div>
+<div class="line"><a name="l01232"></a><span class="lineno"> 1232</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">long</span> randomSeed;</div>
+<div class="line"><a name="l01233"></a><span class="lineno"> 1233</span>&#160;</div>
+<div class="line"><a name="l01241"></a><span class="lineno"> 1241</span>&#160;        <span class="keyword">private</span> Statistics(<span class="keyword">final</span> <span class="keywordtype">int</span> generationLimit) {</div>
+<div class="line"><a name="l01242"></a><span class="lineno"> 1242</span>&#160;            this.generationLimit = generationLimit;</div>
+<div class="line"><a name="l01243"></a><span class="lineno"> 1243</span>&#160;            this.generationEndTimes = <span class="keyword">new</span> <span class="keywordtype">long</span>[generationLimit];</div>
+<div class="line"><a name="l01244"></a><span class="lineno"> 1244</span>&#160;            this.fitnessEvalStageBegin = <span class="keyword">new</span> <span class="keywordtype">long</span>[generationLimit];</div>
+<div class="line"><a name="l01245"></a><span class="lineno"> 1245</span>&#160;            this.fitnessEvalStageEnd = <span class="keyword">new</span> <span class="keywordtype">long</span>[generationLimit];</div>
+<div class="line"><a name="l01246"></a><span class="lineno"> 1246</span>&#160;            this.exceptionTerminated = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l01247"></a><span class="lineno"> 1247</span>&#160;        }</div>
+<div class="line"><a name="l01248"></a><span class="lineno"> 1248</span>&#160;</div>
+<div class="line"><a name="l01255"></a><span class="lineno"> 1255</span>&#160;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">long</span> getStartTime() {</div>
+<div class="line"><a name="l01256"></a><span class="lineno"> 1256</span>&#160;            <span class="keywordflow">return</span> this.startTime;</div>
+<div class="line"><a name="l01257"></a><span class="lineno"> 1257</span>&#160;        }</div>
+<div class="line"><a name="l01258"></a><span class="lineno"> 1258</span>&#160;</div>
+<div class="line"><a name="l01265"></a><span class="lineno"> 1265</span>&#160;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">long</span> getStopTime() {</div>
+<div class="line"><a name="l01266"></a><span class="lineno"> 1266</span>&#160;            <span class="keywordflow">return</span> this.stopTime;</div>
+<div class="line"><a name="l01267"></a><span class="lineno"> 1267</span>&#160;        }</div>
+<div class="line"><a name="l01268"></a><span class="lineno"> 1268</span>&#160;</div>
+<div class="line"><a name="l01275"></a><span class="lineno"> 1275</span>&#160;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">long</span> getInitTime() {</div>
+<div class="line"><a name="l01276"></a><span class="lineno"> 1276</span>&#160;            <span class="keywordflow">return</span> this.initTime;</div>
+<div class="line"><a name="l01277"></a><span class="lineno"> 1277</span>&#160;        }</div>
+<div class="line"><a name="l01278"></a><span class="lineno"> 1278</span>&#160;</div>
+<div class="line"><a name="l01285"></a><span class="lineno"> 1285</span>&#160;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">long</span> getExecutionTime() {</div>
+<div class="line"><a name="l01286"></a><span class="lineno"> 1286</span>&#160;            <span class="keywordflow">return</span> this.executionTime;</div>
+<div class="line"><a name="l01287"></a><span class="lineno"> 1287</span>&#160;        }</div>
+<div class="line"><a name="l01288"></a><span class="lineno"> 1288</span>&#160;</div>
+<div class="line"><a name="l01295"></a><span class="lineno"> 1295</span>&#160;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">int</span> getGenerations() {</div>
+<div class="line"><a name="l01296"></a><span class="lineno"> 1296</span>&#160;            <span class="keywordflow">return</span> this.generations;</div>
+<div class="line"><a name="l01297"></a><span class="lineno"> 1297</span>&#160;        }</div>
+<div class="line"><a name="l01298"></a><span class="lineno"> 1298</span>&#160;</div>
+<div class="line"><a name="l01305"></a><span class="lineno"> 1305</span>&#160;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">int</span> getGenerationLimit() {</div>
+<div class="line"><a name="l01306"></a><span class="lineno"> 1306</span>&#160;            <span class="keywordflow">return</span> this.generationLimit;</div>
+<div class="line"><a name="l01307"></a><span class="lineno"> 1307</span>&#160;        }</div>
+<div class="line"><a name="l01308"></a><span class="lineno"> 1308</span>&#160;</div>
+<div class="line"><a name="l01317"></a><span class="lineno"> 1317</span>&#160;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">long</span> getGenerationEndTime(<span class="keyword">final</span> <span class="keywordtype">int</span> gen) {</div>
+<div class="line"><a name="l01318"></a><span class="lineno"> 1318</span>&#160;            <span class="keywordflow">return</span> this.generationEndTimes[gen];</div>
+<div class="line"><a name="l01319"></a><span class="lineno"> 1319</span>&#160;        }</div>
+<div class="line"><a name="l01320"></a><span class="lineno"> 1320</span>&#160;</div>
+<div class="line"><a name="l01328"></a><span class="lineno"> 1328</span>&#160;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">boolean</span> isExceptionTerminated() {</div>
+<div class="line"><a name="l01329"></a><span class="lineno"> 1329</span>&#160;            <span class="keywordflow">return</span> this.exceptionTerminated;</div>
+<div class="line"><a name="l01330"></a><span class="lineno"> 1330</span>&#160;        }</div>
+<div class="line"><a name="l01331"></a><span class="lineno"> 1331</span>&#160;</div>
+<div class="line"><a name="l01338"></a><span class="lineno"> 1338</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> getFitnessEvaluationNumbers() {</div>
+<div class="line"><a name="l01339"></a><span class="lineno"> 1339</span>&#160;            <span class="keywordflow">return</span> fitnessEvaluationNumbers;</div>
+<div class="line"><a name="l01340"></a><span class="lineno"> 1340</span>&#160;        }</div>
+<div class="line"><a name="l01341"></a><span class="lineno"> 1341</span>&#160;</div>
+<div class="line"><a name="l01348"></a><span class="lineno"> 1348</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">long</span> getFitnessEvalStageBegin() {</div>
+<div class="line"><a name="l01349"></a><span class="lineno"> 1349</span>&#160;            <span class="keywordtype">int</span> last = this.generations - 1;</div>
+<div class="line"><a name="l01350"></a><span class="lineno"> 1350</span>&#160;            <span class="keywordflow">return</span> last &gt;= 0 ? this.fitnessEvalStageBegin[this.generations - 1] : -1;</div>
+<div class="line"><a name="l01351"></a><span class="lineno"> 1351</span>&#160;        }</div>
+<div class="line"><a name="l01352"></a><span class="lineno"> 1352</span>&#160;</div>
+<div class="line"><a name="l01362"></a><span class="lineno"> 1362</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">long</span> getFitnessEvalStageBegin(<span class="keywordtype">int</span> gen) {</div>
+<div class="line"><a name="l01363"></a><span class="lineno"> 1363</span>&#160;            <span class="keywordflow">return</span> this.fitnessEvalStageBegin[gen - 1];</div>
+<div class="line"><a name="l01364"></a><span class="lineno"> 1364</span>&#160;        }</div>
+<div class="line"><a name="l01365"></a><span class="lineno"> 1365</span>&#160;</div>
+<div class="line"><a name="l01372"></a><span class="lineno"> 1372</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">long</span> getFitnessEvalStageEnd() {</div>
+<div class="line"><a name="l01373"></a><span class="lineno"> 1373</span>&#160;            <span class="keywordtype">int</span> last = this.generations - 1;</div>
+<div class="line"><a name="l01374"></a><span class="lineno"> 1374</span>&#160;            <span class="keywordflow">return</span> last &gt;= 0 ? this.fitnessEvalStageEnd[this.generations - 1] : -1;</div>
+<div class="line"><a name="l01375"></a><span class="lineno"> 1375</span>&#160;        }</div>
+<div class="line"><a name="l01376"></a><span class="lineno"> 1376</span>&#160;</div>
+<div class="line"><a name="l01385"></a><span class="lineno"> 1385</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">long</span> getFitnessEvalStageEnd(<span class="keywordtype">int</span> gen) {</div>
+<div class="line"><a name="l01386"></a><span class="lineno"> 1386</span>&#160;            <span class="keywordflow">return</span> this.fitnessEvalStageEnd[gen - 1];</div>
+<div class="line"><a name="l01387"></a><span class="lineno"> 1387</span>&#160;        }</div>
+<div class="line"><a name="l01388"></a><span class="lineno"> 1388</span>&#160;</div>
+<div class="line"><a name="l01395"></a><span class="lineno"> 1395</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">long</span> getTimeSpentForFitnessEval() {</div>
+<div class="line"><a name="l01396"></a><span class="lineno"> 1396</span>&#160;            <span class="keywordflow">return</span> timeSpentInFitnessEval;</div>
+<div class="line"><a name="l01397"></a><span class="lineno"> 1397</span>&#160;        }</div>
+<div class="line"><a name="l01398"></a><span class="lineno"> 1398</span>&#160;</div>
+<div class="line"><a name="l01405"></a><span class="lineno"> 1405</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">long</span> getRandomSeed() {</div>
+<div class="line"><a name="l01406"></a><span class="lineno"> 1406</span>&#160;            <span class="keywordflow">return</span> randomSeed;</div>
+<div class="line"><a name="l01407"></a><span class="lineno"> 1407</span>&#160;        }</div>
+<div class="line"><a name="l01408"></a><span class="lineno"> 1408</span>&#160;</div>
+<div class="line"><a name="l01416"></a><span class="lineno"> 1416</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> copyTo(<span class="keyword">final</span> Statistics stats) {</div>
+<div class="line"><a name="l01417"></a><span class="lineno"> 1417</span>&#160;            stats.initTime = this.initTime;</div>
+<div class="line"><a name="l01418"></a><span class="lineno"> 1418</span>&#160;            stats.startTime = this.startTime;</div>
+<div class="line"><a name="l01419"></a><span class="lineno"> 1419</span>&#160;            stats.stopTime = this.stopTime;</div>
+<div class="line"><a name="l01420"></a><span class="lineno"> 1420</span>&#160;            stats.executionTime = this.executionTime;</div>
+<div class="line"><a name="l01421"></a><span class="lineno"> 1421</span>&#160;            stats.generationLimit = this.generationLimit;</div>
+<div class="line"><a name="l01422"></a><span class="lineno"> 1422</span>&#160;            stats.generations = this.generations;</div>
+<div class="line"><a name="l01423"></a><span class="lineno"> 1423</span>&#160;            stats.fitnessEvaluationNumbers = this.fitnessEvaluationNumbers;</div>
+<div class="line"><a name="l01424"></a><span class="lineno"> 1424</span>&#160;</div>
+<div class="line"><a name="l01425"></a><span class="lineno"> 1425</span>&#160;            stats.timeSpentInFitnessEval = this.timeSpentInFitnessEval;</div>
+<div class="line"><a name="l01426"></a><span class="lineno"> 1426</span>&#160;            stats.randomSeed = this.randomSeed;</div>
+<div class="line"><a name="l01427"></a><span class="lineno"> 1427</span>&#160;            System.arraycopy(this.fitnessEvalStageBegin, 0, stats.fitnessEvalStageBegin, 0, this.fitnessEvalStageBegin.length);</div>
+<div class="line"><a name="l01428"></a><span class="lineno"> 1428</span>&#160;            System.arraycopy(this.fitnessEvalStageEnd, 0, stats.fitnessEvalStageEnd, 0, this.fitnessEvalStageEnd.length);</div>
+<div class="line"><a name="l01429"></a><span class="lineno"> 1429</span>&#160;            System.arraycopy(this.generationEndTimes, 0, stats.generationEndTimes, 0, this.generationEndTimes.length);</div>
+<div class="line"><a name="l01430"></a><span class="lineno"> 1430</span>&#160;        }</div>
+<div class="line"><a name="l01431"></a><span class="lineno"> 1431</span>&#160;    }</div>
+<div class="line"><a name="l01432"></a><span class="lineno"> 1432</span>&#160;}</div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_a34e6ea627850ec240d4c0bba39170d4b"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a34e6ea627850ec240d4c0bba39170d4b">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.isBiggerBetter</a></div><div class="ttdeci">final boolean isBiggerBetter()</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l00969">GeneticAlgorithm.java:969</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_ab52be3b0fcd2f424ae191ff4e642edf3"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#ab52be3b0fcd2f424ae191ff4e642edf3">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.getHistorySize</a></div><div class="ttdeci">final int getHistorySize()</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l00424">GeneticAlgorithm.java:424</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_a8bbf6df4fc231cfc88a7e879d2bbf814"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a8bbf6df4fc231cfc88a7e879d2bbf814">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.getElitism</a></div><div class="ttdeci">final int getElitism()</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l01054">GeneticAlgorithm.java:1054</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_ab90dc099bae1616275779f59f400a59b"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#ab90dc099bae1616275779f59f400a59b">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.evaluatePopulation</a></div><div class="ttdeci">final void evaluatePopulation(final Population&lt; T &gt; population)</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l00761">GeneticAlgorithm.java:761</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_a33e632148218289d0bc43e202a804bf1"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a33e632148218289d0bc43e202a804bf1">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.removeGenerationEventListener</a></div><div class="ttdeci">final void removeGenerationEventListener(final GenerationEventListener gel)</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l01179">GeneticAlgorithm.java:1179</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_a1e4d04de7cf34838296ad6745ac046f5"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a1e4d04de7cf34838296ad6745ac046f5">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.setGenerationLimit</a></div><div class="ttdeci">void setGenerationLimit(final int limit)</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l00945">GeneticAlgorithm.java:945</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_acf14a43bc2c8bed69aa0334b18d58ba7"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#acf14a43bc2c8bed69aa0334b18d58ba7">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.setRandomization</a></div><div class="ttdeci">final void setRandomization(final boolean value)</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l00882">GeneticAlgorithm.java:882</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_a6ff8bcd8e9049106c7959637e4e10e70"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a6ff8bcd8e9049106c7959637e4e10e70">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.setRunner</a></div><div class="ttdeci">void setRunner(Runner runner)</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l00402">GeneticAlgorithm.java:402</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_afe0501230c1645d2a6cdf54af2672639"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#afe0501230c1645d2a6cdf54af2672639">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.GeneticAlgorithm</a></div><div class="ttdeci">GeneticAlgorithm(final Population&lt; T &gt; pop, final int genlimit)</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l00297">GeneticAlgorithm.java:297</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_afcc4f944d2d47d757e177a22a660bfd3"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#afcc4f944d2d47d757e177a22a660bfd3">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.setBiggerIsBetter</a></div><div class="ttdeci">void setBiggerIsBetter(final boolean flag)</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l00984">GeneticAlgorithm.java:984</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_af847a2a8cba2288fbddf726ec12eaf47"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#af847a2a8cba2288fbddf726ec12eaf47">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.toString</a></div><div class="ttdeci">final String toString()</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l01210">GeneticAlgorithm.java:1210</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_a855bc56ffb3e1704ced2fdf68cc96d8f"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a855bc56ffb3e1704ced2fdf68cc96d8f">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.getCurrentPopulation</a></div><div class="ttdeci">final Population&lt; T &gt; getCurrentPopulation()</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l00501">GeneticAlgorithm.java:501</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_aa0ab85fdb0cb1880a469044affbb32e7"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#aa0ab85fdb0cb1880a469044affbb32e7">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.addStage</a></div><div class="ttdeci">void addStage(final AbstractStage&lt; T &gt; stage)</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l00956">GeneticAlgorithm.java:956</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_aff762153c3f11a2ad83936867ca31617"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#aff762153c3f11a2ad83936867ca31617">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.setFitness</a></div><div class="ttdeci">final void setFitness(Fitness fitness)</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l00377">GeneticAlgorithm.java:377</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_a0040f9dbb0018e8bb28dde97dacac7d8"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a0040f9dbb0018e8bb28dde97dacac7d8">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.body</a></div><div class="ttdeci">Sequence&lt; T &gt; body</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l00195">GeneticAlgorithm.java:195</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_a78cb20ba6256d06e7cd04696e697cc4e"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a78cb20ba6256d06e7cd04696e697cc4e">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.setRandomization</a></div><div class="ttdeci">void setRandomization(final double rate)</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l00898">GeneticAlgorithm.java:898</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_a6677c80cf6ad470a0124fc2fa3051310"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a6677c80cf6ad470a0124fc2fa3051310">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.generationLimit</a></div><div class="ttdeci">int generationLimit</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l00206">GeneticAlgorithm.java:206</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_a71407144e93e7522d2d474c25781d65c"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a71407144e93e7522d2d474c25781d65c">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.setHistorySize</a></div><div class="ttdeci">void setHistorySize(int hs)</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l00442">GeneticAlgorithm.java:442</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_a7cefcc35bf6c98eb9b7c33c074b32d69"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a7cefcc35bf6c98eb9b7c33c074b32d69">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.randomizeIndividual</a></div><div class="ttdeci">void randomizeIndividual(final Individual&lt; T &gt; individual)</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l00869">GeneticAlgorithm.java:869</a></div></div>
+<div class="ttc" id="classjenes_1_1_algorithm_exception_html"><div class="ttname"><a href="classjenes_1_1_algorithm_exception.html">jenes.AlgorithmException</a></div><div class="ttdef"><b>Definition:</b> <a href="_algorithm_exception_8java_source.html#l00028">AlgorithmException.java:28</a></div></div>
+<div class="ttc" id="classjenes_1_1utils_1_1multitasking_1_1_runner_html"><div class="ttname"><a href="classjenes_1_1utils_1_1multitasking_1_1_runner.html">jenes.utils.multitasking.Runner</a></div><div class="ttdef"><b>Definition:</b> <a href="_runner_8java_source.html#l00035">Runner.java:35</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_a9fe6f2d66ffcbce1233194871cdfc5ae"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a9fe6f2d66ffcbce1233194871cdfc5ae">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.setFullEvaluationForced</a></div><div class="ttdeci">void setFullEvaluationForced(boolean flag)</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l01001">GeneticAlgorithm.java:1001</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_a04258af6f64ec98561b015651d20f9ea"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a04258af6f64ec98561b015651d20f9ea">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.onStop</a></div><div class="ttdeci">void onStop(long time)</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l00737">GeneticAlgorithm.java:737</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_a8a4f4965c968047c55a8b56240267a4f"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a8a4f4965c968047c55a8b56240267a4f">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.updateStatistics</a></div><div class="ttdeci">final void updateStatistics(final Statistics stats)</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l01203">GeneticAlgorithm.java:1203</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_aeab54a329fb6df5686a2fce4a8a8727a"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#aeab54a329fb6df5686a2fce4a8a8727a">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.getBody</a></div><div class="ttdeci">final Sequence&lt; T &gt; getBody()</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l01133">GeneticAlgorithm.java:1133</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_a265c4e10d321e68ae5757abf68d88739"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a265c4e10d321e68ae5757abf68d88739">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.generationListeners</a></div><div class="ttdeci">List&lt; GenerationEventListener&lt; T &gt; &gt; generationListeners</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l00247">GeneticAlgorithm.java:247</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_af3997e737162629c161c04a65dd830a0"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#af3997e737162629c161c04a65dd830a0">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.GeneticAlgorithm</a></div><div class="ttdeci">GeneticAlgorithm(final Fitness fitness, final Population&lt; T &gt; pop, final int genlimit)</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l00332">GeneticAlgorithm.java:332</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_ac6eceff2ad4a055f3c6047fb4c272ef3"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#ac6eceff2ad4a055f3c6047fb4c272ef3">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.getGenerationLimit</a></div><div class="ttdeci">final int getGenerationLimit()</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l00934">GeneticAlgorithm.java:934</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_acfda239e0d2154eb26a7be4f6aa1315d"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#acfda239e0d2154eb26a7be4f6aa1315d">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.GeneticAlgorithm</a></div><div class="ttdeci">GeneticAlgorithm()</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l00271">GeneticAlgorithm.java:271</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_aede3d2fbd3c3d1cf04a4e419649cae93"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#aede3d2fbd3c3d1cf04a4e419649cae93">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.GeneticAlgorithm</a></div><div class="ttdeci">GeneticAlgorithm(final Population&lt; T &gt; pop)</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l00283">GeneticAlgorithm.java:283</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_aa39f1ae905e67a5a3f7d7ad5cb25d276"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#aa39f1ae905e67a5a3f7d7ad5cb25d276">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.addGenerationEventListener</a></div><div class="ttdeci">final void addGenerationEventListener(final GenerationEventListener&lt; T &gt; gel)</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l01167">GeneticAlgorithm.java:1167</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_a85479397ce0f8bd995b97fa91f4d6690"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a85479397ce0f8bd995b97fa91f4d6690">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.onInit</a></div><div class="ttdeci">void onInit(long time)</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l00725">GeneticAlgorithm.java:725</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_a8cab61e04f54ed5abbda047815a1683d"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a8cab61e04f54ed5abbda047815a1683d">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.removeAlgorithmEventListener</a></div><div class="ttdeci">final void removeAlgorithmEventListener(final AlgorithmEventListener ael)</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l01155">GeneticAlgorithm.java:1155</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_a379c5a3789ba72941a081d32fbcc4474"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a379c5a3789ba72941a081d32fbcc4474">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.getResizeStrategy</a></div><div class="ttdeci">final ResizeStrategy getResizeStrategy()</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l01123">GeneticAlgorithm.java:1123</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_ab5ff704fa1d7b01bcfc5f0ca36b20e34"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#ab5ff704fa1d7b01bcfc5f0ca36b20e34">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.getInitialPopulation</a></div><div class="ttdeci">final Population&lt; T &gt; getInitialPopulation()</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l00488">GeneticAlgorithm.java:488</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_a17d1c99e638312a18394c6d76dedb2f3"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a17d1c99e638312a18394c6d76dedb2f3">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.evaluateIndividual</a></div><div class="ttdeci">void evaluateIndividual(final Individual&lt; T &gt; individual)</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l00826">GeneticAlgorithm.java:826</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_a27f67506714b18eb15d890bfa3d5b0ab"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a27f67506714b18eb15d890bfa3d5b0ab">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.setElitism</a></div><div class="ttdeci">void setElitism(final int elitism)</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l01066">GeneticAlgorithm.java:1066</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_a99718490498059da48833dfbdfc8076e"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a99718490498059da48833dfbdfc8076e">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.getHistoryAt</a></div><div class="ttdeci">final Population&lt; T &gt; getHistoryAt(int pos)</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l00475">GeneticAlgorithm.java:475</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_a6fd4badfc67b0c2b0d43c6dd4a14875e"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a6fd4badfc67b0c2b0d43c6dd4a14875e">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.start</a></div><div class="ttdeci">final void start(boolean reset)</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l00623">GeneticAlgorithm.java:623</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_a484fcdba7cf2e4aa4a6ec1c0006e2193"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a484fcdba7cf2e4aa4a6ec1c0006e2193">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.getStatistics</a></div><div class="ttdeci">final Statistics getStatistics()</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l01190">GeneticAlgorithm.java:1190</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_a25602ec654959a43a64f12e92251cb47"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a25602ec654959a43a64f12e92251cb47">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.getGeneration</a></div><div class="ttdeci">final int getGeneration()</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l00924">GeneticAlgorithm.java:924</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_a5d22b21350638a64a66d3599b2777982"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a5d22b21350638a64a66d3599b2777982">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.getNextPopulation</a></div><div class="ttdeci">final Population&lt; T &gt; getNextPopulation()</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l00514">GeneticAlgorithm.java:514</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_a85647664d61cca550ed40dd70b074365"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a85647664d61cca550ed40dd70b074365">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.applyElitism</a></div><div class="ttdeci">final void applyElitism()</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l01010">GeneticAlgorithm.java:1010</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_a7e5f06abe9e8661cdb38bd0fa663da6c"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a7e5f06abe9e8661cdb38bd0fa663da6c">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.setRandomSeed</a></div><div class="ttdeci">void setRandomSeed(long seed)</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l00413">GeneticAlgorithm.java:413</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_aedc89ba915f6a528ef4052eb31a8c467"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#aedc89ba915f6a528ef4052eb31a8c467">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.setElitismStrategy</a></div><div class="ttdeci">void setElitismStrategy(final ElitismStrategy es)</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l01090">GeneticAlgorithm.java:1090</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_a6d0de9962bff7d63a4c197eeef6da7d0"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a6d0de9962bff7d63a4c197eeef6da7d0">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.stop</a></div><div class="ttdeci">final void stop()</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l00687">GeneticAlgorithm.java:687</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_a7d5cb4716cbc586aa85774c5dc934d15"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a7d5cb4716cbc586aa85774c5dc934d15">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.isFitnessChanged</a></div><div class="ttdeci">final boolean isFitnessChanged()</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l00385">GeneticAlgorithm.java:385</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_a7824bcf504331528000af8be62073d53"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a7824bcf504331528000af8be62073d53">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.randomizePopulation</a></div><div class="ttdeci">final void randomizePopulation(final Population&lt; T &gt; pop)</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l00850">GeneticAlgorithm.java:850</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_a41376d72c82d4503693eebb3832cf772"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a41376d72c82d4503693eebb3832cf772">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.end</a></div><div class="ttdeci">boolean end()</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l00610">GeneticAlgorithm.java:610</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_a08a57814b09412baed3146d2cc6e2174"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a08a57814b09412baed3146d2cc6e2174">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.GeneticAlgorithm</a></div><div class="ttdeci">GeneticAlgorithm(final Fitness fitness, final Population&lt; T &gt; pop)</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l00318">GeneticAlgorithm.java:318</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_aefcf45276a730906c98ff8de90b6c48e"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#aefcf45276a730906c98ff8de90b6c48e">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.GeneticAlgorithm</a></div><div class="ttdeci">GeneticAlgorithm(final Fitness fitness)</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l00306">GeneticAlgorithm.java:306</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_add75e6182615af89791921472d2fbc9f"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#add75e6182615af89791921472d2fbc9f">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.getRandomization</a></div><div class="ttdeci">final double getRandomization()</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l00915">GeneticAlgorithm.java:915</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_a8afdd855dc891b981cbf675c63db72c3"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a8afdd855dc891b981cbf675c63db72c3">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.evolve</a></div><div class="ttdeci">final void evolve()</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l00523">GeneticAlgorithm.java:523</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_a168e2b37b5351108e62d8fb887e1fae4"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a168e2b37b5351108e62d8fb887e1fae4">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.addAlgorithmEventListener</a></div><div class="ttdeci">final void addAlgorithmEventListener(final AlgorithmEventListener&lt; T &gt; ael)</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l01144">GeneticAlgorithm.java:1144</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_a63ea13380fe4a30d1eabd394e44d6e96"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a63ea13380fe4a30d1eabd394e44d6e96">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.getRunner</a></div><div class="ttdeci">Runner getRunner()</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l00393">GeneticAlgorithm.java:393</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_a0ed4a97cf7e3266913eaad8092913de3"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a0ed4a97cf7e3266913eaad8092913de3">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.onStart</a></div><div class="ttdeci">void onStart(long time)</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l00713">GeneticAlgorithm.java:713</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_a53540867ddd13889614232b3cbea6d6f"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a53540867ddd13889614232b3cbea6d6f">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.algorithmListeners</a></div><div class="ttdeci">List&lt; AlgorithmEventListener&lt; T &gt; &gt; algorithmListeners</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l00245">GeneticAlgorithm.java:245</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_afea32755ac446883e283d2eec6bc69fa"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#afea32755ac446883e283d2eec6bc69fa">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.evolve</a></div><div class="ttdeci">final void evolve(final Population&lt; T &gt; pop)</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l00532">GeneticAlgorithm.java:532</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_a687996ee45582145be24e2086fc8c210"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a687996ee45582145be24e2086fc8c210">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.getFitness</a></div><div class="ttdeci">final Fitness getFitness()</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l00368">GeneticAlgorithm.java:368</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_a7305deb720716287d256832f0bd44785"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a7305deb720716287d256832f0bd44785">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.isFullEvaluationForced</a></div><div class="ttdeci">boolean isFullEvaluationForced()</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l00992">GeneticAlgorithm.java:992</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_ad227ba9924206ee18f69d24ea4ee4ab0"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#ad227ba9924206ee18f69d24ea4ee4ab0">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.getElitismStrategy</a></div><div class="ttdeci">final ElitismStrategy getElitismStrategy()</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l01076">GeneticAlgorithm.java:1076</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_ad254fc6b2ff476bc7f7837d03e677786"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#ad254fc6b2ff476bc7f7837d03e677786">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.getPool</a></div><div class="ttdeci">final Pool&lt; T &gt; getPool()</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l00433">GeneticAlgorithm.java:433</a></div></div>
+<div class="ttc" id="classjenes_1_1stage_1_1_stage_exception_html"><div class="ttname"><a href="classjenes_1_1stage_1_1_stage_exception.html">jenes.stage.StageException</a></div><div class="ttdef"><b>Definition:</b> <a href="_stage_exception_8java_source.html#l00030">StageException.java:30</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_a4a04df077e2b7752248689668889a5a5"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a4a04df077e2b7752248689668889a5a5">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.evaluatePopulation</a></div><div class="ttdeci">final void evaluatePopulation(final Population&lt; T &gt; population, final boolean forced)</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l00775">GeneticAlgorithm.java:775</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_a685af9b6322920d9431977fd25c5cf77"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#a685af9b6322920d9431977fd25c5cf77">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.setResizeStrategy</a></div><div class="ttdeci">void setResizeStrategy(final ResizeStrategy rs)</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l01113">GeneticAlgorithm.java:1113</a></div></div>
+<div class="ttc" id="classjenes_1_1utils_1_1_random_html"><div class="ttname"><a href="classjenes_1_1utils_1_1_random.html">jenes.utils.Random</a></div><div class="ttdef"><b>Definition:</b> <a href="_random_8java_source.html#l00037">Random.java:37</a></div></div>
+<div class="ttc" id="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4_html_aed0d630f1e0b290bb87ba9ab8b164b89"><div class="ttname"><a href="classjenes_1_1_genetic_algorithm_3_01_t_01extends_01_chromosome_01_4.html#aed0d630f1e0b290bb87ba9ab8b164b89">jenes.GeneticAlgorithm&lt; T extends Chromosome &gt;.onGeneration</a></div><div class="ttdeci">void onGeneration(long time)</div><div class="ttdef"><b>Definition:</b> <a href="_genetic_algorithm_8java_source.html#l00749">GeneticAlgorithm.java:749</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Sábado, 23 de Noviembre de 2013 21:00:49 para Jenes 2.0 por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

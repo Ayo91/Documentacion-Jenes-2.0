@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Jenes 2.0: Fichero Fuente C:/Users/Ayo/Desktop/jenes 2.0/src/jenes/algorithms/CrowdingGA.java</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Jenes 2.0
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="namespaces.html"><span>Paquetes</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_12f2200cf1e99b3d3381c7cc6a32cc41.html">jenes</a></li><li class="navelem"><a class="el" href="dir_af246c06069a48e6e764146014b43fc4.html">algorithms</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">CrowdingGA.java</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_crowding_g_a_8java.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * JENES</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * A time and memory efficient Java library for genetic algorithms and more </span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Copyright (C) 2011 Intelligentia srl</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * This program is free software: you can redistribute it and/or modify</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * the Free Software Foundation, either version 3 of the License, or</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * (at your option) any later version.</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> *  This program is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> *  but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> *  GNU General Public License for more details.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> *  You should have received a copy of the GNU General Public License</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> *  along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;. </span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="namespacejenes_1_1algorithms.html">   19</a></span>&#160;<span class="keyword">package </span>jenes.algorithms;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">import</span> jenes.population.Fitness;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">import</span> jenes.GeneticAlgorithm;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">import</span> jenes.chromosome.Chromosome;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">import</span> jenes.population.Population;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">import</span> jenes.stage.AbstractStage;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">import</span> jenes.stage.operator.Crowder;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classjenes_1_1algorithms_1_1_crowding_g_a_3_01_t_01extends_01_chromosome_01_4.html">   36</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span>CrowdingGA&lt;T <span class="keyword">extends</span> Chromosome&gt; extends GeneticAlgorithm&lt;T&gt; {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classjenes_1_1algorithms_1_1_crowding_g_a_3_01_t_01extends_01_chromosome_01_4.html#afb96c2e73129293b45044998e3614c06">   39</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keywordtype">int</span> DEFAULT_GENERATION_LIMIT = 100;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classjenes_1_1algorithms_1_1_crowding_g_a_3_01_t_01extends_01_chromosome_01_4.html#aa747112afbb20cb4faec643ccc73e396">   40</a></span>&#160;    <span class="keyword">protected</span> Crowder <a class="code" href="classjenes_1_1algorithms_1_1_crowding_g_a_3_01_t_01extends_01_chromosome_01_4.html#aa747112afbb20cb4faec643ccc73e396">crowder</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classjenes_1_1algorithms_1_1_crowding_g_a_3_01_t_01extends_01_chromosome_01_4.html#a5f9de70a8e431de7e0f9bbb6bb42ec1e">   47</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classjenes_1_1algorithms_1_1_crowding_g_a_3_01_t_01extends_01_chromosome_01_4.html#a5f9de70a8e431de7e0f9bbb6bb42ec1e">CrowdingGA</a>(<span class="keyword">final</span> Fitness fitness, <span class="keyword">final</span> Crowder crowder) {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keyword">this</span>(fitness, crowder, null, DEFAULT_GENERATION_LIMIT);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classjenes_1_1algorithms_1_1_crowding_g_a_3_01_t_01extends_01_chromosome_01_4.html#ad3e5e26f962e7839e076b61efcd5704f">   58</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classjenes_1_1algorithms_1_1_crowding_g_a_3_01_t_01extends_01_chromosome_01_4.html#ad3e5e26f962e7839e076b61efcd5704f">CrowdingGA</a>(<span class="keyword">final</span> Fitness fitness, <span class="keyword">final</span> Crowder crowder, <span class="keyword">final</span> Population&lt;T&gt; population, <span class="keyword">final</span> <span class="keywordtype">int</span> generations) {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        super(fitness, population, generations);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        this.crowder = crowder;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        super.getBody().appendStage(crowder);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    @Override</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classjenes_1_1algorithms_1_1_crowding_g_a_3_01_t_01extends_01_chromosome_01_4.html#ad241412becfe0073cbeb06418a1e49f3">   71</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1algorithms_1_1_crowding_g_a_3_01_t_01extends_01_chromosome_01_4.html#ad241412becfe0073cbeb06418a1e49f3">addStage</a>(AbstractStage&lt;T&gt; stage) {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        this.crowder.getBody().appendStage(stage);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="classjenes_1_1algorithms_1_1_crowding_g_a_3_01_t_01extends_01_chromosome_01_4.html#a6cc270cedf906a0743cb743b30c2ba02">   79</a></span>&#160;    <span class="keyword">public</span> Crowder <a class="code" href="classjenes_1_1algorithms_1_1_crowding_g_a_3_01_t_01extends_01_chromosome_01_4.html#a6cc270cedf906a0743cb743b30c2ba02">getCrowder</a>() {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">return</span> this.crowder;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
+<div class="ttc" id="classjenes_1_1algorithms_1_1_crowding_g_a_3_01_t_01extends_01_chromosome_01_4_html_a5f9de70a8e431de7e0f9bbb6bb42ec1e"><div class="ttname"><a href="classjenes_1_1algorithms_1_1_crowding_g_a_3_01_t_01extends_01_chromosome_01_4.html#a5f9de70a8e431de7e0f9bbb6bb42ec1e">jenes.algorithms.CrowdingGA&lt; T extends Chromosome &gt;.CrowdingGA</a></div><div class="ttdeci">CrowdingGA(final Fitness fitness, final Crowder crowder)</div><div class="ttdef"><b>Definition:</b> <a href="_crowding_g_a_8java_source.html#l00047">CrowdingGA.java:47</a></div></div>
+<div class="ttc" id="classjenes_1_1algorithms_1_1_crowding_g_a_3_01_t_01extends_01_chromosome_01_4_html_a6cc270cedf906a0743cb743b30c2ba02"><div class="ttname"><a href="classjenes_1_1algorithms_1_1_crowding_g_a_3_01_t_01extends_01_chromosome_01_4.html#a6cc270cedf906a0743cb743b30c2ba02">jenes.algorithms.CrowdingGA&lt; T extends Chromosome &gt;.getCrowder</a></div><div class="ttdeci">Crowder getCrowder()</div><div class="ttdef"><b>Definition:</b> <a href="_crowding_g_a_8java_source.html#l00079">CrowdingGA.java:79</a></div></div>
+<div class="ttc" id="classjenes_1_1algorithms_1_1_crowding_g_a_3_01_t_01extends_01_chromosome_01_4_html_aa747112afbb20cb4faec643ccc73e396"><div class="ttname"><a href="classjenes_1_1algorithms_1_1_crowding_g_a_3_01_t_01extends_01_chromosome_01_4.html#aa747112afbb20cb4faec643ccc73e396">jenes.algorithms.CrowdingGA&lt; T extends Chromosome &gt;.crowder</a></div><div class="ttdeci">Crowder crowder</div><div class="ttdef"><b>Definition:</b> <a href="_crowding_g_a_8java_source.html#l00040">CrowdingGA.java:40</a></div></div>
+<div class="ttc" id="classjenes_1_1algorithms_1_1_crowding_g_a_3_01_t_01extends_01_chromosome_01_4_html_ad3e5e26f962e7839e076b61efcd5704f"><div class="ttname"><a href="classjenes_1_1algorithms_1_1_crowding_g_a_3_01_t_01extends_01_chromosome_01_4.html#ad3e5e26f962e7839e076b61efcd5704f">jenes.algorithms.CrowdingGA&lt; T extends Chromosome &gt;.CrowdingGA</a></div><div class="ttdeci">CrowdingGA(final Fitness fitness, final Crowder crowder, final Population&lt; T &gt; population, final int generations)</div><div class="ttdef"><b>Definition:</b> <a href="_crowding_g_a_8java_source.html#l00058">CrowdingGA.java:58</a></div></div>
+<div class="ttc" id="classjenes_1_1algorithms_1_1_crowding_g_a_3_01_t_01extends_01_chromosome_01_4_html_ad241412becfe0073cbeb06418a1e49f3"><div class="ttname"><a href="classjenes_1_1algorithms_1_1_crowding_g_a_3_01_t_01extends_01_chromosome_01_4.html#ad241412becfe0073cbeb06418a1e49f3">jenes.algorithms.CrowdingGA&lt; T extends Chromosome &gt;.addStage</a></div><div class="ttdeci">void addStage(AbstractStage&lt; T &gt; stage)</div><div class="ttdef"><b>Definition:</b> <a href="_crowding_g_a_8java_source.html#l00071">CrowdingGA.java:71</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Sábado, 23 de Noviembre de 2013 21:00:49 para Jenes 2.0 por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

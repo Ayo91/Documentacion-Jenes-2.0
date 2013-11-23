@@ -1,0 +1,99 @@
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_crossover_3_01_t_01extends_01_chromosome_01_4_1_1_statistics}{\section{Referencia de la Clase jenes.\-stage.\-operator.\-Crossover$<$ T extends Chromosome $>$.Statistics}
+\label{classjenes_1_1stage_1_1operator_1_1_crossover_3_01_t_01extends_01_chromosome_01_4_1_1_statistics}\index{jenes.\-stage.\-operator.\-Crossover$<$ T extends Chromosome $>$.\-Statistics@{jenes.\-stage.\-operator.\-Crossover$<$ T extends Chromosome $>$.\-Statistics}}
+}
+Diagrama de herencias de jenes.\-stage.\-operator.\-Crossover$<$ T extends Chromosome $>$.Statistics\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classjenes_1_1stage_1_1operator_1_1_crossover_3_01_t_01extends_01_chromosome_01_4_1_1_statistics}
+\end{center}
+\end{figure}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+final long \hyperlink{classjenes_1_1stage_1_1operator_1_1_crossover_3_01_t_01extends_01_chromosome_01_4_1_1_statistics_a6181ee46b3e760f5d440e758d95db04b}{get\-Crossovers} ()
+\end{DoxyCompactItemize}
+\subsection*{Métodos protegidos}
+\begin{DoxyCompactItemize}
+\item 
+final void \hyperlink{classjenes_1_1stage_1_1operator_1_1_crossover_3_01_t_01extends_01_chromosome_01_4_1_1_statistics_ae352590e85b1d1d821b0912a770f257a}{fill} (final Operator$<$ T $>$.Statistics stats)
+\end{DoxyCompactItemize}
+\subsection*{Atributos protegidos}
+\begin{DoxyCompactItemize}
+\item 
+long \hyperlink{classjenes_1_1stage_1_1operator_1_1_crossover_3_01_t_01extends_01_chromosome_01_4_1_1_statistics_abf1983cc628b3283b942dc68cc871bbc}{crossovers}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+A statistics object holding the number of crossover performed and the time spent to execute them. The statistics is available by two methods\-: \hyperlink{}{Crossover\#get\-Statistics()} to have a new statistics setted according to the crossover state or \hyperlink{}{Crossover\#update\-Statistics(jenes.\-stage.\-operator.\-Operator.\-Statistics)} to modify an existing statistics according to the crossover state. 
+
+Esamples of use are showed below. 
+
+\begin{quotation}
+
+\begin{DoxyPre}
+Crossover.Statistics stat = a\_crossover.getStatistics();
+\end{DoxyPre}
+\end{quotation}
+
+
+returns a new statistics object setted according to the specified crossover state. 
+
+\begin{quotation}
+
+\begin{DoxyPre}
+Crossover.Statistics stat = new Crossover.Statistics();
+a\_crossover.updateStatistics(stat);
+\end{DoxyPre}
+\end{quotation}
+
+
+modifies the existing statistics according to the specified crossover state. 
+
+Definición en la línea 152 del archivo Crossover.\-java.
+
+
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_crossover_3_01_t_01extends_01_chromosome_01_4_1_1_statistics_ae352590e85b1d1d821b0912a770f257a}{\index{jenes\-::stage\-::operator\-::\-Crossover$<$ T extends Chromosome $>$\-::\-Statistics@{jenes\-::stage\-::operator\-::\-Crossover$<$ T extends Chromosome $>$\-::\-Statistics}!fill@{fill}}
+\index{fill@{fill}!jenes::stage::operator::Crossover< T extends Chromosome >::Statistics@{jenes\-::stage\-::operator\-::\-Crossover$<$ T extends Chromosome $>$\-::\-Statistics}}
+\subsubsection[{fill}]{\setlength{\rightskip}{0pt plus 5cm}final void jenes.\-stage.\-operator.\-Crossover$<$ T extends Chromosome $>$.Statistics.\-fill (
+\begin{DoxyParamCaption}
+\item[{final Operator$<$ T $>$.Statistics}]{stats}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classjenes_1_1stage_1_1operator_1_1_crossover_3_01_t_01extends_01_chromosome_01_4_1_1_statistics_ae352590e85b1d1d821b0912a770f257a}
+
+
+Definición en la línea 166 del archivo Crossover.\-java.
+
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_crossover_3_01_t_01extends_01_chromosome_01_4_1_1_statistics_a6181ee46b3e760f5d440e758d95db04b}{\index{jenes\-::stage\-::operator\-::\-Crossover$<$ T extends Chromosome $>$\-::\-Statistics@{jenes\-::stage\-::operator\-::\-Crossover$<$ T extends Chromosome $>$\-::\-Statistics}!get\-Crossovers@{get\-Crossovers}}
+\index{get\-Crossovers@{get\-Crossovers}!jenes::stage::operator::Crossover< T extends Chromosome >::Statistics@{jenes\-::stage\-::operator\-::\-Crossover$<$ T extends Chromosome $>$\-::\-Statistics}}
+\subsubsection[{get\-Crossovers}]{\setlength{\rightskip}{0pt plus 5cm}final long jenes.\-stage.\-operator.\-Crossover$<$ T extends Chromosome $>$.Statistics.\-get\-Crossovers (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classjenes_1_1stage_1_1operator_1_1_crossover_3_01_t_01extends_01_chromosome_01_4_1_1_statistics_a6181ee46b3e760f5d440e758d95db04b}
+Returns the number of crossovers performed.
+
+\begin{DoxyReturn}{Devuelve}
+the number of crossovers performed. 
+\end{DoxyReturn}
+
+
+Definición en la línea 161 del archivo Crossover.\-java.
+
+
+
+\subsection{Documentación de los datos miembro}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_crossover_3_01_t_01extends_01_chromosome_01_4_1_1_statistics_abf1983cc628b3283b942dc68cc871bbc}{\index{jenes\-::stage\-::operator\-::\-Crossover$<$ T extends Chromosome $>$\-::\-Statistics@{jenes\-::stage\-::operator\-::\-Crossover$<$ T extends Chromosome $>$\-::\-Statistics}!crossovers@{crossovers}}
+\index{crossovers@{crossovers}!jenes::stage::operator::Crossover< T extends Chromosome >::Statistics@{jenes\-::stage\-::operator\-::\-Crossover$<$ T extends Chromosome $>$\-::\-Statistics}}
+\subsubsection[{crossovers}]{\setlength{\rightskip}{0pt plus 5cm}long jenes.\-stage.\-operator.\-Crossover$<$ T extends Chromosome $>$.Statistics.\-crossovers\hspace{0.3cm}{\ttfamily [protected]}}}\label{classjenes_1_1stage_1_1operator_1_1_crossover_3_01_t_01extends_01_chromosome_01_4_1_1_statistics_abf1983cc628b3283b942dc68cc871bbc}
+Number of crossovers performed. 
+
+Definición en la línea 154 del archivo Crossover.\-java.
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Ayo/\-Desktop/jenes 2.\-0/src/jenes/stage/operator/\hyperlink{_crossover_8java}{Crossover.\-java}\end{DoxyCompactItemize}

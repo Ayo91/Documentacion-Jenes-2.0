@@ -1,0 +1,12 @@
+digraph "jenes.utils.XLSLogger"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="jenes.utils.XLSLogger",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="jenes.utils.AbstractLogger",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classjenes_1_1utils_1_1_abstract_logger.html"];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" schema" ,fontname="Helvetica"];
+  Node3 [label="List\< String \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" record" ,fontname="Helvetica"];
+  Node4 [label="Map\< String, Object \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}

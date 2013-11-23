@@ -1,0 +1,19 @@
+digraph "Representación gráfica de la clase"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Fitness",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="jenes.tutorials.problem10.\lFitnessFunction",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classjenes_1_1tutorials_1_1problem10_1_1_fitness_function.html"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="jenes.tutorials.problem11.\lImageMatchingFitness",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classjenes_1_1tutorials_1_1problem11_1_1_image_matching_fitness.html"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="jenes.tutorials.problem2.\lPatternGA.PatternFitness",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classjenes_1_1tutorials_1_1problem2_1_1_pattern_g_a_1_1_pattern_fitness.html"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="jenes.tutorials.problem3.\lTSPGA.TSPFitness",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classjenes_1_1tutorials_1_1problem3_1_1_t_s_p_g_a_1_1_t_s_p_fitness.html"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="jenes.tutorials.problem4.\lEntropyFitness",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classjenes_1_1tutorials_1_1problem4_1_1_entropy_fitness.html"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="jenes.tutorials.problem9.\lFitnessFunction",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classjenes_1_1tutorials_1_1problem9_1_1_fitness_function.html"];
+}

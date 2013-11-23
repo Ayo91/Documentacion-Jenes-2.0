@@ -1,0 +1,477 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Jenes 2.0: Fichero Fuente C:/Users/Ayo/Desktop/jenes 2.0/src/jenes/population/Individual.java</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Jenes 2.0
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="namespaces.html"><span>Paquetes</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_12f2200cf1e99b3d3381c7cc6a32cc41.html">jenes</a></li><li class="navelem"><a class="el" href="dir_82c005ca2872e95e511af0dd93e9c14e.html">population</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Individual.java</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_individual_8java.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * JENES</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * A time and memory efficient Java library for genetic algorithms and more </span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Copyright (C) 2011 Intelligentia srl</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * This program is free software: you can redistribute it and/or modify</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * the Free Software Foundation, either version 3 of the License, or</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * (at your option) any later version.</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> *  This program is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> *  but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> *  GNU General Public License for more details.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> *  You should have received a copy of the GNU General Public License</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> *  along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;. </span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">package </span>jenes.population;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">import</span> java.io.Serializable;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">import</span> java.util.Arrays;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">import</span> jenes.chromosome.Chromosome;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">import</span> <a class="code" href="interfacejenes_1_1statistics_1_1_statistics_logger_1_1_loggable.html">jenes.statistics.StatisticsLogger.Loggable</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">import</span> jenes.statistics.StatisticsLogger.LoggableStatistics;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html">   58</a></span>&#160;<span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">class </span>Individual&lt;T <span class="keyword">extends</span> Chromosome&gt; implements Cloneable, Serializable, Comparable&lt;Individual&lt;T&gt;&gt; {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keywordtype">long</span> serialVersionUID = -7644577572400307010L;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#a6f913202241aa5f7255e482179175f62">   62</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keywordtype">int</span> UNRANKED = -1;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keywordtype">boolean</span> sameChromosomeSameFitness = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">private</span> T chromosome;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">double</span> score[];</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">boolean</span> evaluated;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">boolean</span> legal = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">private</span> Population&lt;T&gt; population;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">int</span> speciem = 0;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">int</span> rank = UNRANKED;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">private</span> Statistics&lt;T&gt; statistics = null;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#aaef7161bf62cee0ac95f079394fdac9f">   85</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#aaef7161bf62cee0ac95f079394fdac9f">Individual</a>() {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keyword">this</span>(null, null);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#ab976f777177706bca918974cc60728c9">   94</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#ab976f777177706bca918974cc60728c9">Individual</a>(<span class="keyword">final</span> <span class="keywordtype">int</span> n, <span class="keyword">final</span> T chromosome) {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        this.chromosome = chromosome;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        this.resetScores(n);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#a0ee89d719da75153410f8757ebafdb0d">  105</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#a0ee89d719da75153410f8757ebafdb0d">Individual</a>(<span class="keyword">final</span> T chromosome, <span class="keyword">final</span> <span class="keywordtype">double</span>... score) {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        this.chromosome = chromosome;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        this.setScore(score);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    @SuppressWarnings(<span class="stringliteral">&quot;unchecked&quot;</span>)</div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#a39ca92146563b3b00576736296b523a5">  116</a></span>&#160;    public Individual(final Individual&lt;T&gt; ind) {</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        this.chromosome = (T) ind.getChromosome().clone();</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        this.score = <span class="keyword">new</span> <span class="keywordtype">double</span>[ind.score.length];</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        System.arraycopy(ind.score, 0, this.score, 0, this.score.length);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        this.evaluated = ind.evaluated;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        this.legal = ind.legal;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        this.speciem = ind.speciem;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        this.population = null;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    }</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#a15020083468eb11265c621aca7de0bf2">  133</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> Population&lt;T&gt; <a class="code" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#a15020083468eb11265c621aca7de0bf2">getPopulation</a>() {</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <span class="keywordflow">return</span> this.population;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    }</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keyword">final</span> <span class="keywordtype">void</span> setPopulation(Population&lt;T&gt; pop) {</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        this.population = pop;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    }</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#aeed25204463ec1e7eebe36674a24ada7">  151</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> T <a class="code" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#aeed25204463ec1e7eebe36674a24ada7">getChromosome</a>() {</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        <span class="keywordflow">return</span> chromosome;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    }</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
+<div class="line"><a name="l00160"></a><span class="lineno"><a class="line" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#a14c0669f286f8097bb8fdf13dc5fcf50">  160</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#a14c0669f286f8097bb8fdf13dc5fcf50">setChromosome</a>(<span class="keyword">final</span> T chromosome) {</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        this.chromosome = chromosome;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        this.setNotEvaluated();</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    }</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
+<div class="line"><a name="l00170"></a><span class="lineno"><a class="line" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#a1c109dce60908107cc2dcfaf630b95f5">  170</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">int</span> <a class="code" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#a1c109dce60908107cc2dcfaf630b95f5">getNumOfObjectives</a>() {</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        <span class="keywordflow">return</span> this.score.length;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    }</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
+<div class="line"><a name="l00181"></a><span class="lineno"><a class="line" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#aa95dc3489632913f59c9c9e5d30d89c0">  181</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">double</span> <a class="code" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#aa95dc3489632913f59c9c9e5d30d89c0">getScore</a>() {</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        <span class="keywordflow">return</span> this.score == null ? Double.NaN : this.score[0];</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    }</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
+<div class="line"><a name="l00191"></a><span class="lineno"><a class="line" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#ad2cc30ec43ca42539e72c4619953fd3b">  191</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">double</span> <a class="code" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#ad2cc30ec43ca42539e72c4619953fd3b">getScore</a>(<span class="keywordtype">int</span> i) {</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="keywordflow">return</span> this.score[i];</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    }</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
+<div class="line"><a name="l00200"></a><span class="lineno"><a class="line" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#ad3b9122edf5b711c5f6d860e0f7c36b2">  200</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">double</span>[] <a class="code" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#ad3b9122edf5b711c5f6d860e0f7c36b2">getAllScores</a>() {</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        <span class="keywordflow">return</span> this.score;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    }</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
+<div class="line"><a name="l00211"></a><span class="lineno"><a class="line" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#ad2b80a4fa7401737fef5d9fbebf7588e">  211</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#ad2b80a4fa7401737fef5d9fbebf7588e">resetScores</a>(<span class="keywordtype">int</span> m) {</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        <span class="keywordflow">if</span> (this.score == null || m != this.score.length) {</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;            this.score = <span class="keyword">new</span> <span class="keywordtype">double</span>[m];</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        }</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; m; ++i) {</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;            this.score[i] = Double.NaN;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        }</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        this.evaluated = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    }</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
+<div class="line"><a name="l00228"></a><span class="lineno"><a class="line" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#a6f459ca1de55083c73390b4474271539">  228</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#a6f459ca1de55083c73390b4474271539">setScore</a>(<span class="keyword">final</span> <span class="keywordtype">double</span>... score) {</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        <span class="keywordflow">if</span> (score != null &amp;&amp; score.length &gt; 0) {</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;            <span class="keywordflow">if</span> (this.score == null || this.score.length != score.length) {</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;                this.score = <span class="keyword">new</span> <span class="keywordtype">double</span>[score.length];</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                System.arraycopy(score, 0, this.score, 0, this.score.length);</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;            }</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; this.score.length; ++i) {</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                this.score[i] = score[i];</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;            }</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;            this.evaluated = checkEvaluated();</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;            this.resetScores(1);</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        }</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    }</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;</div>
+<div class="line"><a name="l00254"></a><span class="lineno"><a class="line" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#a0388610de8d27632d932de85904d18e4">  254</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#a0388610de8d27632d932de85904d18e4">setScore</a>(<span class="keyword">final</span> <span class="keywordtype">double</span> score, <span class="keyword">final</span> <span class="keywordtype">int</span> i) {</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        this.score[i] = score;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        this.evaluated = checkEvaluated();</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    }</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">boolean</span> checkEvaluated() {</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">double</span> s : score) {</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;            <span class="keywordflow">if</span> (s == Double.NaN) {</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;            }</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        }</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    }</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;</div>
+<div class="line"><a name="l00278"></a><span class="lineno"><a class="line" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#aede2854b691153950593a92a69cad856">  278</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#aede2854b691153950593a92a69cad856">setNotEvaluated</a>() {</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        this.evaluated = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; this.score.length; ++i) {</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;            this.score[i] = Double.NaN;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        }</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    }</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;</div>
+<div class="line"><a name="l00290"></a><span class="lineno"><a class="line" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#a42c65137e521bc9cd81448f7c27dccd2">  290</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#a42c65137e521bc9cd81448f7c27dccd2">getRank</a>() {</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        <span class="keywordflow">if</span> (this.population == null || !this.population.isSorted()) {</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;            <span class="keywordflow">return</span> Individual.UNRANKED;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        }</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        <span class="keywordflow">return</span> rank;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    }</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="keywordtype">void</span> setRank(<span class="keywordtype">int</span> rank) {</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        this.rank = rank;</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    }</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;</div>
+<div class="line"><a name="l00311"></a><span class="lineno"><a class="line" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#aed3f28eb6e9ea75f5dd58dc981180559">  311</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#aed3f28eb6e9ea75f5dd58dc981180559">getSpeciem</a>() {</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        <span class="keywordflow">return</span> speciem;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    }</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;</div>
+<div class="line"><a name="l00320"></a><span class="lineno"><a class="line" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#a52068a99fee4d8b7e5bc51c4d2c068cd">  320</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#a52068a99fee4d8b7e5bc51c4d2c068cd">setSpeciem</a>(<span class="keywordtype">int</span> speciem) {</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        this.speciem = speciem;</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    }</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    @Override</div>
+<div class="line"><a name="l00330"></a><span class="lineno"><a class="line" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#acc11569b9577fe227751297e26d719df">  330</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> Individual&lt;T&gt; <a class="code" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#acc11569b9577fe227751297e26d719df">clone</a>() {</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> Individual&lt;T&gt;(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    }</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;</div>
+<div class="line"><a name="l00337"></a><span class="lineno"><a class="line" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#aa15396a9c24a33b93ad1b7a332b92cfb">  337</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#aa15396a9c24a33b93ad1b7a332b92cfb">randomize</a>() {</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        this.chromosome.randomize();</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        this.setNotEvaluated();</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    }</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;</div>
+<div class="line"><a name="l00347"></a><span class="lineno"><a class="line" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#abf8f090558f25a8479a1187d4f53e8d7">  347</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#abf8f090558f25a8479a1187d4f53e8d7">setAs</a>(<span class="keyword">final</span> Individual&lt;T&gt; individual) {</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        this.setAs(individual, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    }</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    @SuppressWarnings(<span class="stringliteral">&quot;unchecked&quot;</span>)</div>
+<div class="line"><a name="l00358"></a><span class="lineno"><a class="line" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#a5d41ad20ea167e591b4df69883e3ab84">  358</a></span>&#160;    public final <span class="keywordtype">void</span> setAs(final Individual&lt;T&gt; individual, final <span class="keywordtype">boolean</span> full) {</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        <span class="keywordflow">if</span> (this.score == null || this.score.length != individual.score.length) {</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;            this.score = <span class="keyword">new</span> <span class="keywordtype">double</span>[individual.score.length];</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        }</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        System.arraycopy(individual.score, 0, this.score, 0, this.score.length);</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;        <span class="keywordflow">if</span> (this.chromosome != null) {</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;            this.chromosome.setAs(individual.getChromosome());</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;            this.chromosome = (T) individual.getChromosome().clone();</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;        }</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;        this.evaluated = individual.evaluated;</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        this.legal = individual.legal;</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;        this.speciem = individual.speciem;</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;        this.rank = individual.getRank();</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        <span class="keywordflow">if</span> (full) {</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;            this.population = individual.population;</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        }</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    }</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;</div>
+<div class="line"><a name="l00388"></a><span class="lineno"><a class="line" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#a90f222f30e37b23c0c3aceffd4571cfa">  388</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">boolean</span> <a class="code" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#a90f222f30e37b23c0c3aceffd4571cfa">isEvaluated</a>() {</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;        <span class="keywordflow">return</span> this.evaluated;</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    }</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;</div>
+<div class="line"><a name="l00397"></a><span class="lineno"><a class="line" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#aeea71cba0872f34f4097e882b5debf64">  397</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> String <a class="code" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#aeea71cba0872f34f4097e882b5debf64">toCompleteString</a>() {</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;        <span class="keywordflow">return</span> String.format(<span class="stringliteral">&quot;%s: scored %s, legal = %b, speciem = %d&quot;</span>,</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;                chromosome != null ? chromosome.toString() : <span class="stringliteral">&quot;[]&quot;</span>, Arrays.toString(<span class="keyword">this</span>.score),</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;                this.isLegal(),</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;                this.getSpeciem());</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    }</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    @Override</div>
+<div class="line"><a name="l00406"></a><span class="lineno"><a class="line" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#a705d4c4407ca6e33ae5b500fb192ced0">  406</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> String <a class="code" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#a705d4c4407ca6e33ae5b500fb192ced0">toString</a>() {</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;        <span class="keywordflow">return</span> String.format(<span class="stringliteral">&quot;%s: scored %s&quot;</span>,</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;                chromosome != null ? chromosome.toString() : <span class="stringliteral">&quot;[]&quot;</span>, Arrays.toString(<span class="keyword">this</span>.score));</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    }</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;</div>
+<div class="line"><a name="l00417"></a><span class="lineno"><a class="line" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#adcfca83cfc369ef8a3fcabe9bda4de1f">  417</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">boolean</span> <a class="code" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#adcfca83cfc369ef8a3fcabe9bda4de1f">isLegal</a>() {</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;        <span class="keywordflow">return</span> this.legal;</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;    }</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;</div>
+<div class="line"><a name="l00426"></a><span class="lineno"><a class="line" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#aabb4dbbc582544a12932ec7c42a2ec78">  426</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#aabb4dbbc582544a12932ec7c42a2ec78">setLegal</a>(<span class="keyword">final</span> <span class="keywordtype">boolean</span> legal) {</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;        this.legal = legal;</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    }</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;</div>
+<div class="line"><a name="l00439"></a><span class="lineno"><a class="line" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#a4cc0f0feb3da7cc54bb44e881006d39a">  439</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">int</span> <a class="code" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#a4cc0f0feb3da7cc54bb44e881006d39a">compareTo</a>(<span class="keyword">final</span> Individual&lt;T&gt; ind) {</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;        <span class="keywordflow">if</span> (this.getScore() &gt; ind.getScore()) {</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;            <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;        }</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;        <span class="keywordflow">if</span> (ind.getScore() &gt; this.getScore()) {</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;            <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;        }</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;    }</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;    @SuppressWarnings(<span class="stringliteral">&quot;unchecked&quot;</span>)</div>
+<div class="line"><a name="l00460"></a><span class="lineno"><a class="line" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#acffe4b1590048fb780b637716fad6db6">  460</a></span>&#160;    public final <span class="keywordtype">boolean</span> equals(final Individual&lt;T&gt; ind) {</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;</div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;        <span class="keywordflow">if</span> (<span class="keyword">this</span> == ind) {</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;        }</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;        <span class="keywordflow">if</span> (ind.chromosome != null &amp;&amp; <span class="keyword">this</span>.chromosome != null &amp;&amp; ind.chromosome.equals(<span class="keyword">this</span>.chromosome)) {</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;            <span class="keywordflow">if</span> (this.isScoreEqual(ind.score)) {</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;                <span class="keywordflow">if</span> (sameChromosomeSameFitness) {</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;                    <span class="keywordflow">throw</span> <span class="keyword">new</span> IllegalStateException(<span class="stringliteral">&quot;[Jenes]: when sameChromosomeSameFitness=true individuals with the same genome have to be equal fitted!&quot;</span>);</div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;                } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;                }</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;            }</div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;</div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;            <span class="comment">// Equivalent to return ind.chromosome == null &amp;&amp; this.chromosome == null;            </span></div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;            <span class="keywordflow">return</span> ind.chromosome == this.chromosome;</div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;        }</div>
+<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;</div>
+<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;    }</div>
+<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">boolean</span> isScoreEqual(<span class="keywordtype">double</span>[] s) {</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;</div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;        <span class="keywordflow">if</span> (this.score.length != s.length) {</div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> IllegalStateException(<span class="stringliteral">&quot;[Jenes]: the array passed as argument and the array of scores must have the same lenght !&quot;</span>);</div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;        }</div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;</div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;        <span class="keywordflow">return</span> Arrays.equals(this.score, s);</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;    }</div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;</div>
+<div class="line"><a name="l00504"></a><span class="lineno"><a class="line" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#a78847299c79de4cde6aec341a406e80c">  504</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keywordtype">int</span> <a class="code" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#a78847299c79de4cde6aec341a406e80c">getChromosomeLength</a>() {</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;        <span class="keywordflow">return</span> this.chromosome != null ? this.chromosome.length() : 0;</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;    }</div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;</div>
+<div class="line"><a name="l00514"></a><span class="lineno"><a class="line" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#adc6718949b2a065a657f0ac5e7aef664">  514</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keywordtype">boolean</span> <a class="code" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#adc6718949b2a065a657f0ac5e7aef664">isSameChromosomeSameFitness</a>() {</div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;        <span class="keywordflow">return</span> sameChromosomeSameFitness;</div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;    }</div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;</div>
+<div class="line"><a name="l00524"></a><span class="lineno"><a class="line" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#a1552d231f0bf2ebdba499e4575d2fa95">  524</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keywordtype">void</span> <a class="code" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#a1552d231f0bf2ebdba499e4575d2fa95">setSameChromosomeSameFitness</a>(<span class="keyword">final</span> <span class="keywordtype">boolean</span> sameChromosomeSameFitness) {</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;        Individual.sameChromosomeSameFitness = sameChromosomeSameFitness;</div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;    }</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;</div>
+<div class="line"><a name="l00533"></a><span class="lineno"><a class="line" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#acdf2d55195f6068913e5487b0542952a">  533</a></span>&#160;    <span class="keyword">public</span> Statistics&lt;T&gt; <a class="code" href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#acdf2d55195f6068913e5487b0542952a">getStatistics</a>() {</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;        <span class="keywordflow">if</span> (this.statistics == null) {</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;            this.statistics = <span class="keyword">new</span> Statistics&lt;T&gt;(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;        }</div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;        <span class="keywordflow">return</span> this.statistics;</div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;    }</div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;</div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">class </span>Statistics&lt;T <span class="keyword">extends</span> Chromosome&gt; extends LoggableStatistics {</div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;</div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;        <span class="keyword">private</span> Individual&lt;T&gt; individual;</div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">double</span>[] score;</div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;</div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;        <span class="keyword">private</span> Statistics(Individual ind) {</div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;            this.individual = ind;</div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;        }</div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;</div>
+<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;        @Loggable(label = <span class="stringliteral">&quot;I.Score&quot;</span>)</div>
+<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;        public final <span class="keywordtype">double</span>[] getScore() {</div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;            <span class="keywordflow">if</span> (this.score == null || !Arrays.equals(<span class="keyword">this</span>.score, <span class="keyword">this</span>.individual.score)) {</div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;                this.score = this.individual.getAllScores();</div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;            }</div>
+<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;            <span class="keywordflow">return</span> this.score;</div>
+<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;        }</div>
+<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;</div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;        @Loggable(label = <span class="stringliteral">&quot;I.Legal&quot;</span>)</div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;        public final <span class="keywordtype">boolean</span> isLegal() {</div>
+<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;            <span class="keywordflow">return</span> this.individual.isLegal();</div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;        }</div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;</div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;        @Loggable(label = <span class="stringliteral">&quot;I.Evaluated&quot;</span>)</div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;        public final <span class="keywordtype">boolean</span> isEvaluated() {</div>
+<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;            <span class="keywordflow">return</span> this.individual.isEvaluated();</div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;        }</div>
+<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;</div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;        @Loggable(label = <span class="stringliteral">&quot;I.Speciem&quot;</span>)</div>
+<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;        public final <span class="keywordtype">int</span> getSpeciem() {</div>
+<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;            <span class="keywordflow">return</span> this.individual.getSpeciem();</div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;        }</div>
+<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;</div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;        @Loggable(label = <span class="stringliteral">&quot;I.NumOfObjectives&quot;</span>)</div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;        public final <span class="keywordtype">int</span> getNumOfObjectives() {</div>
+<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;            <span class="keywordflow">return</span> this.individual.getNumOfObjectives();</div>
+<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;        }</div>
+<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;</div>
+<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;        @Loggable(label = <span class="stringliteral">&quot;I.Chromosome&quot;</span>)</div>
+<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;        public final T getChromosome() {</div>
+<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;            <span class="keywordflow">return</span> this.individual.getChromosome();</div>
+<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;        }</div>
+<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;    }</div>
+<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;}</div>
+<div class="ttc" id="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4_html_a4cc0f0feb3da7cc54bb44e881006d39a"><div class="ttname"><a href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#a4cc0f0feb3da7cc54bb44e881006d39a">jenes.population.Individual&lt; T extends Chromosome &gt;.compareTo</a></div><div class="ttdeci">final int compareTo(final Individual&lt; T &gt; ind)</div><div class="ttdef"><b>Definition:</b> <a href="_individual_8java_source.html#l00439">Individual.java:439</a></div></div>
+<div class="ttc" id="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4_html_abf8f090558f25a8479a1187d4f53e8d7"><div class="ttname"><a href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#abf8f090558f25a8479a1187d4f53e8d7">jenes.population.Individual&lt; T extends Chromosome &gt;.setAs</a></div><div class="ttdeci">final void setAs(final Individual&lt; T &gt; individual)</div><div class="ttdef"><b>Definition:</b> <a href="_individual_8java_source.html#l00347">Individual.java:347</a></div></div>
+<div class="ttc" id="interfacejenes_1_1statistics_1_1_statistics_logger_1_1_loggable_html"><div class="ttname"><a href="interfacejenes_1_1statistics_1_1_statistics_logger_1_1_loggable.html">jenes.statistics.StatisticsLogger.Loggable</a></div><div class="ttdef"><b>Definition:</b> <a href="_statistics_logger_8java_source.html#l00298">StatisticsLogger.java:298</a></div></div>
+<div class="ttc" id="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4_html_a0388610de8d27632d932de85904d18e4"><div class="ttname"><a href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#a0388610de8d27632d932de85904d18e4">jenes.population.Individual&lt; T extends Chromosome &gt;.setScore</a></div><div class="ttdeci">final void setScore(final double score, final int i)</div><div class="ttdef"><b>Definition:</b> <a href="_individual_8java_source.html#l00254">Individual.java:254</a></div></div>
+<div class="ttc" id="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4_html_aede2854b691153950593a92a69cad856"><div class="ttname"><a href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#aede2854b691153950593a92a69cad856">jenes.population.Individual&lt; T extends Chromosome &gt;.setNotEvaluated</a></div><div class="ttdeci">final void setNotEvaluated()</div><div class="ttdef"><b>Definition:</b> <a href="_individual_8java_source.html#l00278">Individual.java:278</a></div></div>
+<div class="ttc" id="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4_html_aabb4dbbc582544a12932ec7c42a2ec78"><div class="ttname"><a href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#aabb4dbbc582544a12932ec7c42a2ec78">jenes.population.Individual&lt; T extends Chromosome &gt;.setLegal</a></div><div class="ttdeci">final void setLegal(final boolean legal)</div><div class="ttdef"><b>Definition:</b> <a href="_individual_8java_source.html#l00426">Individual.java:426</a></div></div>
+<div class="ttc" id="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4_html_ad2cc30ec43ca42539e72c4619953fd3b"><div class="ttname"><a href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#ad2cc30ec43ca42539e72c4619953fd3b">jenes.population.Individual&lt; T extends Chromosome &gt;.getScore</a></div><div class="ttdeci">final double getScore(int i)</div><div class="ttdef"><b>Definition:</b> <a href="_individual_8java_source.html#l00191">Individual.java:191</a></div></div>
+<div class="ttc" id="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4_html_ad2b80a4fa7401737fef5d9fbebf7588e"><div class="ttname"><a href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#ad2b80a4fa7401737fef5d9fbebf7588e">jenes.population.Individual&lt; T extends Chromosome &gt;.resetScores</a></div><div class="ttdeci">final void resetScores(int m)</div><div class="ttdef"><b>Definition:</b> <a href="_individual_8java_source.html#l00211">Individual.java:211</a></div></div>
+<div class="ttc" id="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4_html_a1552d231f0bf2ebdba499e4575d2fa95"><div class="ttname"><a href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#a1552d231f0bf2ebdba499e4575d2fa95">jenes.population.Individual&lt; T extends Chromosome &gt;.setSameChromosomeSameFitness</a></div><div class="ttdeci">static final void setSameChromosomeSameFitness(final boolean sameChromosomeSameFitness)</div><div class="ttdef"><b>Definition:</b> <a href="_individual_8java_source.html#l00524">Individual.java:524</a></div></div>
+<div class="ttc" id="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4_html_adcfca83cfc369ef8a3fcabe9bda4de1f"><div class="ttname"><a href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#adcfca83cfc369ef8a3fcabe9bda4de1f">jenes.population.Individual&lt; T extends Chromosome &gt;.isLegal</a></div><div class="ttdeci">final boolean isLegal()</div><div class="ttdef"><b>Definition:</b> <a href="_individual_8java_source.html#l00417">Individual.java:417</a></div></div>
+<div class="ttc" id="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4_html_aa15396a9c24a33b93ad1b7a332b92cfb"><div class="ttname"><a href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#aa15396a9c24a33b93ad1b7a332b92cfb">jenes.population.Individual&lt; T extends Chromosome &gt;.randomize</a></div><div class="ttdeci">final void randomize()</div><div class="ttdef"><b>Definition:</b> <a href="_individual_8java_source.html#l00337">Individual.java:337</a></div></div>
+<div class="ttc" id="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4_html_a14c0669f286f8097bb8fdf13dc5fcf50"><div class="ttname"><a href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#a14c0669f286f8097bb8fdf13dc5fcf50">jenes.population.Individual&lt; T extends Chromosome &gt;.setChromosome</a></div><div class="ttdeci">final void setChromosome(final T chromosome)</div><div class="ttdef"><b>Definition:</b> <a href="_individual_8java_source.html#l00160">Individual.java:160</a></div></div>
+<div class="ttc" id="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4_html_aeed25204463ec1e7eebe36674a24ada7"><div class="ttname"><a href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#aeed25204463ec1e7eebe36674a24ada7">jenes.population.Individual&lt; T extends Chromosome &gt;.getChromosome</a></div><div class="ttdeci">final T getChromosome()</div><div class="ttdef"><b>Definition:</b> <a href="_individual_8java_source.html#l00151">Individual.java:151</a></div></div>
+<div class="ttc" id="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4_html_a78847299c79de4cde6aec341a406e80c"><div class="ttname"><a href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#a78847299c79de4cde6aec341a406e80c">jenes.population.Individual&lt; T extends Chromosome &gt;.getChromosomeLength</a></div><div class="ttdeci">final int getChromosomeLength()</div><div class="ttdef"><b>Definition:</b> <a href="_individual_8java_source.html#l00504">Individual.java:504</a></div></div>
+<div class="ttc" id="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4_html_adc6718949b2a065a657f0ac5e7aef664"><div class="ttname"><a href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#adc6718949b2a065a657f0ac5e7aef664">jenes.population.Individual&lt; T extends Chromosome &gt;.isSameChromosomeSameFitness</a></div><div class="ttdeci">static final boolean isSameChromosomeSameFitness()</div><div class="ttdef"><b>Definition:</b> <a href="_individual_8java_source.html#l00514">Individual.java:514</a></div></div>
+<div class="ttc" id="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4_html_acdf2d55195f6068913e5487b0542952a"><div class="ttname"><a href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#acdf2d55195f6068913e5487b0542952a">jenes.population.Individual&lt; T extends Chromosome &gt;.getStatistics</a></div><div class="ttdeci">Statistics&lt; T &gt; getStatistics()</div><div class="ttdef"><b>Definition:</b> <a href="_individual_8java_source.html#l00533">Individual.java:533</a></div></div>
+<div class="ttc" id="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4_html_ad3b9122edf5b711c5f6d860e0f7c36b2"><div class="ttname"><a href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#ad3b9122edf5b711c5f6d860e0f7c36b2">jenes.population.Individual&lt; T extends Chromosome &gt;.getAllScores</a></div><div class="ttdeci">final double[] getAllScores()</div><div class="ttdef"><b>Definition:</b> <a href="_individual_8java_source.html#l00200">Individual.java:200</a></div></div>
+<div class="ttc" id="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4_html_a42c65137e521bc9cd81448f7c27dccd2"><div class="ttname"><a href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#a42c65137e521bc9cd81448f7c27dccd2">jenes.population.Individual&lt; T extends Chromosome &gt;.getRank</a></div><div class="ttdeci">int getRank()</div><div class="ttdef"><b>Definition:</b> <a href="_individual_8java_source.html#l00290">Individual.java:290</a></div></div>
+<div class="ttc" id="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4_html_a52068a99fee4d8b7e5bc51c4d2c068cd"><div class="ttname"><a href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#a52068a99fee4d8b7e5bc51c4d2c068cd">jenes.population.Individual&lt; T extends Chromosome &gt;.setSpeciem</a></div><div class="ttdeci">void setSpeciem(int speciem)</div><div class="ttdef"><b>Definition:</b> <a href="_individual_8java_source.html#l00320">Individual.java:320</a></div></div>
+<div class="ttc" id="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4_html_aeea71cba0872f34f4097e882b5debf64"><div class="ttname"><a href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#aeea71cba0872f34f4097e882b5debf64">jenes.population.Individual&lt; T extends Chromosome &gt;.toCompleteString</a></div><div class="ttdeci">final String toCompleteString()</div><div class="ttdef"><b>Definition:</b> <a href="_individual_8java_source.html#l00397">Individual.java:397</a></div></div>
+<div class="ttc" id="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4_html_acc11569b9577fe227751297e26d719df"><div class="ttname"><a href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#acc11569b9577fe227751297e26d719df">jenes.population.Individual&lt; T extends Chromosome &gt;.clone</a></div><div class="ttdeci">final Individual&lt; T &gt; clone()</div><div class="ttdef"><b>Definition:</b> <a href="_individual_8java_source.html#l00330">Individual.java:330</a></div></div>
+<div class="ttc" id="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4_html_a90f222f30e37b23c0c3aceffd4571cfa"><div class="ttname"><a href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#a90f222f30e37b23c0c3aceffd4571cfa">jenes.population.Individual&lt; T extends Chromosome &gt;.isEvaluated</a></div><div class="ttdeci">final boolean isEvaluated()</div><div class="ttdef"><b>Definition:</b> <a href="_individual_8java_source.html#l00388">Individual.java:388</a></div></div>
+<div class="ttc" id="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4_html_aed3f28eb6e9ea75f5dd58dc981180559"><div class="ttname"><a href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#aed3f28eb6e9ea75f5dd58dc981180559">jenes.population.Individual&lt; T extends Chromosome &gt;.getSpeciem</a></div><div class="ttdeci">int getSpeciem()</div><div class="ttdef"><b>Definition:</b> <a href="_individual_8java_source.html#l00311">Individual.java:311</a></div></div>
+<div class="ttc" id="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4_html_a0ee89d719da75153410f8757ebafdb0d"><div class="ttname"><a href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#a0ee89d719da75153410f8757ebafdb0d">jenes.population.Individual&lt; T extends Chromosome &gt;.Individual</a></div><div class="ttdeci">Individual(final T chromosome, final double...score)</div><div class="ttdef"><b>Definition:</b> <a href="_individual_8java_source.html#l00105">Individual.java:105</a></div></div>
+<div class="ttc" id="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4_html_aaef7161bf62cee0ac95f079394fdac9f"><div class="ttname"><a href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#aaef7161bf62cee0ac95f079394fdac9f">jenes.population.Individual&lt; T extends Chromosome &gt;.Individual</a></div><div class="ttdeci">Individual()</div><div class="ttdef"><b>Definition:</b> <a href="_individual_8java_source.html#l00085">Individual.java:85</a></div></div>
+<div class="ttc" id="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4_html_ab976f777177706bca918974cc60728c9"><div class="ttname"><a href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#ab976f777177706bca918974cc60728c9">jenes.population.Individual&lt; T extends Chromosome &gt;.Individual</a></div><div class="ttdeci">Individual(final int n, final T chromosome)</div><div class="ttdef"><b>Definition:</b> <a href="_individual_8java_source.html#l00094">Individual.java:94</a></div></div>
+<div class="ttc" id="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4_html_a6f459ca1de55083c73390b4474271539"><div class="ttname"><a href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#a6f459ca1de55083c73390b4474271539">jenes.population.Individual&lt; T extends Chromosome &gt;.setScore</a></div><div class="ttdeci">final void setScore(final double...score)</div><div class="ttdef"><b>Definition:</b> <a href="_individual_8java_source.html#l00228">Individual.java:228</a></div></div>
+<div class="ttc" id="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4_html_a705d4c4407ca6e33ae5b500fb192ced0"><div class="ttname"><a href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#a705d4c4407ca6e33ae5b500fb192ced0">jenes.population.Individual&lt; T extends Chromosome &gt;.toString</a></div><div class="ttdeci">final String toString()</div><div class="ttdef"><b>Definition:</b> <a href="_individual_8java_source.html#l00406">Individual.java:406</a></div></div>
+<div class="ttc" id="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4_html_aa95dc3489632913f59c9c9e5d30d89c0"><div class="ttname"><a href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#aa95dc3489632913f59c9c9e5d30d89c0">jenes.population.Individual&lt; T extends Chromosome &gt;.getScore</a></div><div class="ttdeci">final double getScore()</div><div class="ttdef"><b>Definition:</b> <a href="_individual_8java_source.html#l00181">Individual.java:181</a></div></div>
+<div class="ttc" id="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4_html_a15020083468eb11265c621aca7de0bf2"><div class="ttname"><a href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#a15020083468eb11265c621aca7de0bf2">jenes.population.Individual&lt; T extends Chromosome &gt;.getPopulation</a></div><div class="ttdeci">final Population&lt; T &gt; getPopulation()</div><div class="ttdef"><b>Definition:</b> <a href="_individual_8java_source.html#l00133">Individual.java:133</a></div></div>
+<div class="ttc" id="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4_html_a1c109dce60908107cc2dcfaf630b95f5"><div class="ttname"><a href="classjenes_1_1population_1_1_individual_3_01_t_01extends_01_chromosome_01_4.html#a1c109dce60908107cc2dcfaf630b95f5">jenes.population.Individual&lt; T extends Chromosome &gt;.getNumOfObjectives</a></div><div class="ttdeci">final int getNumOfObjectives()</div><div class="ttdef"><b>Definition:</b> <a href="_individual_8java_source.html#l00170">Individual.java:170</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Sábado, 23 de Noviembre de 2013 21:00:50 para Jenes 2.0 por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

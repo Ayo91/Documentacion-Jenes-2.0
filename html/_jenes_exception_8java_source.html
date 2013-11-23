@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Jenes 2.0: Fichero Fuente C:/Users/Ayo/Desktop/jenes 2.0/src/jenes/JenesException.java</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Jenes 2.0
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="namespaces.html"><span>Paquetes</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_12f2200cf1e99b3d3381c7cc6a32cc41.html">jenes</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">JenesException.java</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_jenes_exception_8java.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * JENES</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * A time and memory efficient Java library for genetic algorithms and more </span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Copyright (C) 2011 Intelligentia srl</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * This program is free software: you can redistribute it and/or modify</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * the Free Software Foundation, either version 3 of the License, or</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * (at your option) any later version.</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> *  This program is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> *  but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> *  GNU General Public License for more details.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> *  You should have received a copy of the GNU General Public License</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> *  along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;. </span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">package </span>jenes;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classjenes_1_1_jenes_exception.html">   24</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classjenes_1_1_jenes_exception.html">JenesException</a> <span class="keyword">extends</span> RuntimeException {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="enumjenes_1_1_jenes_exception_1_1_context.html">   26</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">enum</span> <a class="code" href="enumjenes_1_1_jenes_exception_1_1_context.html">Context</a> {</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="enumjenes_1_1_jenes_exception_1_1_context.html#ae925bab13906bd4450260c30cc7b4cab">   27</a></span>&#160;        <a class="code" href="enumjenes_1_1_jenes_exception_1_1_context.html#ae925bab13906bd4450260c30cc7b4cab">ALGORITHM</a>,</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="enumjenes_1_1_jenes_exception_1_1_context.html#ae0335a1dcf69b5493fac24c4c2c25cd1">   28</a></span>&#160;        <a class="code" href="enumjenes_1_1_jenes_exception_1_1_context.html#ae0335a1dcf69b5493fac24c4c2c25cd1">STATISTICS</a>,</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="enumjenes_1_1_jenes_exception_1_1_context.html#a023d03d781868c33bd25415d7c5602d0">   29</a></span>&#160;        IO</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">private</span> Object source;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">private</span> <a class="code" href="enumjenes_1_1_jenes_exception_1_1_context.html">Context</a> context;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">private</span> String description;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">boolean</span> fatal;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classjenes_1_1_jenes_exception.html#a0896ada42c15de11ae090d00f60712e6">   37</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classjenes_1_1_jenes_exception.html#a0896ada42c15de11ae090d00f60712e6">JenesException</a>( Object source, <a class="code" href="enumjenes_1_1_jenes_exception_1_1_context.html">Context</a> context, String desc ) {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keyword">this</span>( source, context, desc, true );</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classjenes_1_1_jenes_exception.html#ab12d2e209aa3cfe14f08b4732271d9d9">   41</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classjenes_1_1_jenes_exception.html#ab12d2e209aa3cfe14f08b4732271d9d9">JenesException</a>( Object source, <a class="code" href="enumjenes_1_1_jenes_exception_1_1_context.html">Context</a> context, String desc, <span class="keywordtype">boolean</span> fatal ) {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        super( context.name() + <span class="stringliteral">&quot;: &quot;</span> + desc );</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        this.source = source;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        this.description = desc;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        this.fatal = fatal;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        this.context = context;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classjenes_1_1_jenes_exception.html#a1dc5c4b0404aeab984604002fad7dbfb">   49</a></span>&#160;    <span class="keyword">public</span> Object <a class="code" href="classjenes_1_1_jenes_exception.html#a1dc5c4b0404aeab984604002fad7dbfb">getSource</a>() {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">return</span> source;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classjenes_1_1_jenes_exception.html#a9a47a0e830dda47c1f9841461fb29726">   53</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="enumjenes_1_1_jenes_exception_1_1_context.html">Context</a> <a class="code" href="classjenes_1_1_jenes_exception.html#a9a47a0e830dda47c1f9841461fb29726">getContext</a>() {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">return</span> context;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classjenes_1_1_jenes_exception.html#a0d37f5de0bddb6c1a3014816f217281c">   57</a></span>&#160;    <span class="keyword">public</span> String <a class="code" href="classjenes_1_1_jenes_exception.html#a0d37f5de0bddb6c1a3014816f217281c">getDescription</a>() {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">return</span> description;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classjenes_1_1_jenes_exception.html#a4d673283c5e13dd3b95e73cf780e9419">   61</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">boolean</span> <a class="code" href="classjenes_1_1_jenes_exception.html#a4d673283c5e13dd3b95e73cf780e9419">isFatal</a>() {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">return</span> fatal;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
+<div class="ttc" id="enumjenes_1_1_jenes_exception_1_1_context_html_ae0335a1dcf69b5493fac24c4c2c25cd1"><div class="ttname"><a href="enumjenes_1_1_jenes_exception_1_1_context.html#ae0335a1dcf69b5493fac24c4c2c25cd1">jenes.JenesException.Context.STATISTICS</a></div><div class="ttdeci">STATISTICS</div><div class="ttdef"><b>Definition:</b> <a href="_jenes_exception_8java_source.html#l00028">JenesException.java:28</a></div></div>
+<div class="ttc" id="classjenes_1_1_jenes_exception_html"><div class="ttname"><a href="classjenes_1_1_jenes_exception.html">jenes.JenesException</a></div><div class="ttdef"><b>Definition:</b> <a href="_jenes_exception_8java_source.html#l00024">JenesException.java:24</a></div></div>
+<div class="ttc" id="classjenes_1_1_jenes_exception_html_a0d37f5de0bddb6c1a3014816f217281c"><div class="ttname"><a href="classjenes_1_1_jenes_exception.html#a0d37f5de0bddb6c1a3014816f217281c">jenes.JenesException.getDescription</a></div><div class="ttdeci">String getDescription()</div><div class="ttdef"><b>Definition:</b> <a href="_jenes_exception_8java_source.html#l00057">JenesException.java:57</a></div></div>
+<div class="ttc" id="enumjenes_1_1_jenes_exception_1_1_context_html_ae925bab13906bd4450260c30cc7b4cab"><div class="ttname"><a href="enumjenes_1_1_jenes_exception_1_1_context.html#ae925bab13906bd4450260c30cc7b4cab">jenes.JenesException.Context.ALGORITHM</a></div><div class="ttdeci">ALGORITHM</div><div class="ttdef"><b>Definition:</b> <a href="_jenes_exception_8java_source.html#l00027">JenesException.java:27</a></div></div>
+<div class="ttc" id="classjenes_1_1_jenes_exception_html_a9a47a0e830dda47c1f9841461fb29726"><div class="ttname"><a href="classjenes_1_1_jenes_exception.html#a9a47a0e830dda47c1f9841461fb29726">jenes.JenesException.getContext</a></div><div class="ttdeci">Context getContext()</div><div class="ttdef"><b>Definition:</b> <a href="_jenes_exception_8java_source.html#l00053">JenesException.java:53</a></div></div>
+<div class="ttc" id="classjenes_1_1_jenes_exception_html_ab12d2e209aa3cfe14f08b4732271d9d9"><div class="ttname"><a href="classjenes_1_1_jenes_exception.html#ab12d2e209aa3cfe14f08b4732271d9d9">jenes.JenesException.JenesException</a></div><div class="ttdeci">JenesException(Object source, Context context, String desc, boolean fatal)</div><div class="ttdef"><b>Definition:</b> <a href="_jenes_exception_8java_source.html#l00041">JenesException.java:41</a></div></div>
+<div class="ttc" id="enumjenes_1_1_jenes_exception_1_1_context_html"><div class="ttname"><a href="enumjenes_1_1_jenes_exception_1_1_context.html">jenes.JenesException.Context</a></div><div class="ttdef"><b>Definition:</b> <a href="_jenes_exception_8java_source.html#l00026">JenesException.java:26</a></div></div>
+<div class="ttc" id="classjenes_1_1_jenes_exception_html_a0896ada42c15de11ae090d00f60712e6"><div class="ttname"><a href="classjenes_1_1_jenes_exception.html#a0896ada42c15de11ae090d00f60712e6">jenes.JenesException.JenesException</a></div><div class="ttdeci">JenesException(Object source, Context context, String desc)</div><div class="ttdef"><b>Definition:</b> <a href="_jenes_exception_8java_source.html#l00037">JenesException.java:37</a></div></div>
+<div class="ttc" id="classjenes_1_1_jenes_exception_html_a1dc5c4b0404aeab984604002fad7dbfb"><div class="ttname"><a href="classjenes_1_1_jenes_exception.html#a1dc5c4b0404aeab984604002fad7dbfb">jenes.JenesException.getSource</a></div><div class="ttdeci">Object getSource()</div><div class="ttdef"><b>Definition:</b> <a href="_jenes_exception_8java_source.html#l00049">JenesException.java:49</a></div></div>
+<div class="ttc" id="classjenes_1_1_jenes_exception_html_a4d673283c5e13dd3b95e73cf780e9419"><div class="ttname"><a href="classjenes_1_1_jenes_exception.html#a4d673283c5e13dd3b95e73cf780e9419">jenes.JenesException.isFatal</a></div><div class="ttdeci">boolean isFatal()</div><div class="ttdef"><b>Definition:</b> <a href="_jenes_exception_8java_source.html#l00061">JenesException.java:61</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Sábado, 23 de Noviembre de 2013 21:00:49 para Jenes 2.0 por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>
